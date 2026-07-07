@@ -6,11 +6,214 @@
 -->
 <html>
 	<head>
-		<title>Yan Zhu | Behavioral Intervention Systems, Learning, and Implementation Quality</title>
+		<title>Yan Zhu | Behavioral Intervention Systems for Learning, Development, and Durable Change</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			/* =========================
+			   Yan Zhu Custom Homepage Style
+			   Only modifies index.html
+			   ========================= */
+
+			body {
+				line-height: 1.75;
+			}
+
+			#wrapper p {
+				font-size: 1rem;
+				line-height: 1.75;
+			}
+
+			.inner {
+				max-width: 1180px;
+			}
+
+			h1, h2, h3 {
+				letter-spacing: -0.02em;
+			}
+
+			h2 {
+				margin-bottom: 1.25rem;
+			}
+
+			/* About section layout */
+			.about-profile {
+				max-width: 1040px;
+			}
+
+			.profile-top {
+				display: grid;
+				grid-template-columns: 240px 1fr;
+				gap: 2.4rem;
+				align-items: center;
+				margin-bottom: 1.8rem;
+			}
+
+			.profile-photo {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.profile-photo img {
+				width: 220px;
+				height: 220px;
+				object-fit: cover;
+				border-radius: 50%;
+				border: 3px solid rgba(255, 255, 255, 0.35);
+				box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.25);
+				background: rgba(255, 255, 255, 0.08);
+			}
+
+			.profile-identity {
+				max-width: 720px;
+			}
+
+			.profile-name {
+				font-size: 3.35rem;
+				line-height: 1.05;
+				margin: 0 0 0.85rem 0;
+			}
+
+			.profile-meta {
+				font-size: 0.8rem;
+				line-height: 1.5;
+				opacity: 0.84;
+				max-width: 680px;
+			}
+
+			.profile-meta p {
+				margin: 0 0 0.28rem 0;
+			}
+
+			.profile-location {
+				font-size: 0.9rem;
+				margin-bottom: 0.45rem !important;
+				opacity: 0.9;
+			}
+
+			.profile-main {
+				max-width: 900px;
+			}
+
+			.profile-tagline {
+				margin-bottom: 1.45rem;
+				font-size: 1.28rem;
+				font-weight: 600;
+				line-height: 1.45;
+				max-width: 900px;
+			}
+
+			.profile-summary {
+				max-width: 900px;
+			}
+
+			.profile-summary p {
+				margin-bottom: 1rem;
+				font-size: 1.02rem;
+				line-height: 1.75;
+			}
+
+			/* Make long text sections less crowded */
+			.content .inner {
+				max-width: 760px;
+			}
+
+			/* Improve project cards */
+			.features section {
+				border-radius: 1.25rem;
+				transition: transform 0.2s ease, background-color 0.2s ease;
+			}
+
+			.features section:hover {
+				transform: translateY(-3px);
+			}
+
+			.features h3 {
+				margin-bottom: 1rem;
+			}
+
+			.features p {
+				margin-bottom: 0.85rem;
+			}
+
+			.actions {
+				margin-top: 1.6rem;
+			}
+
+			.button {
+				letter-spacing: 0.04em;
+			}
+
+			.section-note {
+				font-size: 0.95rem;
+				opacity: 0.88;
+				max-width: 840px;
+				margin-bottom: 2rem;
+			}
+
+			@media screen and (max-width: 980px) {
+				.profile-top {
+					grid-template-columns: 210px 1fr;
+					gap: 2rem;
+					margin-bottom: 2rem;
+				}
+
+				.profile-photo img {
+					width: 200px;
+					height: 200px;
+				}
+
+				.profile-name {
+					font-size: 2.9rem;
+				}
+
+				.profile-tagline {
+					font-size: 1.18rem;
+				}
+
+				.profile-summary p {
+					font-size: 1rem;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				.profile-top {
+					grid-template-columns: 1fr;
+					gap: 1.6rem;
+					margin-bottom: 2.2rem;
+				}
+
+				.profile-photo {
+					justify-content: flex-start;
+				}
+
+				.profile-photo img {
+					width: 170px;
+					height: 170px;
+				}
+
+				.profile-name {
+					font-size: 2.35rem;
+				}
+
+				.profile-meta {
+					font-size: 0.82rem;
+				}
+
+				.profile-tagline {
+					font-size: 1.1rem;
+				}
+
+				.profile-summary p {
+					font-size: 1rem;
+					line-height: 1.75;
+				}
+			}
+		</style>
 	</head>
 
 	<body class="is-preload">
@@ -36,53 +239,54 @@
 			<!-- About -->
 			<section id="intro" class="wrapper style1 fullscreen fade-up">
 				<div class="inner">
-			
-					<div class="about-grid">
-			
-						<!-- Profile Photo -->
-						<div class="profile-photo">
-							<img src="images/profile.jpg" alt="Portrait of Yan Zhu" />
+
+					<div class="about-profile">
+
+						<!-- Profile Top -->
+						<div class="profile-top">
+							<div class="profile-photo">
+								<img src="images/profile.jpg" alt="Portrait of Yan Zhu" />
+							</div>
+
+							<div class="profile-identity">
+								<h1 class="profile-name">Yan Zhu</h1>
+
+								<div class="profile-meta">
+									<p class="profile-location">From Chengdu, China</p>
+									<p><strong>M.S.</strong> Psychology, University of Wisconsin–Madison</p>
+									<p><strong>B.S.</strong> Psychology, Michigan State University</p>
+								</div>
+							</div>
 						</div>
-			
-						<!-- About Text -->
-						<div class="about-text">
-							<h1>Yan Zhu</h1>
-			
-							<p class="location">
-								From Chengdu, China
+
+						<!-- Profile Main Text -->
+						<div class="profile-main">
+							<p class="profile-tagline">
+								Behavioral Intervention Systems for Learning, Development, and Durable Change
 							</p>
-			
-							<div class="education-inline">
+
+							<div class="profile-summary">
 								<p>
-									<strong>M.S.</strong>, Your Graduate University<br />
-									<strong>B.S.</strong>, Your Undergraduate University
+									I study how behavioral intervention systems support learning, development, and durable behavior change across everyday care, education, and service environments.
+								</p>
+
+								<p>
+									I am especially interested in how adults around the learner—families, caregivers, educators, practitioners, and supervisors—can be better supported through training, supervision, implementation quality, and data-informed decision-making.
+								</p>
+
+								<p>
+									My goal is to develop research and tools that make evidence-based intervention more sustainable, responsive, and useful in the real environments where learning and behavior change unfold.
 								</p>
 							</div>
-			
-							<p class="subtitle">
-								Behavioral Intervention Systems, Learning, and Implementation Quality
-							</p>
-			
-							<p>
-								I am an ABA practitioner and data-informed behavioral science researcher interested in how behavioral interventions can become more reliable, sustainable, and effective in real-world learning and service settings.
-							</p>
-			
-							<p>
-								My work is shaped by applied behavior analysis, developmental and educational research, and a systems-oriented interest in how people, environments, supervision systems, and data-informed tools support durable behavior change.
-							</p>
-			
-							<p>
-								One core belief behind my work is that behavioral intervention cannot be fully outsourced to external providers. Parents and caregivers play a central role in shaping the everyday environments where learning, behavior, and long-term change actually occur. When families are disconnected from the intervention process, even well-designed services may struggle to maintain meaningful outcomes across daily routines.
-							</p>
-			
+
 							<ul class="actions">
-								<li><a href="#practice-to-research" class="button scrolly">From Practice to Research</a></li>
+								<li><a href="#working-on" class="button scrolly">What I Am Working On</a></li>
 								<li><a href="#contact" class="button scrolly">CV & Contact</a></li>
 							</ul>
 						</div>
-			
+
 					</div>
-			
+
 				</div>
 			</section>
 
@@ -156,8 +360,8 @@
 				<div class="inner">
 					<h2>What I Am Working On</h2>
 
-					<p>
-						I am currently organizing my applied, academic, and technical work into a developing research portfolio. These projects are not presented as formal publications; they are emerging work products that show how I am translating practice-based questions into research briefs, evidence maps, and data-informed tools.
+					<p class="section-note">
+						I am organizing my applied, academic, and technical work into a developing research portfolio. These projects translate practice-based questions into research briefs, evidence maps, and data-informed design concepts.
 					</p>
 
 					<div class="features">
@@ -308,7 +512,7 @@
 							<ul class="contact">
 								<li>
 									<h3>Email</h3>
-									<a href="mailto:zhuyan339@gmail.com">zhuyan339@gmail.com</a>
+									<a href="mailto:zhuyanseattle@gmail.com">zhuyanseattle@gmail.com</a>
 								</li>
 
 								<li>
@@ -316,13 +520,13 @@
 
 									<ul class="icons">
 										<li>
-											<a href="https://github.com/zhuyan339" class="icon brands fa-github">
+											<a href="https://github.com/zhuyan-3" class="icon brands fa-github">
 												<span class="label">GitHub</span>
 											</a>
 										</li>
 
 										<li>
-											<a href="#" class="icon brands fa-linkedin-in">
+											<a href="https://linkedin.com/in/zhuyan3" class="icon brands fa-linkedin-in">
 												<span class="label">LinkedIn</span>
 											</a>
 										</li>
