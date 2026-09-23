@@ -255,6 +255,44 @@
 
 
 			/* =========================
+			   Practice / Reflection
+			   ========================= */
+
+			.practice-cycle {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 1.25rem;
+				margin-top: 2.25rem;
+				margin-bottom: 2.5rem;
+			}
+
+			.practice-card {
+				padding: 1.4rem 1.5rem;
+				background: rgba(255, 255, 255, 0.05);
+				border-radius: 1rem;
+			}
+
+			.practice-card h3 {
+				margin-bottom: 0.7rem;
+			}
+
+			.practice-card p {
+				margin-bottom: 0;
+				font-size: 0.94rem !important;
+			}
+
+			.question-list {
+				max-width: 850px;
+				margin-top: 1.5rem;
+			}
+
+			.question-list li {
+				margin-bottom: 0.85rem;
+				line-height: 1.65;
+			}
+
+
+			/* =========================
 			   Practice / Artifact
 			   ========================= */
 
@@ -357,7 +395,8 @@
 					font-size: 2.9rem;
 				}
 
-				.artifact-grid {
+				.artifact-grid,
+				.practice-cycle {
 					grid-template-columns: repeat(2, 1fr);
 				}
 			}
@@ -387,7 +426,8 @@
 					font-size: 1.1rem;
 				}
 
-				.artifact-grid {
+				.artifact-grid,
+				.practice-cycle {
 					grid-template-columns: 1fr;
 				}
 
@@ -414,8 +454,8 @@
 						<li><a href="#intro">About</a></li>
 						<li><a href="#path">My Path</a></li>
 						<li><a href="#projects">Projects & Questions</a></li>
-						<li><a href="#practice">Practice</a></li>
-						<li><a href="#methods">Methods</a></li>
+						<li><a href="#practice">Learning From Practice</a></li>
+						<li><a href="#methods">How I Work With Data</a></li>
 						<li><a href="#future">What's Next</a></li>
 						<li><a href="#contact">CV & Contact</a></li>
 					</ul>
@@ -492,31 +532,35 @@
 									My path has moved between psychology,
 									behavioral data science, and direct
 									behavioral intervention. Across these
-									experiences, I have become increasingly
-									interested in a simple but difficult
-									question: why does knowing what to do—or
-									having a behavioral strategy available—not
-									always translate into what people actually
-									do in everyday life?
+									experiences, I keep returning to a simple
+									but difficult problem:
+									<strong>
+										knowing what to do—or having a
+										behavioral strategy available—does not
+										always mean that it will be used when
+										it matters.
+									</strong>
 								</p>
 
 								<p>
-									I am still developing this question. My
-									experiences in research, data analysis,
-									and applied practice have each shaped a
-									different part of how I think about it.
-									This site is a record of that development:
-									the projects I have worked on, the
-									questions that emerged from them, and the
-									direction I hope to explore next.
+									I have encountered versions of this problem
+									in different places: in longitudinal
+									behavioral data, digital intervention
+									engagement, and direct behavioral practice.
+									These experiences have made me increasingly
+									interested in the gap between behavioral
+									capacity and action, and in how data can
+									help us understand when and why that gap
+									emerges.
 								</p>
 
 								<p>
-									I am especially interested in how
-									behavioral research can eventually move
-									beyond analysis into interventions, tools,
-									and systems that can be tested and used in
-									real-world environments.
+									This site documents how that question is
+									developing through my research, practice,
+									and ongoing work—and how I hope eventually
+									to translate behavioral research into
+									interventions, assessments, and tools that
+									can be tested in real-world environments.
 								</p>
 
 							</div>
@@ -627,13 +671,13 @@
 
 							<p>
 								Direct behavioral intervention gave me a
-								different perspective. Skills and strategies
-								that appear clear in structured programs do
-								not automatically transfer across people,
-								settings, caregivers, or everyday routines.
-								These experiences made questions of
-								implementation and generalization feel less
-								abstract.
+								different way of thinking about behavior.
+								A skill that appears established in one
+								setting may not transfer reliably across
+								people, routines, or environments. Seeing
+								this variation in everyday practice made
+								questions of implementation and generalization
+								increasingly concrete to me.
 							</p>
 
 						</div>
@@ -651,11 +695,13 @@
 
 							<p>
 								I am now trying to connect these parts of my
-								background. Rather than treating practice as
-								research evidence, I use it as a source of
-								questions—and use behavioral data and
-								systematic research to examine those questions
-								more carefully.
+								background. Practice helps me notice behavioral
+								problems that may be easy to miss in abstract
+								models; data gives me a way to examine those
+								problems systematically. I am especially
+								interested in what happens between acquiring
+								a behavioral capacity and actually using it
+								in everyday life.
 							</p>
 
 						</div>
@@ -684,9 +730,9 @@
 						These projects represent different stages of my
 						training. Some were collaborative research
 						experiences; others are analyses I have continued to
-						develop independently. I see them as part of an
-						ongoing process of learning how to ask better
-						behavioral questions.
+						develop independently. I see them not only as projects
+						I have completed or contributed to, but also as places
+						where new behavioral questions began to emerge.
 					</p>
 
 
@@ -730,17 +776,22 @@
 
 							<p>
 								<strong>What I am learning:</strong>
-								The analysis has pushed me to think beyond
-								whether a strategy is known or available and
-								toward the conditions under which it is
-								actually implemented.
+								This project has made the distinction between
+								behavioral repertoire and behavioral
+								implementation increasingly important to me.
+								Knowing that a strategy exists in someone's
+								repertoire tells us something—but not
+								necessarily whether it will be used at the
+								moment it matters.
 							</p>
 
 							<p>
-								<strong>Question it led to:</strong>
-								When does behavioral repertoire become
-								real-world behavior, and what explains the
-								gap when it does not?
+								<strong>Where this question is taking me:</strong>
+								I am becoming interested in whether intensive
+								longitudinal data can help identify the people,
+								moments, and contexts in which the gap between
+								behavioral capacity and implementation is most
+								likely to emerge.
 							</p>
 
 						</section>
@@ -777,11 +828,15 @@
 							</p>
 
 							<p>
-								<strong>What I learned:</strong>
-								Behavioral data collected repeatedly in daily
-								life can reveal variation that disappears when
-								behavior is reduced to a single average or
-								cross-sectional measure.
+								<strong>What changed in how I think:</strong>
+								Working with repeated measurements made
+								"the average person" feel increasingly
+								incomplete as a way of thinking about
+								behavior. The same person can behave
+								differently across days and situations, and
+								those fluctuations may contain information
+								that a single baseline or cross-sectional
+								measure cannot capture.
 							</p>
 
 						</section>
@@ -817,12 +872,14 @@
 							</p>
 
 							<p>
-								<strong>What I learned:</strong>
-								The existence of an intervention does not
-								guarantee meaningful engagement with it.
-								Understanding how people actually use an
-								intervention can be as important as the
-								intervention itself.
+								<strong>What changed in how I think:</strong>
+								This project was one of the experiences that
+								made me distinguish between making an
+								intervention available and understanding how
+								it is actually used. People can engage with
+								the same intervention in very different ways,
+								making engagement itself an important
+								behavioral process to understand.
 							</p>
 
 						</section>
@@ -847,23 +904,25 @@
 								In the Preventing Interpersonal Violence and
 								Overcoming Trauma Lab at UW–Madison, I
 								supported research through data cleaning,
-								exploratory analysis, variable construction,
-								visualization, and quantitative and
-								qualitative work in R.
+								variable construction, exploratory data
+								analysis, statistical analysis, and
+								visualization in R.
 							</p>
 
 							<p>
 								I also developed and refined funnel plots and
-								other research visualizations for doctoral
-								work.
+								other meta-analytic visualizations for a
+								doctoral research project.
 							</p>
 
 							<p>
-								<strong>What I learned:</strong>
-								Collaborative research taught me how much
-								careful data preparation, documentation, and
-								interpretation sit behind the final results of
-								a research project.
+								<strong>What stayed with me:</strong>
+								This experience made me appreciate how much
+								of research happens before a final model or
+								result appears. Decisions about how behavior
+								is represented, cleaned, summarized, and
+								visualized can shape which patterns become
+								visible and how they are interpreted.
 							</p>
 
 						</section>
@@ -878,7 +937,7 @@
 
 
 			<!-- =========================
-			     Practice
+			     Learning From Practice
 			     ========================= -->
 
 			<section id="practice" class="wrapper style2 fade-up">
@@ -890,33 +949,129 @@
 					</h2>
 
 					<p class="section-intro">
-						My applied behavioral work has shaped the kinds of
-						questions I notice. Working across structured,
-						home, and community settings has repeatedly reminded
-						me that behavior change occurs within relationships,
-						routines, environments, and everyday constraints.
+						Some of the questions I care about most did not begin
+						with a dataset. They began with small discrepancies I
+						noticed in everyday behavioral work.
 					</p>
 
 					<p>
-						I do not treat observations from practice as research
-						findings. Instead, I see practice as one place where
-						important research questions begin. It has made me
-						especially curious about generalization,
-						implementation, caregiver and practitioner behavior,
-						and the conditions that help behavioral change persist
-						outside structured intervention settings.
+						A skill demonstrated in one setting may not appear as
+						reliably in another. A strategy that works within one
+						routine may become harder to use when the environment,
+						people, prompts, or demands change. Behavior that
+						looks stable during structured intervention can become
+						much more variable in everyday contexts.
+					</p>
+
+					<p>
+						I do not treat these observations as research
+						findings. Instead, they help me notice questions that
+						can later be examined systematically. Practice has
+						made me increasingly interested not only in
+						<strong>whether</strong> an intervention or strategy
+						works, but also in <strong>when</strong> behavior
+						transfers, when implementation breaks down, and what
+						changes in the surrounding context when that happens.
 					</p>
 
 
+					<div class="practice-cycle">
+
+						<div class="practice-card">
+
+							<h3>
+								1. Notice
+							</h3>
+
+							<p>
+								Real-world practice exposes variation that can
+								be difficult to see in structured settings:
+								the same skill, strategy, or intervention can
+								look different across people, routines, and
+								environments.
+							</p>
+
+						</div>
+
+
+						<div class="practice-card">
+
+							<h3>
+								2. Ask & Measure
+							</h3>
+
+							<p>
+								Those discrepancies can become researchable
+								questions. Behavioral measurement and
+								longitudinal data provide a way to examine
+								when behavior changes and what individual or
+								contextual factors accompany that change.
+							</p>
+
+						</div>
+
+
+						<div class="practice-card">
+
+							<h3>
+								3. Return to Application
+							</h3>
+
+							<p>
+								The goal is not for analysis to end with a
+								model. What we learn can inform how
+								interventions, assessments, or tools are
+								designed, tested, and adapted for use in
+								real-world settings.
+							</p>
+
+						</div>
+
+					</div>
+
+
+					<h3>
+						Questions I Notice in Everyday Work
+					</h3>
+
+					<ul class="question-list">
+
+						<li>
+							Why can a behavior look stable in one environment
+							and fragile in another?
+						</li>
+
+						<li>
+							When does a learned skill become something a
+							person can use independently across situations?
+						</li>
+
+						<li>
+							How do caregivers, practitioners, routines, and
+							environmental demands shape whether an
+							intervention is implemented as intended?
+						</li>
+
+						<li>
+							What would we need to measure in everyday life to
+							know when additional behavioral support is most
+							useful?
+						</li>
+
+					</ul>
+
+
 					<!--
-						OPTIONAL ARTWORK SECTION
+						OPTIONAL ARTWORK / PRACTICE ARTIFACT SECTION
 
 						Only publish client-created artwork when you have
 						appropriate permission for public display and after
 						removing identifying information.
 
-						Replace the sample filenames below with your own
-						images when ready.
+						This section can also be used later for your own
+						diagrams, behavioral data visualizations, field
+						notes, or intervention materials that do not contain
+						protected or identifying information.
 					-->
 
 					<!--
@@ -926,22 +1081,22 @@
 						<div class="artifact-card">
 							<img
 								src="images/artwork01.jpg"
-								alt="Artwork from a practice experience"
+								alt="Artifact related to behavioral practice"
 							/>
 							<div class="artifact-caption">
-								A small artifact from practice that reminds me
-								that behavioral work takes place in real lives,
-								not only in datasets.
+								A small artifact from practice that reminds
+								me that behavioral work takes place in real
+								lives, not only in datasets.
 							</div>
 						</div>
 
 						<div class="artifact-card">
 							<img
 								src="images/artwork02.jpg"
-								alt="Artwork from a practice experience"
+								alt="Artifact related to behavioral practice"
 							/>
 							<div class="artifact-caption">
-								Moments from practice have often shaped the
+								Moments from practice often shape the
 								questions I later bring back to behavioral
 								research.
 							</div>
@@ -963,7 +1118,7 @@
 
 
 			<!-- =========================
-			     Methods
+			     How I Work With Behavioral Data
 			     ========================= -->
 
 			<section id="methods" class="wrapper style1 fade-up">
@@ -971,27 +1126,30 @@
 				<div class="inner">
 
 					<h2>
-						Methods I Use
+						How I Work With Behavioral Data
 					</h2>
 
 					<p class="section-note">
-						My quantitative training gives me a set of tools for
-						turning behavioral questions into analyses. I see
-						these methods as tools rather than as the endpoint of
-						my research.
+						My quantitative training gives me tools for turning
+						behavioral questions into analyses. I am most
+						interested in methods when they help clarify a
+						behavioral problem—not as an endpoint by themselves.
 					</p>
 
 
 					<div class="method-block">
 
 						<h3>
-							Longitudinal Behavioral Data
+							Repeated Behavior
 						</h3>
 
 						<p>
-							Repeated-measures and intensive longitudinal
-							analysis; multilevel and mixed-effects models;
-							within- and between-person decomposition.
+							I am especially interested in data that capture
+							behavior repeatedly across time and situations.
+							Longitudinal and multilevel approaches allow me
+							to distinguish relatively stable differences
+							between people from changes occurring within the
+							same person across occasions.
 						</p>
 
 					</div>
@@ -1000,14 +1158,17 @@
 					<div class="method-block">
 
 						<h3>
-							Data & Modeling
+							From Messy Data to Behavioral Variables
 						</h3>
 
 						<p>
-							Exploratory data analysis; data cleaning and
-							transformation; predictive modeling; process
-							mining; count and ordinal models; model
-							diagnostics and sensitivity analysis.
+							Much of my research experience has involved
+							turning real-world behavioral data into analyzable
+							representations: cleaning and transforming data,
+							constructing variables and scales, exploring
+							distributions and patterns, visualizing results,
+							and checking whether analytic decisions change
+							the conclusions.
 						</p>
 
 					</div>
@@ -1016,13 +1177,16 @@
 					<div class="method-block">
 
 						<h3>
-							Programming
+							Modeling as a Tool
 						</h3>
 
 						<p>
-							R; Python; SQL; Git/GitHub; Jupyter Notebook;
-							PM4Py; LaTeX; reproducible reporting and
-							visualization.
+							I use R and Python for statistical and
+							computational analysis, including mixed-effects,
+							count, ordinal, and predictive approaches. My
+							work has also included process mining, model
+							diagnostics, sensitivity analysis, and
+							reproducible research workflows.
 						</p>
 
 					</div>
@@ -1031,14 +1195,17 @@
 					<div class="method-block">
 
 						<h3>
-							Applied Behavioral Training
+							Connecting Measurement to Practice
 						</h3>
 
 						<p>
-							Applied behavior analysis; single-case
-							experimental design; behavioral assessment and
-							intervention; implementation across center-based,
-							home, and community settings.
+							My applied behavioral training gives me another
+							lens on measurement. Direct intervention has made
+							me attentive to how behavior is defined,
+							observed, prompted, reinforced, and generalized
+							across settings—and to the difference between
+							what can be measured conveniently and what may
+							matter in everyday life.
 						</p>
 
 					</div>
@@ -1063,8 +1230,8 @@
 
 					<p class="section-intro">
 						The question I am developing now sits at the
-						intersection of behavioral science, measurement, and
-						intervention.
+						intersection of behavioral science, measurement,
+						and intervention.
 					</p>
 
 
@@ -1090,25 +1257,31 @@
 					</p>
 
 					<p>
+						One direction I want to explore is whether repeated
+						behavioral measurement can help identify moments when
+						a person has the capacity or strategy needed for a
+						behavior but is unlikely to implement it. That could
+						create a more precise bridge between behavioral
+						measurement and decisions about when additional
+						support may be useful.
+					</p>
+
+					<p>
 						Over time, I hope to connect this research to the
 						design and evaluation of interventions, assessments,
 						and human-centered tools that can respond to behavior
-						in real-world settings.
+						in real-world settings. I am interested in technology
+						when it makes that translation possible, rather than
+						as an endpoint in itself.
 					</p>
 
 					<p>
-						I am particularly interested in doctoral training that
-						would allow me to move repeatedly between research
-						and application: using real-world problems to generate
-						research questions, testing those questions
-						systematically, translating what is learned into
-						interventions or tools, and then learning from how
-						those approaches perform outside the laboratory.
-					</p>
-
-					<p>
-						This direction is still developing. That is part of
-						why I am pursuing doctoral training.
+						Doctoral training would allow me to develop these
+						questions more rigorously: connecting behavioral
+						theory with intensive measurement, testing when
+						implementation succeeds or fails, and translating
+						what is learned into interventions and tools that can
+						themselves be evaluated in real-world settings.
 					</p>
 
 				</div>
