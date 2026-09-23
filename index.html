@@ -34,42 +34,91 @@
 
 		/* =========================================================
 		   COLOR SYSTEM
-
-		   Deep green:      #203A34
-		   Forest green:    #294B43
-		   Sage:            #6F8F83
-		   Warm cream:      #F4F0E8
-		   Warm accent:     #C89B72
+		   Warm · Alive · Academic
 		   ========================================================= */
 
+		:root {
+
+			/* Backgrounds */
+			--ivory: #F8F6EF;
+			--white: #FFFEFA;
+
+			/* Blue */
+			--navy: #17324D;
+			--blue: #47769B;
+			--blue-light: #E8F0F5;
+
+			/* Green */
+			--sage: #789B7A;
+			--sage-dark: #58755E;
+			--sage-light: #E6EEE4;
+
+			/* Yellow */
+			--yellow: #E8C766;
+			--yellow-light: #F7EFCF;
+
+			/* Text */
+			--text: #303B40;
+			--muted: #68757A;
+
+			/* Lines */
+			--border: #DDE2DC;
+
+		}
+
+
+
+		/* =========================================================
+		   GLOBAL
+		   ========================================================= */
+
+		html {
+			scroll-behavior: smooth;
+		}
 
 		body {
 			line-height: 1.75;
-			background: #203A34;
+			background: var(--ivory);
+			color: var(--text);
 		}
 
+		#wrapper {
+			background: var(--ivory);
+		}
 
 		#wrapper p {
 			font-size: 1rem;
 			line-height: 1.75;
+			color: var(--text);
 		}
-
 
 		.inner {
 			max-width: 1120px;
 		}
 
-
 		h1,
 		h2,
 		h3 {
+			color: var(--navy) !important;
 			letter-spacing: -0.02em;
 		}
-
 
 		h2 {
 			margin-bottom: 1.3rem;
 		}
+
+		strong {
+			color: var(--navy);
+		}
+
+		a {
+			color: var(--blue);
+		}
+
+		a:hover {
+			color: var(--navy);
+		}
+
 
 
 		/* =========================================================
@@ -77,25 +126,23 @@
 		   ========================================================= */
 
 		#sidebar {
-			background: #172C27;
+			background: var(--navy);
 		}
-
 
 		#sidebar nav a {
-			color: rgba(244, 240, 232, 0.72);
+			color: rgba(255, 255, 255, 0.64);
 		}
-
 
 		#sidebar nav a:hover,
 		#sidebar nav a.active {
-			color: #F4F0E8;
+			color: #FFFFFF;
 		}
-
 
 		#sidebar nav a:after {
 			background-image: none;
-			background: #C89B72;
+			background: var(--yellow);
 		}
+
 
 
 		/* =========================================================
@@ -103,23 +150,27 @@
 		   ========================================================= */
 
 		.wrapper.style1 {
-			background: #203A34;
+			background: var(--ivory);
 		}
-
 
 		.wrapper.style2 {
-			background: #294B43;
+			background: var(--white);
 		}
-
 
 		.wrapper.style3 {
-			background: #36584F;
+			background: #F0F4EF;
 		}
-
 
 		.wrapper.style1-alt {
-			background: #172C27;
+			background: var(--navy);
 		}
+
+		.wrapper.style1:before,
+		.wrapper.style2:before,
+		.wrapper.style3:before {
+			background: none;
+		}
+
 
 
 		/* =========================================================
@@ -127,71 +178,75 @@
 		   ========================================================= */
 
 		.about-profile {
-			max-width: 920px;
+			max-width: 940px;
 		}
-
 
 		.profile-top {
 			display: grid;
-			grid-template-columns: 210px 1fr;
-			gap: 2.5rem;
+			grid-template-columns: 220px 1fr;
+			gap: 2.7rem;
 			align-items: center;
-			margin-bottom: 2.4rem;
+			margin-bottom: 2.5rem;
 		}
 
-
-		.profile-photo-placeholder {
-			width: 190px;
-			height: 190px;
-			border-radius: 50%;
-			border: 2px solid rgba(244, 240, 232, 0.28);
-			background: rgba(244, 240, 232, 0.06);
+		.profile-photo {
 			display: flex;
 			align-items: center;
-			justify-content: center;
-			text-align: center;
-			font-size: 0.8rem;
-			line-height: 1.5;
-			opacity: 0.65;
+			justify-content: flex-start;
 		}
 
+		.profile-photo img {
+			width: 205px;
+			height: 205px;
+
+			object-fit: cover;
+			object-position: center;
+
+			border-radius: 50%;
+
+			border: 6px solid var(--white);
+
+			box-shadow:
+				0 0 0 2px var(--sage-light),
+				0 12px 35px rgba(23, 50, 77, 0.13);
+
+			background: var(--white);
+		}
 
 		.profile-name {
-			font-size: 3.4rem;
+			font-size: 3.55rem;
 			line-height: 1;
-			margin-bottom: 0.8rem;
+			margin: 0 0 0.8rem 0;
+			color: var(--navy) !important;
 		}
-
 
 		.profile-tagline {
-			font-size: 1.25rem;
+			font-size: 1.25rem !important;
 			font-weight: 600;
-			color: #E3D7C7;
-			margin-bottom: 0.5rem;
+			color: var(--blue) !important;
+			margin: 0 0 0.35rem 0;
 		}
 
-
 		.profile-location {
-			font-size: 0.9rem;
-			opacity: 0.72;
+			font-size: 0.9rem !important;
+			color: var(--muted) !important;
 			margin: 0;
 		}
 
-
 		.profile-summary {
-			max-width: 800px;
+			max-width: 790px;
 		}
-
 
 		.profile-summary p {
 			font-size: 1.06rem !important;
+			color: var(--text) !important;
 			margin-bottom: 1rem;
 		}
 
-
 		.profile-summary strong {
-			color: #F4F0E8;
+			color: var(--navy);
 		}
+
 
 
 		/* =========================================================
@@ -200,19 +255,21 @@
 
 		.section-intro {
 			max-width: 760px;
-			font-size: 1.05rem;
+			font-size: 1.05rem !important;
 			margin-bottom: 2.2rem;
+			color: var(--muted) !important;
 		}
-
 
 		.small-note {
-			font-size: 0.82rem !important;
-			opacity: 0.65;
+			font-size: 0.78rem !important;
+			color: var(--muted) !important;
+			opacity: 0.8;
 		}
+
 
 
 		/* =========================================================
-		   PATH
+		   STORY / TIMELINE
 		   ========================================================= */
 
 		.journey {
@@ -220,49 +277,56 @@
 			margin-top: 2.5rem;
 		}
 
-
 		.journey-item {
 			position: relative;
 			padding: 0 0 2.5rem 2.2rem;
-			border-left: 2px solid rgba(244, 240, 232, 0.18);
+			border-left: 2px solid #CBD8CB;
 		}
-
 
 		.journey-item:last-child {
 			padding-bottom: 0;
 		}
 
-
 		.journey-item:before {
 			content: "";
 			position: absolute;
-			left: -0.47rem;
-			top: 0.35rem;
-			width: 0.8rem;
-			height: 0.8rem;
-			border-radius: 50%;
-			background: #C89B72;
-		}
 
+			left: -0.52rem;
+			top: 0.3rem;
+
+			width: 0.85rem;
+			height: 0.85rem;
+
+			border-radius: 50%;
+
+			background: var(--yellow);
+
+			border: 3px solid var(--white);
+
+			box-shadow:
+				0 0 0 2px var(--sage);
+		}
 
 		.journey-label {
-			font-size: 0.74rem;
+			font-size: 0.74rem !important;
 			text-transform: uppercase;
 			letter-spacing: 0.1em;
-			opacity: 0.68;
+
+			color: var(--sage-dark) !important;
+
 			margin-bottom: 0.35rem;
 		}
-
 
 		.journey-item h3 {
 			margin-bottom: 0.55rem;
 		}
 
-
 		.journey-item p {
 			max-width: 700px;
 			margin-bottom: 0;
+			color: var(--text) !important;
 		}
+
 
 
 		/* =========================================================
@@ -276,92 +340,150 @@
 			margin-top: 2rem;
 		}
 
-
 		.work-card {
-			background: rgba(244, 240, 232, 0.055);
-			border: 1px solid rgba(244, 240, 232, 0.08);
+			background: var(--white);
+
+			border: 1px solid var(--border);
 			border-radius: 1.1rem;
-			padding: 1.6rem;
+
+			padding: 1.65rem;
+
+			box-shadow:
+				0 8px 30px rgba(23, 50, 77, 0.045);
+
+			transition:
+				transform 0.2s ease,
+				box-shadow 0.2s ease;
 		}
 
+		.work-card:hover {
+			transform: translateY(-3px);
+
+			box-shadow:
+				0 12px 34px rgba(23, 50, 77, 0.08);
+		}
+
+		.work-card:first-child {
+			border-top: 4px solid var(--blue);
+		}
+
+		.work-card:nth-child(2) {
+			border-top: 4px solid var(--sage);
+		}
+
+		.work-card:nth-child(3) {
+			border-top: 4px solid var(--yellow);
+		}
+
+		.work-card:nth-child(4) {
+			border-top: 4px solid #89AABD;
+		}
 
 		.work-card h3 {
 			margin-bottom: 0.7rem;
 		}
 
-
 		.work-label {
 			font-size: 0.72rem !important;
+
 			text-transform: uppercase;
 			letter-spacing: 0.09em;
-			opacity: 0.62;
+
+			color: var(--blue) !important;
+
 			margin-bottom: 0.45rem !important;
 		}
 
-
 		.work-card p {
 			font-size: 0.94rem !important;
+			color: var(--text) !important;
 			margin-bottom: 0.75rem;
 		}
-
 
 		.work-card p:last-child {
 			margin-bottom: 0;
 		}
 
-
 		.takeaway {
-			color: #E7D5C2;
+			color: var(--navy) !important;
 		}
+
 
 
 		/* =========================================================
 		   PRACTICE
 		   ========================================================= */
 
-		.practice-story {
-			max-width: 800px;
+		#practice {
+			background: #F4F7F1;
 		}
 
+		.practice-story {
+			max-width: 790px;
+		}
 
 		.practice-story p {
 			font-size: 1.04rem !important;
+			color: var(--text) !important;
 		}
-
 
 		.milestone-grid {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			gap: 1.2rem;
-			margin-top: 2.2rem;
-		}
 
+			margin-top: 2.3rem;
+		}
 
 		.milestone-card {
 			padding: 1.5rem;
+
 			border-radius: 1rem;
-			background: rgba(244, 240, 232, 0.06);
+
+			border: 1px solid var(--border);
+
+			background: var(--sage-light);
 		}
 
+		.milestone-card:nth-child(2) {
+			background: var(--yellow-light);
+			border-color: #E9DDAA;
+		}
+
+		.milestone-card:nth-child(3) {
+			background: var(--blue-light);
+			border-color: #D3E1EA;
+		}
 
 		.milestone-number {
-			font-size: 0.72rem;
-			letter-spacing: 0.1em;
+			font-size: 0.72rem !important;
+
 			text-transform: uppercase;
-			color: #D7B18E;
-			margin-bottom: 0.5rem;
+			letter-spacing: 0.1em;
+
+			color: var(--sage-dark) !important;
+
+			margin-bottom: 0.5rem !important;
 		}
 
+		.milestone-card:nth-child(2) .milestone-number {
+			color: #9B7B28 !important;
+		}
+
+		.milestone-card:nth-child(3) .milestone-number {
+			color: var(--blue) !important;
+		}
 
 		.milestone-card h3 {
 			margin-bottom: 0.65rem;
 		}
 
-
 		.milestone-card p {
 			font-size: 0.92rem !important;
+			color: var(--text) !important;
 			margin-bottom: 0;
 		}
+
 
 
 		/* =========================================================
@@ -369,99 +491,203 @@
 		   ========================================================= */
 
 		.artwork-section {
-			margin-top: 3.5rem;
+			margin-top: 3.8rem;
 		}
 
+		.artwork-section h3 {
+			font-size: 1.45rem;
+		}
 
 		.artwork-intro {
 			max-width: 700px;
+			color: var(--muted) !important;
 		}
-
 
 		.artwork-grid {
 			display: grid;
+
 			grid-template-columns: repeat(3, 1fr);
+
 			gap: 1.2rem;
+
 			margin-top: 1.8rem;
 		}
 
-
 		.artwork-card {
-			background: rgba(244, 240, 232, 0.05);
-			border-radius: 1rem;
-			overflow: hidden;
-		}
+			background: var(--white);
 
+			border: 1px solid var(--border);
+
+			border-radius: 1rem;
+
+			overflow: hidden;
+
+			box-shadow:
+				0 7px 24px rgba(23, 50, 77, 0.045);
+		}
 
 		.artwork-placeholder {
 			aspect-ratio: 4 / 3;
-			background: rgba(244, 240, 232, 0.07);
+
+			background:
+				linear-gradient(
+					135deg,
+					var(--sage-light),
+					var(--yellow-light)
+				);
+
+			color: var(--muted);
+
 			display: flex;
+
 			align-items: center;
 			justify-content: center;
-			text-align: center;
-			padding: 1rem;
-			font-size: 0.8rem;
-			opacity: 0.6;
-		}
 
+			text-align: center;
+
+			padding: 1rem;
+
+			font-size: 0.8rem;
+		}
 
 		.artwork-card img {
 			width: 100%;
+
 			aspect-ratio: 4 / 3;
+
 			object-fit: cover;
+
 			display: block;
 		}
 
-
 		.artwork-caption {
 			padding: 1rem 1.1rem;
+
 			font-size: 0.84rem;
+
 			line-height: 1.55;
-			opacity: 0.82;
+
+			color: var(--text);
+
+			background: var(--white);
 		}
+
 
 
 		/* =========================================================
 		   CURRENT QUESTION
 		   ========================================================= */
 
+		#future {
+			background: var(--ivory);
+		}
+
 		.question-box {
 			max-width: 850px;
+
 			margin: 2rem 0;
+
 			padding: 1.7rem 1.8rem;
-			border-left: 4px solid #C89B72;
-			background: rgba(244, 240, 232, 0.06);
+
+			border-left: 5px solid var(--yellow);
+
+			background: var(--yellow-light);
+
 			border-radius: 0 1rem 1rem 0;
 		}
 
-
 		.question-box p {
+			color: var(--navy) !important;
+
 			margin: 0;
+
 			font-size: 1.22rem !important;
+
 			line-height: 1.65 !important;
+
 			font-weight: 600;
 		}
-
 
 		.future-text {
 			max-width: 760px;
 		}
+
+		.future-text p {
+			color: var(--text) !important;
+		}
+
 
 
 		/* =========================================================
 		   BUTTONS
 		   ========================================================= */
 
-		.button.primary {
-			background: #C89B72;
-			color: #172C27 !important;
+		.button {
+			color: var(--navy) !important;
+
+			box-shadow:
+				inset 0 0 0 1px var(--navy) !important;
 		}
 
+		.button:hover {
+			background: rgba(71, 118, 155, 0.06);
+		}
+
+		.button.primary {
+			background: var(--navy) !important;
+
+			color: #FFFFFF !important;
+
+			box-shadow: none !important;
+		}
 
 		.button.primary:hover {
-			background: #D9AF89;
+			background: var(--blue) !important;
 		}
+
+
+
+		/* =========================================================
+		   CONTACT
+		   ========================================================= */
+
+		#contact {
+			background: #EEF3ED;
+		}
+
+		#contact p,
+		#contact li {
+			color: var(--text);
+		}
+
+		#contact .icon {
+			color: var(--navy);
+		}
+
+		#contact a {
+			color: var(--blue);
+		}
+
+		#contact a:hover {
+			color: var(--navy);
+		}
+
+
+
+		/* =========================================================
+		   FOOTER
+		   ========================================================= */
+
+		#footer {
+			background: var(--navy);
+		}
+
+		#footer,
+		#footer a,
+		#footer li {
+			color: rgba(255, 255, 255, 0.68);
+		}
+
 
 
 		/* =========================================================
@@ -469,6 +695,15 @@
 		   ========================================================= */
 
 		@media screen and (max-width: 980px) {
+
+			.profile-top {
+				grid-template-columns: 190px 1fr;
+			}
+
+			.profile-photo img {
+				width: 175px;
+				height: 175px;
+			}
 
 			.work-grid,
 			.milestone-grid,
@@ -483,27 +718,27 @@
 
 			.profile-top {
 				grid-template-columns: 1fr;
-				gap: 1.5rem;
+				gap: 1.6rem;
 			}
 
-
-			.profile-photo-placeholder {
-				width: 150px;
-				height: 150px;
+			.profile-photo img {
+				width: 155px;
+				height: 155px;
 			}
-
 
 			.profile-name {
-				font-size: 2.5rem;
+				font-size: 2.55rem;
 			}
 
+			.profile-tagline {
+				font-size: 1.08rem !important;
+			}
 
 			.work-grid,
 			.milestone-grid,
 			.artwork-grid {
 				grid-template-columns: 1fr;
 			}
-
 
 			.journey-item {
 				padding-left: 1.6rem;
@@ -567,10 +802,22 @@
 					<div class="profile-top">
 
 
-						<div class="profile-photo-placeholder">
-							Photo<br />
-							to be added
+						<!--
+							YOUR ORIGINAL PROFILE PHOTO
+
+							Keep your existing photo here:
+							images/profile.jpg
+						-->
+
+						<div class="profile-photo">
+
+							<img
+								src="images/profile.jpg"
+								alt="Portrait of Yan Zhu"
+							/>
+
 						</div>
+
 
 
 						<div>
@@ -591,6 +838,7 @@
 
 
 					</div>
+
 
 
 					<div class="profile-summary">
@@ -614,24 +862,29 @@
 					</div>
 
 
+
 					<ul class="actions">
 
 						<li>
+
 							<a
 								href="#path"
 								class="button scrolly"
 							>
 								My Story
 							</a>
+
 						</li>
 
 						<li>
+
 							<a
 								href="#contact"
 								class="button scrolly"
 							>
 								CV & Contact
 							</a>
+
 						</li>
 
 					</ul>
@@ -682,6 +935,7 @@
 					</div>
 
 
+
 					<div class="journey-item">
 
 						<p class="journey-label">
@@ -699,6 +953,7 @@
 						</p>
 
 					</div>
+
 
 
 					<div class="journey-item">
@@ -720,6 +975,7 @@
 						</p>
 
 					</div>
+
 
 
 					<div class="journey-item">
@@ -989,7 +1245,9 @@
 
 				<!-- =================================================
 				     ARTWORK
-				     Photos will be added later.
+
+				     We will replace these placeholders with
+				     actual artwork later.
 				     ================================================= -->
 
 				<div class="artwork-section">
@@ -1063,8 +1321,11 @@
 
 
 					<!--
-						Add this statement ONLY if you have appropriate
-						permission for public display:
+						IMPORTANT:
+
+						Only uncomment this statement after confirming
+						that you have appropriate permission to display
+						the artwork publicly.
 
 						<p class="small-note">
 							Selected artifacts displayed with permission.
