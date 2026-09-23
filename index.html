@@ -6,1458 +6,1314 @@
 	(html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Yan Zhu | Behavioral Science, Data & Practice</title>
 
-		<meta charset="utf-8" />
+<head>
 
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, user-scalable=no"
-		/>
+	<title>Yan Zhu | Behavioral Science, Data & Practice</title>
 
-		<meta
-			name="description"
-			content="Yan Zhu's work and developing research interests at the intersection of behavioral science, behavioral data, and real-world intervention."
-		/>
+	<meta charset="utf-8" />
 
-		<link rel="stylesheet" href="assets/css/main.css" />
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, user-scalable=no"
+	/>
 
-		<noscript>
-			<link rel="stylesheet" href="assets/css/noscript.css" />
-		</noscript>
+	<meta
+		name="description"
+		content="Yan Zhu's work and developing research interests in behavioral science, behavioral data, and real-world intervention."
+	/>
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 
 
-		<style>
+	<style>
 
-			/* =========================
-			   Yan Zhu Personal Research Homepage
-			   ========================= */
+		/* =========================================================
+		   COLOR SYSTEM
 
-			body {
-				line-height: 1.75;
+		   Deep green:      #203A34
+		   Forest green:    #294B43
+		   Sage:            #6F8F83
+		   Warm cream:      #F4F0E8
+		   Warm accent:     #C89B72
+		   ========================================================= */
+
+
+		body {
+			line-height: 1.75;
+			background: #203A34;
+		}
+
+
+		#wrapper p {
+			font-size: 1rem;
+			line-height: 1.75;
+		}
+
+
+		.inner {
+			max-width: 1120px;
+		}
+
+
+		h1,
+		h2,
+		h3 {
+			letter-spacing: -0.02em;
+		}
+
+
+		h2 {
+			margin-bottom: 1.3rem;
+		}
+
+
+		/* =========================================================
+		   SIDEBAR
+		   ========================================================= */
+
+		#sidebar {
+			background: #172C27;
+		}
+
+
+		#sidebar nav a {
+			color: rgba(244, 240, 232, 0.72);
+		}
+
+
+		#sidebar nav a:hover,
+		#sidebar nav a.active {
+			color: #F4F0E8;
+		}
+
+
+		#sidebar nav a:after {
+			background-image: none;
+			background: #C89B72;
+		}
+
+
+		/* =========================================================
+		   SECTION COLORS
+		   ========================================================= */
+
+		.wrapper.style1 {
+			background: #203A34;
+		}
+
+
+		.wrapper.style2 {
+			background: #294B43;
+		}
+
+
+		.wrapper.style3 {
+			background: #36584F;
+		}
+
+
+		.wrapper.style1-alt {
+			background: #172C27;
+		}
+
+
+		/* =========================================================
+		   ABOUT
+		   ========================================================= */
+
+		.about-profile {
+			max-width: 920px;
+		}
+
+
+		.profile-top {
+			display: grid;
+			grid-template-columns: 210px 1fr;
+			gap: 2.5rem;
+			align-items: center;
+			margin-bottom: 2.4rem;
+		}
+
+
+		.profile-photo-placeholder {
+			width: 190px;
+			height: 190px;
+			border-radius: 50%;
+			border: 2px solid rgba(244, 240, 232, 0.28);
+			background: rgba(244, 240, 232, 0.06);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			font-size: 0.8rem;
+			line-height: 1.5;
+			opacity: 0.65;
+		}
+
+
+		.profile-name {
+			font-size: 3.4rem;
+			line-height: 1;
+			margin-bottom: 0.8rem;
+		}
+
+
+		.profile-tagline {
+			font-size: 1.25rem;
+			font-weight: 600;
+			color: #E3D7C7;
+			margin-bottom: 0.5rem;
+		}
+
+
+		.profile-location {
+			font-size: 0.9rem;
+			opacity: 0.72;
+			margin: 0;
+		}
+
+
+		.profile-summary {
+			max-width: 800px;
+		}
+
+
+		.profile-summary p {
+			font-size: 1.06rem !important;
+			margin-bottom: 1rem;
+		}
+
+
+		.profile-summary strong {
+			color: #F4F0E8;
+		}
+
+
+		/* =========================================================
+		   GENERAL
+		   ========================================================= */
+
+		.section-intro {
+			max-width: 760px;
+			font-size: 1.05rem;
+			margin-bottom: 2.2rem;
+		}
+
+
+		.small-note {
+			font-size: 0.82rem !important;
+			opacity: 0.65;
+		}
+
+
+		/* =========================================================
+		   PATH
+		   ========================================================= */
+
+		.journey {
+			max-width: 850px;
+			margin-top: 2.5rem;
+		}
+
+
+		.journey-item {
+			position: relative;
+			padding: 0 0 2.5rem 2.2rem;
+			border-left: 2px solid rgba(244, 240, 232, 0.18);
+		}
+
+
+		.journey-item:last-child {
+			padding-bottom: 0;
+		}
+
+
+		.journey-item:before {
+			content: "";
+			position: absolute;
+			left: -0.47rem;
+			top: 0.35rem;
+			width: 0.8rem;
+			height: 0.8rem;
+			border-radius: 50%;
+			background: #C89B72;
+		}
+
+
+		.journey-label {
+			font-size: 0.74rem;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			opacity: 0.68;
+			margin-bottom: 0.35rem;
+		}
+
+
+		.journey-item h3 {
+			margin-bottom: 0.55rem;
+		}
+
+
+		.journey-item p {
+			max-width: 700px;
+			margin-bottom: 0;
+		}
+
+
+		/* =========================================================
+		   SELECTED WORK
+		   ========================================================= */
+
+		.work-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.25rem;
+			margin-top: 2rem;
+		}
+
+
+		.work-card {
+			background: rgba(244, 240, 232, 0.055);
+			border: 1px solid rgba(244, 240, 232, 0.08);
+			border-radius: 1.1rem;
+			padding: 1.6rem;
+		}
+
+
+		.work-card h3 {
+			margin-bottom: 0.7rem;
+		}
+
+
+		.work-label {
+			font-size: 0.72rem !important;
+			text-transform: uppercase;
+			letter-spacing: 0.09em;
+			opacity: 0.62;
+			margin-bottom: 0.45rem !important;
+		}
+
+
+		.work-card p {
+			font-size: 0.94rem !important;
+			margin-bottom: 0.75rem;
+		}
+
+
+		.work-card p:last-child {
+			margin-bottom: 0;
+		}
+
+
+		.takeaway {
+			color: #E7D5C2;
+		}
+
+
+		/* =========================================================
+		   PRACTICE
+		   ========================================================= */
+
+		.practice-story {
+			max-width: 800px;
+		}
+
+
+		.practice-story p {
+			font-size: 1.04rem !important;
+		}
+
+
+		.milestone-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 1.2rem;
+			margin-top: 2.2rem;
+		}
+
+
+		.milestone-card {
+			padding: 1.5rem;
+			border-radius: 1rem;
+			background: rgba(244, 240, 232, 0.06);
+		}
+
+
+		.milestone-number {
+			font-size: 0.72rem;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #D7B18E;
+			margin-bottom: 0.5rem;
+		}
+
+
+		.milestone-card h3 {
+			margin-bottom: 0.65rem;
+		}
+
+
+		.milestone-card p {
+			font-size: 0.92rem !important;
+			margin-bottom: 0;
+		}
+
+
+		/* =========================================================
+		   ARTWORK
+		   ========================================================= */
+
+		.artwork-section {
+			margin-top: 3.5rem;
+		}
+
+
+		.artwork-intro {
+			max-width: 700px;
+		}
+
+
+		.artwork-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 1.2rem;
+			margin-top: 1.8rem;
+		}
+
+
+		.artwork-card {
+			background: rgba(244, 240, 232, 0.05);
+			border-radius: 1rem;
+			overflow: hidden;
+		}
+
+
+		.artwork-placeholder {
+			aspect-ratio: 4 / 3;
+			background: rgba(244, 240, 232, 0.07);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 1rem;
+			font-size: 0.8rem;
+			opacity: 0.6;
+		}
+
+
+		.artwork-card img {
+			width: 100%;
+			aspect-ratio: 4 / 3;
+			object-fit: cover;
+			display: block;
+		}
+
+
+		.artwork-caption {
+			padding: 1rem 1.1rem;
+			font-size: 0.84rem;
+			line-height: 1.55;
+			opacity: 0.82;
+		}
+
+
+		/* =========================================================
+		   CURRENT QUESTION
+		   ========================================================= */
+
+		.question-box {
+			max-width: 850px;
+			margin: 2rem 0;
+			padding: 1.7rem 1.8rem;
+			border-left: 4px solid #C89B72;
+			background: rgba(244, 240, 232, 0.06);
+			border-radius: 0 1rem 1rem 0;
+		}
+
+
+		.question-box p {
+			margin: 0;
+			font-size: 1.22rem !important;
+			line-height: 1.65 !important;
+			font-weight: 600;
+		}
+
+
+		.future-text {
+			max-width: 760px;
+		}
+
+
+		/* =========================================================
+		   BUTTONS
+		   ========================================================= */
+
+		.button.primary {
+			background: #C89B72;
+			color: #172C27 !important;
+		}
+
+
+		.button.primary:hover {
+			background: #D9AF89;
+		}
+
+
+		/* =========================================================
+		   RESPONSIVE
+		   ========================================================= */
+
+		@media screen and (max-width: 980px) {
+
+			.work-grid,
+			.milestone-grid,
+			.artwork-grid {
+				grid-template-columns: repeat(2, 1fr);
 			}
 
-			#wrapper p {
-				font-size: 1rem;
-				line-height: 1.75;
-			}
-
-			.inner {
-				max-width: 1180px;
-			}
-
-			h1,
-			h2,
-			h3 {
-				letter-spacing: -0.02em;
-			}
-
-			h2 {
-				margin-bottom: 1.25rem;
-			}
+		}
 
 
-			/* =========================
-			   About
-			   ========================= */
-
-			.about-profile {
-				max-width: 1040px;
-			}
+		@media screen and (max-width: 736px) {
 
 			.profile-top {
-				display: grid;
-				grid-template-columns: 240px 1fr;
-				gap: 2.4rem;
-				align-items: center;
-				margin-bottom: 2rem;
+				grid-template-columns: 1fr;
+				gap: 1.5rem;
 			}
 
-			.profile-photo {
-				display: flex;
-				justify-content: center;
-				align-items: center;
+
+			.profile-photo-placeholder {
+				width: 150px;
+				height: 150px;
 			}
 
-			.profile-photo img {
-				width: 220px;
-				height: 220px;
-				object-fit: cover;
-				border-radius: 50%;
-				border: 3px solid rgba(255, 255, 255, 0.35);
-				box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.25);
-				background: rgba(255, 255, 255, 0.08);
-			}
-
-			.profile-identity {
-				max-width: 720px;
-			}
 
 			.profile-name {
-				font-size: 3.35rem;
-				line-height: 1.05;
-				margin: 0 0 0.85rem 0;
-			}
-
-			.profile-meta {
-				font-size: 0.84rem;
-				line-height: 1.5;
-				opacity: 0.86;
-				max-width: 680px;
-			}
-
-			.profile-meta p {
-				margin: 0 0 0.28rem 0;
-			}
-
-			.profile-location {
-				font-size: 0.9rem;
-				margin-bottom: 0.45rem !important;
-				opacity: 0.9;
-			}
-
-			.profile-main {
-				max-width: 900px;
-			}
-
-			.profile-tagline {
-				margin-bottom: 1.45rem;
-				font-size: 1.28rem;
-				font-weight: 600;
-				line-height: 1.45;
-				max-width: 900px;
-			}
-
-			.profile-summary {
-				max-width: 900px;
-			}
-
-			.profile-summary p {
-				margin-bottom: 1rem;
-				font-size: 1.02rem;
-				line-height: 1.75;
+				font-size: 2.5rem;
 			}
 
 
-			/* =========================
-			   General Content
-			   ========================= */
-
-			.content .inner {
-				max-width: 820px;
+			.work-grid,
+			.milestone-grid,
+			.artwork-grid {
+				grid-template-columns: 1fr;
 			}
 
-			.section-note {
-				font-size: 0.98rem;
-				opacity: 0.9;
-				max-width: 860px;
-				margin-bottom: 2rem;
-			}
-
-			.section-intro {
-				max-width: 850px;
-				font-size: 1.05rem;
-				margin-bottom: 2.2rem;
-			}
-
-
-			/* =========================
-			   Journey / Timeline
-			   ========================= */
-
-			.journey {
-				max-width: 900px;
-				margin-top: 2.5rem;
-			}
 
 			.journey-item {
-				position: relative;
-				padding: 0 0 2.5rem 2.2rem;
-				border-left: 2px solid rgba(255, 255, 255, 0.22);
+				padding-left: 1.6rem;
 			}
 
-			.journey-item:last-child {
-				padding-bottom: 0;
-			}
+		}
 
-			.journey-item:before {
-				content: "";
-				position: absolute;
-				left: -0.47rem;
-				top: 0.35rem;
-				width: 0.8rem;
-				height: 0.8rem;
-				border-radius: 50%;
-				background: rgba(255, 255, 255, 0.9);
-			}
+	</style>
 
-			.journey-label {
-				font-size: 0.76rem;
-				text-transform: uppercase;
-				letter-spacing: 0.09em;
-				opacity: 0.7;
-				margin-bottom: 0.35rem;
-			}
-
-			.journey-item h3 {
-				margin-bottom: 0.65rem;
-			}
-
-			.journey-item p {
-				margin-bottom: 0;
-				max-width: 760px;
-			}
+</head>
 
 
-			/* =========================
-			   Project Cards
-			   ========================= */
 
-			.features section {
-				border-radius: 1.25rem;
-				transition:
-					transform 0.2s ease,
-					background-color 0.2s ease;
-			}
-
-			.features section:hover {
-				transform: translateY(-3px);
-			}
-
-			.features h3 {
-				margin-bottom: 1rem;
-			}
-
-			.features p {
-				margin-bottom: 0.85rem;
-			}
-
-			.project-label {
-				font-size: 0.78rem;
-				text-transform: uppercase;
-				letter-spacing: 0.08em;
-				opacity: 0.75;
-				margin-bottom: 0.5rem;
-			}
-
-			.project-status {
-				display: inline-block;
-				margin-top: 0.25rem;
-				margin-bottom: 1rem;
-				padding: 0.25rem 0.65rem;
-				border: 1px solid rgba(255, 255, 255, 0.25);
-				border-radius: 999px;
-				font-size: 0.74rem;
-				letter-spacing: 0.04em;
-				opacity: 0.85;
-			}
+<body class="is-preload">
 
 
-			/* =========================
-			   Practice / Reflection
-			   ========================= */
+	<!-- =========================================================
+	     SIDEBAR
+	     ========================================================= -->
 
-			.practice-cycle {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				gap: 1.25rem;
-				margin-top: 2.25rem;
-				margin-bottom: 2.5rem;
-			}
+	<section id="sidebar">
 
-			.practice-card {
-				padding: 1.4rem 1.5rem;
-				background: rgba(255, 255, 255, 0.05);
-				border-radius: 1rem;
-			}
+		<div class="inner">
 
-			.practice-card h3 {
-				margin-bottom: 0.7rem;
-			}
+			<nav>
 
-			.practice-card p {
-				margin-bottom: 0;
-				font-size: 0.94rem !important;
-			}
+				<ul>
+					<li><a href="#intro">About</a></li>
+					<li><a href="#path">My Story</a></li>
+					<li><a href="#work">Selected Work</a></li>
+					<li><a href="#practice">Moments From Practice</a></li>
+					<li><a href="#future">What I'm Asking Now</a></li>
+					<li><a href="#contact">CV & Contact</a></li>
+				</ul>
 
-			.question-list {
-				max-width: 850px;
-				margin-top: 1.5rem;
-			}
+			</nav>
 
-			.question-list li {
-				margin-bottom: 0.85rem;
-				line-height: 1.65;
-			}
+		</div>
+
+	</section>
 
 
-			/* =========================
-			   Practice / Artifact
-			   ========================= */
 
-			.artifact-grid {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				gap: 1.4rem;
-				margin-top: 2rem;
-			}
-
-			.artifact-card {
-				background: rgba(255, 255, 255, 0.05);
-				border-radius: 1rem;
-				overflow: hidden;
-			}
-
-			.artifact-card img {
-				width: 100%;
-				aspect-ratio: 4 / 3;
-				object-fit: cover;
-				display: block;
-			}
-
-			.artifact-caption {
-				padding: 1rem 1.1rem;
-				font-size: 0.86rem;
-				line-height: 1.55;
-				opacity: 0.88;
-			}
+	<div id="wrapper">
 
 
-			/* =========================
-			   Methods
-			   ========================= */
+		<!-- =========================================================
+		     ABOUT
+		     ========================================================= -->
 
-			.method-block {
-				margin-bottom: 1.5rem;
-			}
+		<section
+			id="intro"
+			class="wrapper style1 fullscreen fade-up"
+		>
 
-			.method-block h3 {
-				margin-bottom: 0.45rem;
-			}
-
-			.method-block p {
-				margin-bottom: 0;
-			}
-
-
-			/* =========================
-			   Current Question
-			   ========================= */
-
-			.question-box {
-				max-width: 900px;
-				margin: 2rem 0;
-				padding: 1.6rem 1.8rem;
-				border-left: 4px solid rgba(255, 255, 255, 0.55);
-				background: rgba(255, 255, 255, 0.06);
-				border-radius: 0 1rem 1rem 0;
-			}
-
-			.question-box p {
-				margin: 0;
-				font-size: 1.15rem !important;
-				line-height: 1.65 !important;
-				font-weight: 600;
-			}
-
-
-			/* =========================
-			   Buttons
-			   ========================= */
-
-			.actions {
-				margin-top: 1.6rem;
-			}
-
-			.button {
-				letter-spacing: 0.04em;
-			}
-
-
-			/* =========================
-			   Responsive
-			   ========================= */
-
-			@media screen and (max-width: 980px) {
-
-				.profile-top {
-					grid-template-columns: 210px 1fr;
-					gap: 2rem;
-				}
-
-				.profile-photo img {
-					width: 200px;
-					height: 200px;
-				}
-
-				.profile-name {
-					font-size: 2.9rem;
-				}
-
-				.artifact-grid,
-				.practice-cycle {
-					grid-template-columns: repeat(2, 1fr);
-				}
-			}
-
-
-			@media screen and (max-width: 736px) {
-
-				.profile-top {
-					grid-template-columns: 1fr;
-					gap: 1.6rem;
-				}
-
-				.profile-photo {
-					justify-content: flex-start;
-				}
-
-				.profile-photo img {
-					width: 170px;
-					height: 170px;
-				}
-
-				.profile-name {
-					font-size: 2.35rem;
-				}
-
-				.profile-tagline {
-					font-size: 1.1rem;
-				}
-
-				.artifact-grid,
-				.practice-cycle {
-					grid-template-columns: 1fr;
-				}
-
-				.journey-item {
-					padding-left: 1.6rem;
-				}
-			}
-
-		</style>
-	</head>
-
-
-	<body class="is-preload">
-
-
-		<!-- =========================
-		     Sidebar
-		     ========================= -->
-
-		<section id="sidebar">
 			<div class="inner">
-				<nav>
-					<ul>
-						<li><a href="#intro">About</a></li>
-						<li><a href="#path">My Path</a></li>
-						<li><a href="#projects">Projects & Questions</a></li>
-						<li><a href="#practice">Learning From Practice</a></li>
-						<li><a href="#methods">How I Work With Data</a></li>
-						<li><a href="#future">What's Next</a></li>
-						<li><a href="#contact">CV & Contact</a></li>
+
+				<div class="about-profile">
+
+
+					<div class="profile-top">
+
+
+						<div class="profile-photo-placeholder">
+							Photo<br />
+							to be added
+						</div>
+
+
+						<div>
+
+							<h1 class="profile-name">
+								Yan Zhu
+							</h1>
+
+							<p class="profile-tagline">
+								Behavioral Science · Data · Practice
+							</p>
+
+							<p class="profile-location">
+								Irvine, California
+							</p>
+
+						</div>
+
+
+					</div>
+
+
+					<div class="profile-summary">
+
+						<p>
+							I began in psychology, learned to study
+							behavior through data, and later found myself
+							working with behavior directly in everyday life.
+						</p>
+
+						<p>
+							Across those experiences, one question kept
+							returning:
+							<strong>
+								why does knowing or learning what to do
+								not always translate into doing it when
+								it matters?
+							</strong>
+						</p>
+
+					</div>
+
+
+					<ul class="actions">
+
+						<li>
+							<a
+								href="#path"
+								class="button scrolly"
+							>
+								My Story
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#contact"
+								class="button scrolly"
+							>
+								CV & Contact
+							</a>
+						</li>
+
 					</ul>
-				</nav>
+
+
+				</div>
+
 			</div>
+
 		</section>
 
 
 
-		<div id="wrapper">
-
-
-			<!-- =========================
-			     About
-			     ========================= -->
-
-			<section id="intro" class="wrapper style1 fullscreen fade-up">
-
-				<div class="inner">
-
-					<div class="about-profile">
-
-						<div class="profile-top">
-
-							<div class="profile-photo">
-								<img
-									src="images/profile.jpg"
-									alt="Portrait of Yan Zhu"
-								/>
-							</div>
-
-							<div class="profile-identity">
-
-								<h1 class="profile-name">
-									Yan Zhu
-								</h1>
-
-								<div class="profile-meta">
-
-									<p class="profile-location">
-										Irvine, California
-									</p>
-
-									<p>
-										<strong>M.S.</strong>
-										Psychology — Data Science in Human Behavior
-										<br />
-										University of Wisconsin–Madison
-									</p>
-
-									<p>
-										<strong>B.S.</strong>
-										Psychology
-										<br />
-										Michigan State University
-									</p>
-
-								</div>
-
-							</div>
-
-						</div>
-
-
-						<div class="profile-main">
-
-							<p class="profile-tagline">
-								Behavioral Science · Data · Real-World Intervention
-							</p>
-
-							<div class="profile-summary">
-
-								<p>
-									My path has moved between psychology,
-									behavioral data science, and direct
-									behavioral intervention. Across these
-									experiences, I keep returning to a simple
-									but difficult problem:
-									<strong>
-										knowing what to do—or having a
-										behavioral strategy available—does not
-										always mean that it will be used when
-										it matters.
-									</strong>
-								</p>
-
-								<p>
-									I have encountered versions of this problem
-									in different places: in longitudinal
-									behavioral data, digital intervention
-									engagement, and direct behavioral practice.
-									These experiences have made me increasingly
-									interested in the gap between behavioral
-									capacity and action, and in how data can
-									help us understand when and why that gap
-									emerges.
-								</p>
-
-								<p>
-									This site documents how that question is
-									developing through my research, practice,
-									and ongoing work—and how I hope eventually
-									to translate behavioral research into
-									interventions, assessments, and tools that
-									can be tested in real-world environments.
-								</p>
-
-							</div>
-
-
-							<ul class="actions">
-
-								<li>
-									<a href="#path" class="button scrolly">
-										Follow My Path
-									</a>
-								</li>
-
-								<li>
-									<a href="#contact" class="button scrolly">
-										CV & Contact
-									</a>
-								</li>
-
-							</ul>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</section>
-
-
-
-			<!-- =========================
-			     My Path
-			     ========================= -->
-
-			<section id="path" class="wrapper style2 fade-up">
-
-				<div class="inner">
-
-					<h2>My Path</h2>
-
-					<p class="section-intro">
-						My research interests did not begin with a single
-						theory or research question. They developed gradually
-						as I moved between studying behavior, analyzing
-						behavioral data, and working directly in intervention
-						settings.
-					</p>
-
-
-					<div class="journey">
-
-						<div class="journey-item">
-
-							<p class="journey-label">
-								Foundation
-							</p>
-
-							<h3>
-								Psychology
-							</h3>
-
-							<p>
-								I began by studying psychology and became
-								interested in how behavior develops, changes,
-								and responds to social and environmental
-								conditions. This gave me the theoretical
-								foundation from which I later approached both
-								data and intervention.
-							</p>
-
-						</div>
-
-
-						<div class="journey-item">
-
-							<p class="journey-label">
-								Graduate Training
-							</p>
-
-							<h3>
-								Behavioral Data Science
-							</h3>
-
-							<p>
-								During my master's training at the University
-								of Wisconsin–Madison, I learned to approach
-								behavior through data: longitudinal
-								measurement, statistical modeling,
-								computational workflows, and reproducible
-								analysis. Working with real-world behavioral
-								datasets made variation across people, time,
-								and situations increasingly important to me.
-							</p>
-
-						</div>
-
-
-						<div class="journey-item">
-
-							<p class="journey-label">
-								Applied Experience
-							</p>
-
-							<h3>
-								Behavioral Intervention in Practice
-							</h3>
-
-							<p>
-								Direct behavioral intervention gave me a
-								different way of thinking about behavior.
-								A skill that appears established in one
-								setting may not transfer reliably across
-								people, routines, or environments. Seeing
-								this variation in everyday practice made
-								questions of implementation and generalization
-								increasingly concrete to me.
-							</p>
-
-						</div>
-
-
-						<div class="journey-item">
-
-							<p class="journey-label">
-								Current Development
-							</p>
-
-							<h3>
-								Connecting Data, Behavior, and Intervention
-							</h3>
-
-							<p>
-								I am now trying to connect these parts of my
-								background. Practice helps me notice behavioral
-								problems that may be easy to miss in abstract
-								models; data gives me a way to examine those
-								problems systematically. I am especially
-								interested in what happens between acquiring
-								a behavioral capacity and actually using it
-								in everyday life.
-							</p>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</section>
-
-
-
-			<!-- =========================
-			     Projects & Questions
-			     ========================= -->
-
-			<section id="projects" class="wrapper style3 fade-up">
-
-				<div class="inner">
-
-					<h2>
-						Projects & Questions
-					</h2>
-
-					<p class="section-note">
-						These projects represent different stages of my
-						training. Some were collaborative research
-						experiences; others are analyses I have continued to
-						develop independently. I see them not only as projects
-						I have completed or contributed to, but also as places
-						where new behavioral questions began to emerge.
-					</p>
-
-
-					<div class="features">
-
-
-						<section>
-
-							<span
-								class="icon solid major fa-project-diagram"
-							></span>
-
-							<p class="project-label">
-								Independent Analysis · 2026–Present
-							</p>
-
-							<h3>
-								From Repertoire to Implementation
-							</h3>
-
-							<span class="project-status">
-								Work in Progress
-							</span>
-
-							<p>
-								This project began with a question about
-								protective behavioral strategies: does having
-								a stronger repertoire of strategies translate
-								into actually using those strategies during
-								everyday drinking occasions?
-							</p>
-
-							<p>
-								I have been exploring this question through
-								secondary analysis of intensive longitudinal
-								daily-diary data in R, using person-mean
-								decomposition, mixed-effects models, count
-								and ordinal models, diagnostic checks, and
-								sensitivity analyses.
-							</p>
-
-							<p>
-								<strong>What I am learning:</strong>
-								This project has made the distinction between
-								behavioral repertoire and behavioral
-								implementation increasingly important to me.
-								Knowing that a strategy exists in someone's
-								repertoire tells us something—but not
-								necessarily whether it will be used at the
-								moment it matters.
-							</p>
-
-							<p>
-								<strong>Where this question is taking me:</strong>
-								I am becoming interested in whether intensive
-								longitudinal data can help identify the people,
-								moments, and contexts in which the gap between
-								behavioral capacity and implementation is most
-								likely to emerge.
-							</p>
-
-						</section>
-
-
-
-						<section>
-
-							<span
-								class="icon solid major fa-chart-line"
-							></span>
-
-							<p class="project-label">
-								Graduate Research · 2024
-							</p>
-
-							<h3>
-								Behavior Across Time
-							</h3>
-
-							<p>
-								At the University of Wisconsin–Madison
-								Addiction Research Center, I worked with more
-								than 70,000 ecological momentary assessment
-								observations from 336 participants in research
-								on behavioral predictors of alcohol relapse.
-							</p>
-
-							<p>
-								My work included exploratory data analysis,
-								data-quality validation, behavioral pattern
-								exploration, and reproducible HTML reporting
-								in R.
-							</p>
-
-							<p>
-								<strong>What changed in how I think:</strong>
-								Working with repeated measurements made
-								"the average person" feel increasingly
-								incomplete as a way of thinking about
-								behavior. The same person can behave
-								differently across days and situations, and
-								those fluctuations may contain information
-								that a single baseline or cross-sectional
-								measure cannot capture.
-							</p>
-
-						</section>
-
-
-
-						<section>
-
-							<span
-								class="icon solid major fa-brain"
-							></span>
-
-							<p class="project-label">
-								Graduate Data Science Capstone · 2023
-							</p>
-
-							<h3>
-								Digital Intervention Engagement
-							</h3>
-
-							<p>
-								For my graduate capstone with Healthy Minds
-								Innovations, I worked with more than 5GB of
-								application and survey data from a digital
-								mindfulness intervention.
-							</p>
-
-							<p>
-								I used Python and process-mining methods to
-								examine user engagement pathways and explored
-								relationships between meditation engagement
-								and well-being outcomes.
-							</p>
-
-							<p>
-								<strong>What changed in how I think:</strong>
-								This project was one of the experiences that
-								made me distinguish between making an
-								intervention available and understanding how
-								it is actually used. People can engage with
-								the same intervention in very different ways,
-								making engagement itself an important
-								behavioral process to understand.
-							</p>
-
-						</section>
-
-
-
-						<section>
-
-							<span
-								class="icon solid major fa-users"
-							></span>
-
-							<p class="project-label">
-								Collaborative Research · 2023–2024
-							</p>
-
-							<h3>
-								PIVOT Lab
-							</h3>
-
-							<p>
-								In the Preventing Interpersonal Violence and
-								Overcoming Trauma Lab at UW–Madison, I
-								supported research through data cleaning,
-								variable construction, exploratory data
-								analysis, statistical analysis, and
-								visualization in R.
-							</p>
-
-							<p>
-								I also developed and refined funnel plots and
-								other meta-analytic visualizations for a
-								doctoral research project.
-							</p>
-
-							<p>
-								<strong>What stayed with me:</strong>
-								This experience made me appreciate how much
-								of research happens before a final model or
-								result appears. Decisions about how behavior
-								is represented, cleaned, summarized, and
-								visualized can shape which patterns become
-								visible and how they are interpreted.
-							</p>
-
-						</section>
-
-
-					</div>
-
-				</div>
-
-			</section>
-
-
-
-			<!-- =========================
-			     Learning From Practice
-			     ========================= -->
-
-			<section id="practice" class="wrapper style2 fade-up">
-
-				<div class="inner">
-
-					<h2>
-						Learning From Practice
-					</h2>
-
-					<p class="section-intro">
-						Some of the questions I care about most did not begin
-						with a dataset. They began with small discrepancies I
-						noticed in everyday behavioral work.
-					</p>
-
-					<p>
-						A skill demonstrated in one setting may not appear as
-						reliably in another. A strategy that works within one
-						routine may become harder to use when the environment,
-						people, prompts, or demands change. Behavior that
-						looks stable during structured intervention can become
-						much more variable in everyday contexts.
-					</p>
-
-					<p>
-						I do not treat these observations as research
-						findings. Instead, they help me notice questions that
-						can later be examined systematically. Practice has
-						made me increasingly interested not only in
-						<strong>whether</strong> an intervention or strategy
-						works, but also in <strong>when</strong> behavior
-						transfers, when implementation breaks down, and what
-						changes in the surrounding context when that happens.
-					</p>
-
-
-					<div class="practice-cycle">
-
-						<div class="practice-card">
-
-							<h3>
-								1. Notice
-							</h3>
-
-							<p>
-								Real-world practice exposes variation that can
-								be difficult to see in structured settings:
-								the same skill, strategy, or intervention can
-								look different across people, routines, and
-								environments.
-							</p>
-
-						</div>
-
-
-						<div class="practice-card">
-
-							<h3>
-								2. Ask & Measure
-							</h3>
-
-							<p>
-								Those discrepancies can become researchable
-								questions. Behavioral measurement and
-								longitudinal data provide a way to examine
-								when behavior changes and what individual or
-								contextual factors accompany that change.
-							</p>
-
-						</div>
-
-
-						<div class="practice-card">
-
-							<h3>
-								3. Return to Application
-							</h3>
-
-							<p>
-								The goal is not for analysis to end with a
-								model. What we learn can inform how
-								interventions, assessments, or tools are
-								designed, tested, and adapted for use in
-								real-world settings.
-							</p>
-
-						</div>
-
-					</div>
-
-
-					<h3>
-						Questions I Notice in Everyday Work
-					</h3>
-
-					<ul class="question-list">
-
-						<li>
-							Why can a behavior look stable in one environment
-							and fragile in another?
-						</li>
-
-						<li>
-							When does a learned skill become something a
-							person can use independently across situations?
-						</li>
-
-						<li>
-							How do caregivers, practitioners, routines, and
-							environmental demands shape whether an
-							intervention is implemented as intended?
-						</li>
-
-						<li>
-							What would we need to measure in everyday life to
-							know when additional behavioral support is most
-							useful?
-						</li>
-
-					</ul>
-
-
-					<!--
-						OPTIONAL ARTWORK / PRACTICE ARTIFACT SECTION
-
-						Only publish client-created artwork when you have
-						appropriate permission for public display and after
-						removing identifying information.
-
-						This section can also be used later for your own
-						diagrams, behavioral data visualizations, field
-						notes, or intervention materials that do not contain
-						protected or identifying information.
-					-->
-
-					<!--
-
-					<div class="artifact-grid">
-
-						<div class="artifact-card">
-							<img
-								src="images/artwork01.jpg"
-								alt="Artifact related to behavioral practice"
-							/>
-							<div class="artifact-caption">
-								A small artifact from practice that reminds
-								me that behavioral work takes place in real
-								lives, not only in datasets.
-							</div>
-						</div>
-
-						<div class="artifact-card">
-							<img
-								src="images/artwork02.jpg"
-								alt="Artifact related to behavioral practice"
-							/>
-							<div class="artifact-caption">
-								Moments from practice often shape the
-								questions I later bring back to behavioral
-								research.
-							</div>
-						</div>
-
-					</div>
-
-					<p style="font-size: 0.78rem; opacity: 0.65; margin-top: 1rem;">
-						Selected artifacts reproduced with permission.
-						Identifying information has been removed.
-					</p>
-
-					-->
-
-				</div>
-
-			</section>
-
-
-
-			<!-- =========================
-			     How I Work With Behavioral Data
-			     ========================= -->
-
-			<section id="methods" class="wrapper style1 fade-up">
-
-				<div class="inner">
-
-					<h2>
-						How I Work With Behavioral Data
-					</h2>
-
-					<p class="section-note">
-						My quantitative training gives me tools for turning
-						behavioral questions into analyses. I am most
-						interested in methods when they help clarify a
-						behavioral problem—not as an endpoint by themselves.
-					</p>
-
-
-					<div class="method-block">
-
-						<h3>
-							Repeated Behavior
-						</h3>
-
-						<p>
-							I am especially interested in data that capture
-							behavior repeatedly across time and situations.
-							Longitudinal and multilevel approaches allow me
-							to distinguish relatively stable differences
-							between people from changes occurring within the
-							same person across occasions.
-						</p>
-
-					</div>
-
-
-					<div class="method-block">
-
-						<h3>
-							From Messy Data to Behavioral Variables
-						</h3>
-
-						<p>
-							Much of my research experience has involved
-							turning real-world behavioral data into analyzable
-							representations: cleaning and transforming data,
-							constructing variables and scales, exploring
-							distributions and patterns, visualizing results,
-							and checking whether analytic decisions change
-							the conclusions.
-						</p>
-
-					</div>
-
-
-					<div class="method-block">
-
-						<h3>
-							Modeling as a Tool
-						</h3>
-
-						<p>
-							I use R and Python for statistical and
-							computational analysis, including mixed-effects,
-							count, ordinal, and predictive approaches. My
-							work has also included process mining, model
-							diagnostics, sensitivity analysis, and
-							reproducible research workflows.
-						</p>
-
-					</div>
-
-
-					<div class="method-block">
-
-						<h3>
-							Connecting Measurement to Practice
-						</h3>
-
-						<p>
-							My applied behavioral training gives me another
-							lens on measurement. Direct intervention has made
-							me attentive to how behavior is defined,
-							observed, prompted, reinforced, and generalized
-							across settings—and to the difference between
-							what can be measured conveniently and what may
-							matter in everyday life.
-						</p>
-
-					</div>
-
-				</div>
-
-			</section>
-
-
-
-			<!-- =========================
-			     What's Next
-			     ========================= -->
-
-			<section id="future" class="wrapper style3 fade-up">
-
-				<div class="inner">
-
-					<h2>
-						What's Next
-					</h2>
-
-					<p class="section-intro">
-						The question I am developing now sits at the
-						intersection of behavioral science, measurement,
-						and intervention.
-					</p>
-
-
-					<div class="question-box">
-
-						<p>
-							Why do behavioral capacities or strategies that
-							people possess fail to translate into
-							implementation in real-world contexts—and how can
-							behavioral data help determine when and how
-							additional support or intervention is needed?
-						</p>
-
-					</div>
-
-
-					<p>
-						I am interested in studying when, for whom, and under
-						what conditions implementation succeeds or breaks
-						down. I want to better understand how individual,
-						interpersonal, and environmental contexts shape the
-						translation from behavioral capacity to action.
-					</p>
-
-					<p>
-						One direction I want to explore is whether repeated
-						behavioral measurement can help identify moments when
-						a person has the capacity or strategy needed for a
-						behavior but is unlikely to implement it. That could
-						create a more precise bridge between behavioral
-						measurement and decisions about when additional
-						support may be useful.
-					</p>
-
-					<p>
-						Over time, I hope to connect this research to the
-						design and evaluation of interventions, assessments,
-						and human-centered tools that can respond to behavior
-						in real-world settings. I am interested in technology
-						when it makes that translation possible, rather than
-						as an endpoint in itself.
-					</p>
-
-					<p>
-						Doctoral training would allow me to develop these
-						questions more rigorously: connecting behavioral
-						theory with intensive measurement, testing when
-						implementation succeeds or fails, and translating
-						what is learned into interventions and tools that can
-						themselves be evaluated in real-world settings.
-					</p>
-
-				</div>
-
-			</section>
-
-
-
-			<!-- =========================
-			     CV & Contact
-			     ========================= -->
-
-			<section id="contact" class="wrapper style1 fade-up">
-
-				<div class="inner">
-
-					<h2>
-						CV & Contact
-					</h2>
-
-					<p>
-						I welcome conversations about behavioral science,
-						longitudinal behavioral data, intervention,
-						research-to-practice translation, and doctoral
-						research.
-					</p>
-
-
-					<div class="split style1">
-
-
-						<section>
-
-							<h3>
-								Curriculum Vitae
-							</h3>
-
-							<p>
-								My academic CV provides the formal record of
-								my education, research experience,
-								quantitative training, applied behavioral
-								experience, and service.
-							</p>
-
-
-							<ul class="actions">
-
-								<li>
-									<a
-										href="/assets/Academic_CV_Sep2026.pdf"
-										class="button primary"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										View Academic CV
-									</a>
-								</li>
-
-							</ul>
-
-						</section>
-
-
-
-						<section>
-
-							<ul class="contact">
-
-								<li>
-
-									<h3>Email</h3>
-
-									<a href="mailto:zhuyanseattle@gmail.com">
-										zhuyanseattle@gmail.com
-									</a>
-
-								</li>
-
-
-								<li>
-
-									<h3>
-										Professional Links
-									</h3>
-
-
-									<ul class="icons">
-
-										<li>
-											<a
-												href="https://github.com/zhuyan-3"
-												class="icon brands fa-github"
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												<span class="label">
-													GitHub
-												</span>
-											</a>
-										</li>
-
-
-										<li>
-											<a
-												href="https://linkedin.com/in/zhuyan3"
-												class="icon brands fa-linkedin-in"
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												<span class="label">
-													LinkedIn
-												</span>
-											</a>
-										</li>
-
-									</ul>
-
-								</li>
-
-							</ul>
-
-						</section>
-
-
-					</div>
-
-				</div>
-
-			</section>
-
-
-		</div>
-
-
-
-		<!-- =========================
-		     Footer
-		     ========================= -->
-
-		<footer id="footer" class="wrapper style1-alt">
+		<!-- =========================================================
+		     MY STORY
+		     ========================================================= -->
+
+		<section
+			id="path"
+			class="wrapper style2 fade-up"
+		>
 
 			<div class="inner">
 
-				<ul class="menu">
+				<h2>
+					How I Got Here
+				</h2>
 
-					<li>
-						&copy; Yan Zhu. All rights reserved.
-					</li>
 
-					<li>
-						Design:
-						<a href="https://html5up.net">
-							HTML5 UP
-						</a>
-					</li>
+				<div class="journey">
 
-				</ul>
+
+					<div class="journey-item">
+
+						<p class="journey-label">
+							Psychology
+						</p>
+
+						<h3>
+							I started by wanting to understand behavior.
+						</h3>
+
+						<p>
+							Psychology gave me a way to ask why people
+							learn, respond, and change differently.
+						</p>
+
+					</div>
+
+
+					<div class="journey-item">
+
+						<p class="journey-label">
+							Data Science
+						</p>
+
+						<h3>
+							Then I learned to measure it.
+						</h3>
+
+						<p>
+							Graduate training taught me to look at behavior
+							across people, time, and situations—and to turn
+							messy behavioral data into questions I could test.
+						</p>
+
+					</div>
+
+
+					<div class="journey-item">
+
+						<p class="journey-label">
+							Practice
+						</p>
+
+						<h3>
+							Then behavior became personal.
+						</h3>
+
+						<p>
+							Working directly with children and families
+							showed me something data alone could not:
+							a skill learned in one moment does not
+							automatically appear in the next person,
+							place, or routine.
+						</p>
+
+					</div>
+
+
+					<div class="journey-item">
+
+						<p class="journey-label">
+							Now
+						</p>
+
+						<h3>
+							I want to connect the two.
+						</h3>
+
+						<p>
+							I want real-world experience to generate
+							better research questions—and research to
+							return as better ways of supporting behavior
+							in everyday life.
+						</p>
+
+					</div>
+
+
+				</div>
 
 			</div>
 
-		</footer>
+		</section>
 
 
 
-		<!-- =========================
-		     Scripts
-		     ========================= -->
+		<!-- =========================================================
+		     SELECTED WORK
+		     ========================================================= -->
 
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+		<section
+			id="work"
+			class="wrapper style3 fade-up"
+		>
+
+			<div class="inner">
+
+				<h2>
+					Selected Work
+				</h2>
+
+				<p class="section-intro">
+					Different projects have changed how I think about
+					behavior in different ways.
+				</p>
 
 
-	</body>
+				<div class="work-grid">
+
+
+					<div class="work-card">
+
+						<p class="work-label">
+							Independent Research · 2026–Present
+						</p>
+
+						<h3>
+							From Repertoire to Implementation
+						</h3>
+
+						<p>
+							I am using daily behavioral data to ask
+							whether having protective strategies available
+							actually translates into using them during
+							real-world drinking occasions.
+						</p>
+
+						<p class="takeaway">
+							<strong>It made me ask:</strong>
+							When does behavioral capacity become action?
+						</p>
+
+					</div>
+
+
+
+					<div class="work-card">
+
+						<p class="work-label">
+							Addiction Research · 2024
+						</p>
+
+						<h3>
+							Behavior Across Time
+						</h3>
+
+						<p>
+							Working with intensive longitudinal alcohol-use
+							data showed me how differently the same person
+							can behave across days and situations.
+						</p>
+
+						<p class="takeaway">
+							<strong>It stayed with me:</strong>
+							An average can hide the moments that matter.
+						</p>
+
+					</div>
+
+
+
+					<div class="work-card">
+
+						<p class="work-label">
+							Graduate Capstone · 2023
+						</p>
+
+						<h3>
+							Digital Intervention Engagement
+						</h3>
+
+						<p>
+							I studied how people actually engaged with a
+							digital mindfulness intervention over time.
+						</p>
+
+						<p class="takeaway">
+							<strong>It made me notice:</strong>
+							Making an intervention available does not mean
+							people will use it.
+						</p>
+
+					</div>
+
+
+
+					<div class="work-card">
+
+						<p class="work-label">
+							Collaborative Research · 2023–2024
+						</p>
+
+						<h3>
+							PIVOT Lab
+						</h3>
+
+						<p>
+							Working with behavioral and survey data taught
+							me how much careful preparation happens before
+							a final result ever appears.
+						</p>
+
+						<p class="takeaway">
+							<strong>It taught me:</strong>
+							How we represent behavior in data shapes what
+							we are able to see.
+						</p>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+		<!-- =========================================================
+		     MOMENTS FROM PRACTICE
+		     ========================================================= -->
+
+		<section
+			id="practice"
+			class="wrapper style2 fade-up"
+		>
+
+			<div class="inner">
+
+
+				<h2>
+					Moments From Practice
+				</h2>
+
+
+				<div class="practice-story">
+
+					<p>
+						Some of the questions I now bring to research
+						began with small moments while working directly
+						with children and families.
+					</p>
+
+					<p>
+						Progress did not always look like a dramatic
+						change. Sometimes it was a new request, a response
+						that needed one less prompt, or a skill appearing
+						in a place where I had never seen it before.
+					</p>
+
+				</div>
+
+
+
+				<div class="milestone-grid">
+
+
+					<div class="milestone-card">
+
+						<p class="milestone-number">
+							Milestone 01
+						</p>
+
+						<h3>
+							Finding a Voice
+						</h3>
+
+						<p>
+							Watching a request move from heavy support
+							toward more independent communication changed
+							how I thought about what a small behavioral
+							change can mean in everyday life.
+						</p>
+
+					</div>
+
+
+
+					<div class="milestone-card">
+
+						<p class="milestone-number">
+							Milestone 02
+						</p>
+
+						<h3>
+							Beyond One Setting
+						</h3>
+
+						<p>
+							A skill that appeared consistently in a
+							structured setting could look very different
+							when the people, routine, or environment
+							changed.
+						</p>
+
+					</div>
+
+
+
+					<div class="milestone-card">
+
+						<p class="milestone-number">
+							Milestone 03
+						</p>
+
+						<h3>
+							Small Changes Matter
+						</h3>
+
+						<p>
+							Repeated work taught me to notice changes that
+							are easy to overlook—and to ask what helped a
+							new behavior become more independent and durable.
+						</p>
+
+					</div>
+
+
+				</div>
+
+
+
+				<!-- =================================================
+				     ARTWORK
+				     Photos will be added later.
+				     ================================================= -->
+
+				<div class="artwork-section">
+
+
+					<h3>
+						Small Things I Keep With Me
+					</h3>
+
+
+					<p class="artwork-intro">
+						Not everything meaningful in behavioral work
+						appears in a dataset. A few small artifacts from
+						practice remind me of the people and everyday
+						moments behind the measurements.
+					</p>
+
+
+
+					<div class="artwork-grid">
+
+
+						<div class="artwork-card">
+
+							<div class="artwork-placeholder">
+								Artwork / practice artifact<br />
+								to be added
+							</div>
+
+							<div class="artwork-caption">
+								A small reminder that behavioral change
+								happens in real lives, not only in datasets.
+							</div>
+
+						</div>
+
+
+
+						<div class="artwork-card">
+
+							<div class="artwork-placeholder">
+								Artwork / practice artifact<br />
+								to be added
+							</div>
+
+							<div class="artwork-caption">
+								Some of the moments I remember most cannot
+								be captured by a model or progress graph.
+							</div>
+
+						</div>
+
+
+
+						<div class="artwork-card">
+
+							<div class="artwork-placeholder">
+								Artwork / practice artifact<br />
+								to be added
+							</div>
+
+							<div class="artwork-caption">
+								Small artifacts help me keep the human side
+								of behavioral research visible.
+							</div>
+
+						</div>
+
+
+					</div>
+
+
+					<!--
+						Add this statement ONLY if you have appropriate
+						permission for public display:
+
+						<p class="small-note">
+							Selected artifacts displayed with permission.
+							Identifying information has been removed.
+						</p>
+					-->
+
+
+				</div>
+
+
+			</div>
+
+		</section>
+
+
+
+		<!-- =========================================================
+		     WHAT I'M ASKING NOW
+		     ========================================================= -->
+
+		<section
+			id="future"
+			class="wrapper style1 fade-up"
+		>
+
+			<div class="inner">
+
+
+				<h2>
+					What I'm Asking Now
+				</h2>
+
+
+				<div class="question-box">
+
+					<p>
+						When people have the capacity to do something,
+						what determines whether that capacity becomes
+						action in everyday life?
+					</p>
+
+				</div>
+
+
+				<div class="future-text">
+
+					<p>
+						I want to use behavioral data to understand
+						when that translation succeeds or breaks down—and
+						eventually use what we learn to build better
+						interventions, assessments, and tools.
+					</p>
+
+				</div>
+
+
+			</div>
+
+		</section>
+
+
+
+		<!-- =========================================================
+		     CV & CONTACT
+		     ========================================================= -->
+
+		<section
+			id="contact"
+			class="wrapper style3 fade-up"
+		>
+
+			<div class="inner">
+
+
+				<h2>
+					CV & Contact
+				</h2>
+
+
+				<div class="split style1">
+
+
+					<section>
+
+						<h3>
+							Curriculum Vitae
+						</h3>
+
+						<p>
+							For the formal record of my research,
+							training, methods, and applied experience.
+						</p>
+
+
+						<ul class="actions">
+
+							<li>
+
+								<a
+									href="/assets/Academic_CV_Sep2026.pdf"
+									class="button primary"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									View Academic CV
+								</a>
+
+							</li>
+
+						</ul>
+
+					</section>
+
+
+
+					<section>
+
+						<ul class="contact">
+
+
+							<li>
+
+								<h3>
+									Email
+								</h3>
+
+								<a href="mailto:zhuyanseattle@gmail.com">
+									zhuyanseattle@gmail.com
+								</a>
+
+							</li>
+
+
+
+							<li>
+
+								<h3>
+									Professional Links
+								</h3>
+
+
+								<ul class="icons">
+
+
+									<li>
+
+										<a
+											href="https://github.com/zhuyan-3"
+											class="icon brands fa-github"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+
+											<span class="label">
+												GitHub
+											</span>
+
+										</a>
+
+									</li>
+
+
+
+									<li>
+
+										<a
+											href="https://linkedin.com/in/zhuyan3"
+											class="icon brands fa-linkedin-in"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+
+											<span class="label">
+												LinkedIn
+											</span>
+
+										</a>
+
+									</li>
+
+
+								</ul>
+
+							</li>
+
+
+						</ul>
+
+					</section>
+
+
+				</div>
+
+
+			</div>
+
+		</section>
+
+
+	</div>
+
+
+
+	<!-- =========================================================
+	     FOOTER
+	     ========================================================= -->
+
+	<footer
+		id="footer"
+		class="wrapper style1-alt"
+	>
+
+		<div class="inner">
+
+			<ul class="menu">
+
+				<li>
+					&copy; Yan Zhu. All rights reserved.
+				</li>
+
+				<li>
+					Design:
+					<a href="https://html5up.net">
+						HTML5 UP
+					</a>
+				</li>
+
+			</ul>
+
+		</div>
+
+	</footer>
+
+
+
+	<!-- =========================================================
+	     SCRIPTS
+	     ========================================================= -->
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+</body>
+
 </html>
