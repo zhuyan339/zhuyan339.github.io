@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Yan Zhu | Behavioral Science & Quantitative Research</title>
+		<title>Yan Zhu | Behavioral Science, Data & Practice</title>
 
 		<meta charset="utf-8" />
 
@@ -18,7 +18,7 @@
 
 		<meta
 			name="description"
-			content="Yan Zhu is a behavioral science researcher interested in how behavioral strategies and interventions translate into real-world implementation and outcomes."
+			content="Yan Zhu's work and developing research interests at the intersection of behavioral science, behavioral data, and real-world intervention."
 		/>
 
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -31,7 +31,7 @@
 		<style>
 
 			/* =========================
-			   Yan Zhu Academic Homepage
+			   Yan Zhu Personal Research Homepage
 			   ========================= */
 
 			body {
@@ -71,7 +71,7 @@
 				grid-template-columns: 240px 1fr;
 				gap: 2.4rem;
 				align-items: center;
-				margin-bottom: 1.8rem;
+				margin-bottom: 2rem;
 			}
 
 			.profile-photo {
@@ -141,11 +141,11 @@
 
 
 			/* =========================
-			   Content
+			   General Content
 			   ========================= */
 
 			.content .inner {
-				max-width: 800px;
+				max-width: 820px;
 			}
 
 			.section-note {
@@ -155,9 +155,63 @@
 				margin-bottom: 2rem;
 			}
 
+			.section-intro {
+				max-width: 850px;
+				font-size: 1.05rem;
+				margin-bottom: 2.2rem;
+			}
+
 
 			/* =========================
-			   Research cards
+			   Journey / Timeline
+			   ========================= */
+
+			.journey {
+				max-width: 900px;
+				margin-top: 2.5rem;
+			}
+
+			.journey-item {
+				position: relative;
+				padding: 0 0 2.5rem 2.2rem;
+				border-left: 2px solid rgba(255, 255, 255, 0.22);
+			}
+
+			.journey-item:last-child {
+				padding-bottom: 0;
+			}
+
+			.journey-item:before {
+				content: "";
+				position: absolute;
+				left: -0.47rem;
+				top: 0.35rem;
+				width: 0.8rem;
+				height: 0.8rem;
+				border-radius: 50%;
+				background: rgba(255, 255, 255, 0.9);
+			}
+
+			.journey-label {
+				font-size: 0.76rem;
+				text-transform: uppercase;
+				letter-spacing: 0.09em;
+				opacity: 0.7;
+				margin-bottom: 0.35rem;
+			}
+
+			.journey-item h3 {
+				margin-bottom: 0.65rem;
+			}
+
+			.journey-item p {
+				margin-bottom: 0;
+				max-width: 760px;
+			}
+
+
+			/* =========================
+			   Project Cards
 			   ========================= */
 
 			.features section {
@@ -187,6 +241,50 @@
 				margin-bottom: 0.5rem;
 			}
 
+			.project-status {
+				display: inline-block;
+				margin-top: 0.25rem;
+				margin-bottom: 1rem;
+				padding: 0.25rem 0.65rem;
+				border: 1px solid rgba(255, 255, 255, 0.25);
+				border-radius: 999px;
+				font-size: 0.74rem;
+				letter-spacing: 0.04em;
+				opacity: 0.85;
+			}
+
+
+			/* =========================
+			   Practice / Artifact
+			   ========================= */
+
+			.artifact-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 1.4rem;
+				margin-top: 2rem;
+			}
+
+			.artifact-card {
+				background: rgba(255, 255, 255, 0.05);
+				border-radius: 1rem;
+				overflow: hidden;
+			}
+
+			.artifact-card img {
+				width: 100%;
+				aspect-ratio: 4 / 3;
+				object-fit: cover;
+				display: block;
+			}
+
+			.artifact-caption {
+				padding: 1rem 1.1rem;
+				font-size: 0.86rem;
+				line-height: 1.55;
+				opacity: 0.88;
+			}
+
 
 			/* =========================
 			   Methods
@@ -202,6 +300,27 @@
 
 			.method-block p {
 				margin-bottom: 0;
+			}
+
+
+			/* =========================
+			   Current Question
+			   ========================= */
+
+			.question-box {
+				max-width: 900px;
+				margin: 2rem 0;
+				padding: 1.6rem 1.8rem;
+				border-left: 4px solid rgba(255, 255, 255, 0.55);
+				background: rgba(255, 255, 255, 0.06);
+				border-radius: 0 1rem 1rem 0;
+			}
+
+			.question-box p {
+				margin: 0;
+				font-size: 1.15rem !important;
+				line-height: 1.65 !important;
+				font-weight: 600;
 			}
 
 
@@ -227,7 +346,6 @@
 				.profile-top {
 					grid-template-columns: 210px 1fr;
 					gap: 2rem;
-					margin-bottom: 2rem;
 				}
 
 				.profile-photo img {
@@ -239,12 +357,8 @@
 					font-size: 2.9rem;
 				}
 
-				.profile-tagline {
-					font-size: 1.18rem;
-				}
-
-				.profile-summary p {
-					font-size: 1rem;
+				.artifact-grid {
+					grid-template-columns: repeat(2, 1fr);
 				}
 			}
 
@@ -254,7 +368,6 @@
 				.profile-top {
 					grid-template-columns: 1fr;
 					gap: 1.6rem;
-					margin-bottom: 2.2rem;
 				}
 
 				.profile-photo {
@@ -270,17 +383,16 @@
 					font-size: 2.35rem;
 				}
 
-				.profile-meta {
-					font-size: 0.82rem;
-				}
-
 				.profile-tagline {
 					font-size: 1.1rem;
 				}
 
-				.profile-summary p {
-					font-size: 1rem;
-					line-height: 1.75;
+				.artifact-grid {
+					grid-template-columns: 1fr;
+				}
+
+				.journey-item {
+					padding-left: 1.6rem;
 				}
 			}
 
@@ -299,39 +411,19 @@
 			<div class="inner">
 				<nav>
 					<ul>
-						<li>
-							<a href="#intro">About</a>
-						</li>
-
-						<li>
-							<a href="#interests">Research Interests</a>
-						</li>
-
-						<li>
-							<a href="#research">Research Experience</a>
-						</li>
-
-						<li>
-							<a href="#methods">Methods</a>
-						</li>
-
-						<li>
-							<a href="#future">Future Questions</a>
-						</li>
-
-						<li>
-							<a href="#contact">CV & Contact</a>
-						</li>
+						<li><a href="#intro">About</a></li>
+						<li><a href="#path">My Path</a></li>
+						<li><a href="#projects">Projects & Questions</a></li>
+						<li><a href="#practice">Practice</a></li>
+						<li><a href="#methods">Methods</a></li>
+						<li><a href="#future">What's Next</a></li>
+						<li><a href="#contact">CV & Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 		</section>
 
 
-
-		<!-- =========================
-		     Wrapper
-		     ========================= -->
 
 		<div id="wrapper">
 
@@ -340,15 +432,11 @@
 			     About
 			     ========================= -->
 
-			<section
-				id="intro"
-				class="wrapper style1 fullscreen fade-up"
-			>
+			<section id="intro" class="wrapper style1 fullscreen fade-up">
 
 				<div class="inner">
 
 					<div class="about-profile">
-
 
 						<div class="profile-top">
 
@@ -358,7 +446,6 @@
 									alt="Portrait of Yan Zhu"
 								/>
 							</div>
-
 
 							<div class="profile-identity">
 
@@ -374,7 +461,7 @@
 
 									<p>
 										<strong>M.S.</strong>
-										Psychology, Data Science in Human Behavior
+										Psychology — Data Science in Human Behavior
 										<br />
 										University of Wisconsin–Madison
 									</p>
@@ -393,46 +480,43 @@
 						</div>
 
 
-
 						<div class="profile-main">
 
 							<p class="profile-tagline">
-								Behavioral Science · Quantitative Methods ·
-								Real-World Behavior
+								Behavioral Science · Data · Real-World Intervention
 							</p>
-
 
 							<div class="profile-summary">
 
 								<p>
-									I am interested in understanding how
-									behavioral strategies and interventions
-									translate into behavior in everyday life.
-									My work draws on behavioral science,
-									longitudinal data, and quantitative methods
-									to examine how individual and contextual
-									factors shape behavioral implementation
-									and outcomes.
+									My path has moved between psychology,
+									behavioral data science, and direct
+									behavioral intervention. Across these
+									experiences, I have become increasingly
+									interested in a simple but difficult
+									question: why does knowing what to do—or
+									having a behavioral strategy available—not
+									always translate into what people actually
+									do in everyday life?
 								</p>
 
 								<p>
-									My research experience spans intensive
-									longitudinal behavioral data, digital
-									intervention engagement, behavioral health,
-									and applied behavioral intervention. Across
-									these settings, I have become increasingly
-									interested in the gap between possessing
-									behavioral knowledge or strategies and
-									actually implementing them under
-									real-world conditions.
+									I am still developing this question. My
+									experiences in research, data analysis,
+									and applied practice have each shaped a
+									different part of how I think about it.
+									This site is a record of that development:
+									the projects I have worked on, the
+									questions that emerged from them, and the
+									direction I hope to explore next.
 								</p>
 
 								<p>
-									I am currently developing this interest
-									toward research on behavioral
-									implementation, intervention processes,
-									and the individual and social contexts that
-									support durable behavior change.
+									I am especially interested in how
+									behavioral research can eventually move
+									beyond analysis into interventions, tools,
+									and systems that can be tested and used in
+									real-world environments.
 								</p>
 
 							</div>
@@ -441,19 +525,13 @@
 							<ul class="actions">
 
 								<li>
-									<a
-										href="#research"
-										class="button scrolly"
-									>
-										Research
+									<a href="#path" class="button scrolly">
+										Follow My Path
 									</a>
 								</li>
 
 								<li>
-									<a
-										href="#contact"
-										class="button scrolly"
-									>
+									<a href="#contact" class="button scrolly">
 										CV & Contact
 									</a>
 								</li>
@@ -471,182 +549,149 @@
 
 
 			<!-- =========================
-			     Research Interests
+			     My Path
 			     ========================= -->
 
-			<section
-				id="interests"
-				class="wrapper style2 spotlights"
-			>
+			<section id="path" class="wrapper style2 fade-up">
+
+				<div class="inner">
+
+					<h2>My Path</h2>
+
+					<p class="section-intro">
+						My research interests did not begin with a single
+						theory or research question. They developed gradually
+						as I moved between studying behavior, analyzing
+						behavioral data, and working directly in intervention
+						settings.
+					</p>
 
 
-				<section>
+					<div class="journey">
 
-					<a href="#" class="image">
-						<img
-							src="images/pic01.jpg"
-							alt=""
-							data-position="center center"
-						/>
-					</a>
+						<div class="journey-item">
 
-
-					<div class="content">
-
-						<div class="inner">
-
-							<h2>
-								From Behavioral Repertoire to
-								Real-World Implementation
-							</h2>
-
-							<p>
-								One question that increasingly connects my
-								research is why possessing a behavioral
-								strategy, skill, or intervention plan does not
-								necessarily mean that it will be implemented
-								in everyday life.
+							<p class="journey-label">
+								Foundation
 							</p>
 
+							<h3>
+								Psychology
+							</h3>
+
 							<p>
-								I am interested in the processes that bridge
-								behavioral repertoire and real-world action:
-								when people use strategies they already know,
-								what disrupts implementation, and which
-								individual or contextual conditions support
-								more consistent behavior.
+								I began by studying psychology and became
+								interested in how behavior develops, changes,
+								and responds to social and environmental
+								conditions. This gave me the theoretical
+								foundation from which I later approached both
+								data and intervention.
+							</p>
+
+						</div>
+
+
+						<div class="journey-item">
+
+							<p class="journey-label">
+								Graduate Training
+							</p>
+
+							<h3>
+								Behavioral Data Science
+							</h3>
+
+							<p>
+								During my master's training at the University
+								of Wisconsin–Madison, I learned to approach
+								behavior through data: longitudinal
+								measurement, statistical modeling,
+								computational workflows, and reproducible
+								analysis. Working with real-world behavioral
+								datasets made variation across people, time,
+								and situations increasingly important to me.
+							</p>
+
+						</div>
+
+
+						<div class="journey-item">
+
+							<p class="journey-label">
+								Applied Experience
+							</p>
+
+							<h3>
+								Behavioral Intervention in Practice
+							</h3>
+
+							<p>
+								Direct behavioral intervention gave me a
+								different perspective. Skills and strategies
+								that appear clear in structured programs do
+								not automatically transfer across people,
+								settings, caregivers, or everyday routines.
+								These experiences made questions of
+								implementation and generalization feel less
+								abstract.
+							</p>
+
+						</div>
+
+
+						<div class="journey-item">
+
+							<p class="journey-label">
+								Current Development
+							</p>
+
+							<h3>
+								Connecting Data, Behavior, and Intervention
+							</h3>
+
+							<p>
+								I am now trying to connect these parts of my
+								background. Rather than treating practice as
+								research evidence, I use it as a source of
+								questions—and use behavioral data and
+								systematic research to examine those questions
+								more carefully.
 							</p>
 
 						</div>
 
 					</div>
 
-				</section>
-
-
-
-				<section>
-
-					<a href="#" class="image">
-						<img
-							src="images/pic02.jpg"
-							alt=""
-							data-position="top center"
-						/>
-					</a>
-
-
-					<div class="content">
-
-						<div class="inner">
-
-							<h2>
-								Behavior in Context
-							</h2>
-
-							<p>
-								My applied experience has also made me
-								interested in how behavior and intervention
-								unfold across different environments.
-								Intervention does not occur in isolation:
-								families, caregivers, practitioners, routines,
-								and service environments can all shape how
-								behavioral strategies are implemented and
-								maintained.
-							</p>
-
-							<p>
-								I am particularly interested in studying these
-								contextual processes without assuming that
-								observations from practice are themselves
-								research findings. Instead, I see applied
-								experience as a source of questions that can
-								be tested systematically.
-							</p>
-
-						</div>
-
-					</div>
-
-				</section>
-
-
-
-				<section>
-
-					<a href="#" class="image">
-						<img
-							src="images/pic03.jpg"
-							alt=""
-							data-position="25% 25%"
-						/>
-					</a>
-
-
-					<div class="content">
-
-						<div class="inner">
-
-							<h2>
-								Quantitative Behavioral Science
-							</h2>
-
-							<p>
-								My methodological interests center on using
-								longitudinal and repeated-measures behavioral
-								data to study variation both between people
-								and within the same person across situations
-								and time.
-							</p>
-
-							<p>
-								I am especially interested in combining
-								behavioral theory with multilevel modeling,
-								within-person analysis, computational methods,
-								and reproducible data workflows to study
-								behavior as it occurs in real-world contexts.
-							</p>
-
-						</div>
-
-					</div>
-
-				</section>
-
+				</div>
 
 			</section>
 
 
 
 			<!-- =========================
-			     Research Experience
+			     Projects & Questions
 			     ========================= -->
 
-			<section
-				id="research"
-				class="wrapper style3 fade-up"
-			>
+			<section id="projects" class="wrapper style3 fade-up">
 
 				<div class="inner">
 
 					<h2>
-						Research Experience
+						Projects & Questions
 					</h2>
 
-
 					<p class="section-note">
-						My research experience has progressed from
-						collaborative laboratory and graduate capstone work
-						toward independently developed questions using
-						longitudinal behavioral data.
+						These projects represent different stages of my
+						training. Some were collaborative research
+						experiences; others are analyses I have continued to
+						develop independently. I see them as part of an
+						ongoing process of learning how to ask better
+						behavioral questions.
 					</p>
-
 
 
 					<div class="features">
 
-
-						<!-- Independent Research -->
 
 						<section>
 
@@ -655,61 +700,52 @@
 							></span>
 
 							<p class="project-label">
-								Independent Research · 2026–Present
+								Independent Analysis · 2026–Present
 							</p>
 
 							<h3>
 								From Repertoire to Implementation
 							</h3>
 
+							<span class="project-status">
+								Work in Progress
+							</span>
+
 							<p>
-								<strong>Question:</strong>
-								How does an individual's existing repertoire
-								of protective behavioral strategies translate
-								into strategy implementation during
-								real-world drinking occasions?
+								This project began with a question about
+								protective behavioral strategies: does having
+								a stronger repertoire of strategies translate
+								into actually using those strategies during
+								everyday drinking occasions?
 							</p>
 
 							<p>
-								<strong>Approach:</strong>
-								Secondary analysis of longitudinal daily-diary
-								data using person-mean decomposition,
-								mixed-effects modeling, Poisson and
-								COM-Poisson models, ordinal and binary
-								outcome models, diagnostic checks, and
-								sensitivity analyses in R.
+								I have been exploring this question through
+								secondary analysis of intensive longitudinal
+								daily-diary data in R, using person-mean
+								decomposition, mixed-effects models, count
+								and ordinal models, diagnostic checks, and
+								sensitivity analyses.
 							</p>
 
 							<p>
-								<strong>Current findings:</strong>
-								Stronger baseline protective behavioral
-								strategy repertoire consistently predicted
-								greater real-world implementation. In
-								contrast, day-level elevations in impulsivity
-								and psychological distress did not
-								consistently explain implementation.
+								<strong>What I am learning:</strong>
+								The analysis has pushed me to think beyond
+								whether a strategy is known or available and
+								toward the conditions under which it is
+								actually implemented.
 							</p>
 
 							<p>
-								Greater occasion-level implementation was
-								also associated with lower-risk alcohol
-								outcomes, including lower levels of alcohol
-								consumption and lower blackout likelihood.
-							</p>
-
-							<p>
-								<strong>What this led me to ask:</strong>
-								Under what individual and contextual
-								conditions does behavioral repertoire
-								translate into implementation in everyday
-								life?
+								<strong>Question it led to:</strong>
+								When does behavioral repertoire become
+								real-world behavior, and what explains the
+								gap when it does not?
 							</p>
 
 						</section>
 
 
-
-						<!-- Addiction Research Center -->
 
 						<section>
 
@@ -722,38 +758,35 @@
 							</p>
 
 							<h3>
-								Addiction Research Center
+								Behavior Across Time
 							</h3>
 
 							<p>
-								At the University of Wisconsin–Madison, I
-								worked with more than 70,000 ecological
-								momentary assessment observations from 336
-								participants in research on behavioral
-								predictors of alcohol relapse.
+								At the University of Wisconsin–Madison
+								Addiction Research Center, I worked with more
+								than 70,000 ecological momentary assessment
+								observations from 336 participants in research
+								on behavioral predictors of alcohol relapse.
 							</p>
 
 							<p>
 								My work included exploratory data analysis,
 								data-quality validation, behavioral pattern
 								exploration, and reproducible HTML reporting
-								in R to support the development and
-								interpretation of an alcohol-relapse
-								prediction model.
+								in R.
 							</p>
 
 							<p>
-								This experience strengthened my interest in
-								using intensive longitudinal data to study
-								behavior as it changes across time and
-								real-world situations.
+								<strong>What I learned:</strong>
+								Behavioral data collected repeatedly in daily
+								life can reveal variation that disappears when
+								behavior is reduced to a single average or
+								cross-sectional measure.
 							</p>
 
 						</section>
 
 
-
-						<!-- Healthy Minds -->
 
 						<section>
 
@@ -770,33 +803,31 @@
 							</h3>
 
 							<p>
-								For my graduate data science capstone with
-								Healthy Minds Innovations, I analyzed more
-								than 5GB of application and survey data to
-								investigate patterns of engagement with a
-								digital mindfulness intervention.
+								For my graduate capstone with Healthy Minds
+								Innovations, I worked with more than 5GB of
+								application and survey data from a digital
+								mindfulness intervention.
 							</p>
 
 							<p>
-								I cleaned and structured complex behavioral
-								data and used process-mining methods in
-								Python with PM4Py to characterize user
-								engagement pathways.
+								I used Python and process-mining methods to
+								examine user engagement pathways and explored
+								relationships between meditation engagement
+								and well-being outcomes.
 							</p>
 
 							<p>
-								I also examined associations between
-								meditation engagement—including frequency
-								and duration—and mental health and
-								well-being outcomes using statistical and
-								predictive modeling.
+								<strong>What I learned:</strong>
+								The existence of an intervention does not
+								guarantee meaningful engagement with it.
+								Understanding how people actually use an
+								intervention can be as important as the
+								intervention itself.
 							</p>
 
 						</section>
 
 
-
-						<!-- PIVOT -->
 
 						<section>
 
@@ -814,27 +845,25 @@
 
 							<p>
 								In the Preventing Interpersonal Violence and
-								Overcoming Trauma Lab at the University of
-								Wisconsin–Madison, I supported trauma-related
-								research through data cleaning, exploratory
-								data analysis, and quantitative and
-								qualitative analysis in R.
+								Overcoming Trauma Lab at UW–Madison, I
+								supported research through data cleaning,
+								exploratory analysis, variable construction,
+								visualization, and quantitative and
+								qualitative work in R.
 							</p>
 
 							<p>
-								I developed exploratory visualizations to
-								identify and communicate patterns in
-								behavioral and survey data and created and
-								refined funnel plots and other meta-analytic
-								visualizations for a doctoral research
-								project.
+								I also developed and refined funnel plots and
+								other research visualizations for doctoral
+								work.
 							</p>
 
 							<p>
-								This collaborative work gave me experience
-								using quantitative tools in research on
-								complex behavioral and mental-health
-								questions.
+								<strong>What I learned:</strong>
+								Collaborative research taught me how much
+								careful data preparation, documentation, and
+								interpretation sit behind the final results of
+								a research project.
 							</p>
 
 						</section>
@@ -849,40 +878,120 @@
 
 
 			<!-- =========================
-			     Methods
+			     Practice
 			     ========================= -->
 
-			<section
-				id="methods"
-				class="wrapper style1 fade-up"
-			>
+			<section id="practice" class="wrapper style2 fade-up">
 
 				<div class="inner">
 
 					<h2>
-						Methods & Technical Skills
+						Learning From Practice
 					</h2>
 
+					<p class="section-intro">
+						My applied behavioral work has shaped the kinds of
+						questions I notice. Working across structured,
+						home, and community settings has repeatedly reminded
+						me that behavior change occurs within relationships,
+						routines, environments, and everyday constraints.
+					</p>
+
+					<p>
+						I do not treat observations from practice as research
+						findings. Instead, I see practice as one place where
+						important research questions begin. It has made me
+						especially curious about generalization,
+						implementation, caregiver and practitioner behavior,
+						and the conditions that help behavioral change persist
+						outside structured intervention settings.
+					</p>
+
+
+					<!--
+						OPTIONAL ARTWORK SECTION
+
+						Only publish client-created artwork when you have
+						appropriate permission for public display and after
+						removing identifying information.
+
+						Replace the sample filenames below with your own
+						images when ready.
+					-->
+
+					<!--
+
+					<div class="artifact-grid">
+
+						<div class="artifact-card">
+							<img
+								src="images/artwork01.jpg"
+								alt="Artwork from a practice experience"
+							/>
+							<div class="artifact-caption">
+								A small artifact from practice that reminds me
+								that behavioral work takes place in real lives,
+								not only in datasets.
+							</div>
+						</div>
+
+						<div class="artifact-card">
+							<img
+								src="images/artwork02.jpg"
+								alt="Artwork from a practice experience"
+							/>
+							<div class="artifact-caption">
+								Moments from practice have often shaped the
+								questions I later bring back to behavioral
+								research.
+							</div>
+						</div>
+
+					</div>
+
+					<p style="font-size: 0.78rem; opacity: 0.65; margin-top: 1rem;">
+						Selected artifacts reproduced with permission.
+						Identifying information has been removed.
+					</p>
+
+					-->
+
+				</div>
+
+			</section>
+
+
+
+			<!-- =========================
+			     Methods
+			     ========================= -->
+
+			<section id="methods" class="wrapper style1 fade-up">
+
+				<div class="inner">
+
+					<h2>
+						Methods I Use
+					</h2>
 
 					<p class="section-note">
-						My training combines psychology and behavioral
-						science with quantitative and computational methods
-						for studying behavior across people, situations,
-						and time.
+						My quantitative training gives me a set of tools for
+						turning behavioral questions into analyses. I see
+						these methods as tools rather than as the endpoint of
+						my research.
 					</p>
 
 
 					<div class="method-block">
 
 						<h3>
-							Quantitative Methods
+							Longitudinal Behavioral Data
 						</h3>
 
 						<p>
-							Longitudinal and repeated-measures analysis;
-							multilevel and mixed-effects modeling;
-							within- and between-person decomposition;
-							predictive modeling; process mining.
+							Repeated-measures and intensive longitudinal
+							analysis; multilevel and mixed-effects models;
+							within- and between-person decomposition.
 						</p>
 
 					</div>
@@ -891,15 +1000,14 @@
 					<div class="method-block">
 
 						<h3>
-							Research & Data
+							Data & Modeling
 						</h3>
 
 						<p>
 							Exploratory data analysis; data cleaning and
-							transformation; scale and composite-score
-							construction; model diagnostics and sensitivity
-							analysis; statistical visualization;
-							reproducible reporting.
+							transformation; predictive modeling; process
+							mining; count and ordinal models; model
+							diagnostics and sensitivity analysis.
 						</p>
 
 					</div>
@@ -908,12 +1016,13 @@
 					<div class="method-block">
 
 						<h3>
-							Programming & Tools
+							Programming
 						</h3>
 
 						<p>
 							R; Python; SQL; Git/GitHub; Jupyter Notebook;
-							PM4Py; LaTeX.
+							PM4Py; LaTeX; reproducible reporting and
+							visualization.
 						</p>
 
 					</div>
@@ -927,9 +1036,9 @@
 
 						<p>
 							Applied behavior analysis; single-case
-							experimental design; behavior assessment and
-							intervention; intervention implementation across
-							center-based, home, and community settings.
+							experimental design; behavioral assessment and
+							intervention; implementation across center-based,
+							home, and community settings.
 						</p>
 
 					</div>
@@ -941,112 +1050,68 @@
 
 
 			<!-- =========================
-			     Future Questions
+			     What's Next
 			     ========================= -->
 
-			<section
-				id="future"
-				class="wrapper style2 spotlights"
-			>
+			<section id="future" class="wrapper style3 fade-up">
+
+				<div class="inner">
+
+					<h2>
+						What's Next
+					</h2>
+
+					<p class="section-intro">
+						The question I am developing now sits at the
+						intersection of behavioral science, measurement, and
+						intervention.
+					</p>
 
 
-				<section>
+					<div class="question-box">
 
-					<a href="#" class="image">
-						<img
-							src="images/pic01.jpg"
-							alt=""
-							data-position="center center"
-						/>
-					</a>
-
-
-					<div class="content">
-
-						<div class="inner">
-
-							<h2>
-								Future Questions
-							</h2>
-
-							<p>
-								My current experiences have led me toward a
-								broader set of questions about behavioral
-								implementation and intervention in everyday
-								environments.
-							</p>
-
-							<p>
-								How do behavioral strategies move from
-								knowledge or repertoire into real-world
-								action? Why does implementation vary within
-								the same person across situations? Which
-								individual, interpersonal, and environmental
-								conditions support or disrupt implementation?
-							</p>
-
-							<p>
-								I am also interested in how these questions
-								extend to behavioral interventions: how
-								implementation quality, caregiver and
-								practitioner behavior, feedback, and
-								contextual support influence whether
-								intervention effects generalize and persist
-								outside structured settings.
-							</p>
-
-						</div>
+						<p>
+							Why do behavioral capacities or strategies that
+							people possess fail to translate into
+							implementation in real-world contexts—and how can
+							behavioral data help determine when and how
+							additional support or intervention is needed?
+						</p>
 
 					</div>
 
-				</section>
 
+					<p>
+						I am interested in studying when, for whom, and under
+						what conditions implementation succeeds or breaks
+						down. I want to better understand how individual,
+						interpersonal, and environmental contexts shape the
+						translation from behavioral capacity to action.
+					</p>
 
+					<p>
+						Over time, I hope to connect this research to the
+						design and evaluation of interventions, assessments,
+						and human-centered tools that can respond to behavior
+						in real-world settings.
+					</p>
 
-				<section>
+					<p>
+						I am particularly interested in doctoral training that
+						would allow me to move repeatedly between research
+						and application: using real-world problems to generate
+						research questions, testing those questions
+						systematically, translating what is learned into
+						interventions or tools, and then learning from how
+						those approaches perform outside the laboratory.
+					</p>
 
-					<a href="#" class="image">
-						<img
-							src="images/pic02.jpg"
-							alt=""
-							data-position="top center"
-						/>
-					</a>
+					<p>
+						This direction is still developing. That is part of
+						why I am pursuing doctoral training.
+					</p>
 
-
-					<div class="content">
-
-						<div class="inner">
-
-							<h2>
-								Long-Term Direction
-							</h2>
-
-							<p>
-								I hope to develop a research program that
-								connects behavioral science, quantitative
-								methods, and applied intervention to better
-								understand behavior in the environments where
-								people actually live, learn, and receive
-								support.
-							</p>
-
-							<p>
-								My long-term goal is to contribute research
-								and data-informed tools that help
-								evidence-based behavioral strategies and
-								interventions become more responsive,
-								sustainable, and effective across real-world
-								health, educational, family, and community
-								contexts.
-							</p>
-
-						</div>
-
-					</div>
-
-				</section>
-
+				</div>
 
 			</section>
 
@@ -1056,10 +1121,7 @@
 			     CV & Contact
 			     ========================= -->
 
-			<section
-				id="contact"
-				class="wrapper style1 fade-up"
-			>
+			<section id="contact" class="wrapper style1 fade-up">
 
 				<div class="inner">
 
@@ -1067,14 +1129,12 @@
 						CV & Contact
 					</h2>
 
-
 					<p>
-						I welcome conversations related to doctoral
-						research, behavioral science, quantitative methods,
-						behavioral intervention, and research on
-						implementation in real-world settings.
+						I welcome conversations about behavioral science,
+						longitudinal behavioral data, intervention,
+						research-to-practice translation, and doctoral
+						research.
 					</p>
-
 
 
 					<div class="split style1">
@@ -1087,7 +1147,7 @@
 							</h3>
 
 							<p>
-								My CV provides additional information about
+								My academic CV provides the formal record of
 								my education, research experience,
 								quantitative training, applied behavioral
 								experience, and service.
@@ -1103,7 +1163,7 @@
 										target="_blank"
 										rel="noopener noreferrer"
 									>
-										View CV
+										View Academic CV
 									</a>
 								</li>
 
@@ -1119,9 +1179,7 @@
 
 								<li>
 
-									<h3>
-										Email
-									</h3>
+									<h3>Email</h3>
 
 									<a href="mailto:zhuyanseattle@gmail.com">
 										zhuyanseattle@gmail.com
@@ -1190,10 +1248,7 @@
 		     Footer
 		     ========================= -->
 
-		<footer
-			id="footer"
-			class="wrapper style1-alt"
-		>
+		<footer id="footer" class="wrapper style1-alt">
 
 			<div class="inner">
 
