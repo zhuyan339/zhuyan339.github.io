@@ -549,21 +549,50 @@
 		/* =========================================================
 		   CONTACT
 		   ========================================================= */
+		
 		#contact {
 			background: #EEF3ED;
 		}
-		#contact p,
-		#contact li {
-			color: var(--text);
+		
+		.contact-simple {
+			max-width: 760px;
+			padding: 0.5rem 0;
 		}
-		#contact .icon {
+		
+		.contact-simple h2 {
+			margin-bottom: 1rem;
+		}
+		
+		.contact-email {
+			font-size: 1.15rem !important;
+			margin-bottom: 1.1rem;
+		}
+		
+		.contact-email a {
+			color: var(--blue);
+			border-bottom: none;
+		}
+		
+		.contact-links {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 0.7rem;
+			font-size: 0.95rem;
+			font-weight: 600;
+		}
+		
+		.contact-links a {
 			color: var(--navy);
+			border-bottom: none;
 		}
-		#contact a {
+		
+		.contact-links a:hover {
 			color: var(--blue);
 		}
-		#contact a:hover {
-			color: var(--navy);
+		
+		.contact-links span {
+			color: var(--yellow);
 		}
 		/* =========================================================
 		   FOOTER
@@ -1188,111 +1217,61 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- =========================================================
 		     CV & CONTACT
 		     ========================================================= -->
-		<!-- =========================================================
-		     CV & CONTACT
-		     ========================================================= -->
-		
 		<section
 			id="contact"
 			class="wrapper style3 fade-up"
-			>
+		>
 		
 			<div class="inner">
+
+				<div class="contact-simple">
 		
-				<h2>
-					CV & Contact
-				</h2>
+					<h2>
+						CV & Contact
+					</h2>
 		
-				<div class="split style1">
+					<p class="contact-email">
+						<a href="mailto:zhuyanseattle@gmail.com">
+							zhuyanseattle@gmail.com
+						</a>
+					</p>
 		
-					<section>
+					<div class="contact-links">
 		
-						<ul class="actions">
+						<a
+							href="/assets/Academic_CV_Sep2026.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Academic CV
+						</a>
 		
-							<li>
-								<a
-									href="/assets/Academic_CV_Sep2026.pdf"
-									class="button primary"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									View Academic CV
-								</a>
-							</li>
+						<span>·</span>
+						<a
+							href="https://github.com/zhuyan-3"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							GitHub
+						</a>
 		
-						</ul>
-		
-					</section>
-		
-		
-					<section>
-		
-						<ul class="contact">
-		
-							<li>
-		
-								<h3>
-									Email
-								</h3>
-		
-								<a href="mailto:zhuyanseattle@gmail.com">
-									zhuyanseattle@gmail.com
-								</a>
-		
-							</li>
-		
-		
-							<li>
-		
-								<h3>
-									Professional Links
-								</h3>
-		
-								<ul class="icons">
-		
-									<li>
-										<a
-											href="https://github.com/zhuyan-3"
-											class="icon brands fa-github"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											<span class="label">
-												GitHub
-											</span>
-										</a>
-									</li>
-		
-									<li>
-										<a
-											href="https://linkedin.com/in/zhuyan3"
-											class="icon brands fa-linkedin-in"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											<span class="label">
-												LinkedIn
-											</span>
-										</a>
-									</li>
-		
-								</ul>
-		
-							</li>
-		
-						</ul>
-		
-					</section>
-		
+						<span>·</span>
+						<a
+							href="https://linkedin.com/in/zhuyan3"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							LinkedIn
+						</a>
+					</div>
 				</div>
-		
 			</div>
-		
 		</section>
-	</div>
+		
 	<!-- =========================================================
 	     FOOTER
 	     ========================================================= -->
