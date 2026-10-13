@@ -20,7 +20,7 @@
 
 	<meta
 		name="description"
-		content="Yan Zhu's research interests in behavioral science, behavioral data, adaptive intervention, and human-centered behavior change."
+		content="Yan Zhu's research interests in behavioral science, longitudinal behavioral data, real-world implementation, and adaptive intervention."
 	/>
 
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -414,10 +414,9 @@
 				minmax(0, 1fr) auto
 				minmax(0, 1fr) auto
 				minmax(0, 1fr) auto
-				minmax(0, 1fr) auto
 				minmax(0, 1fr);
 
-			gap: 0.55rem;
+			gap: 0.65rem;
 			align-items: stretch;
 
 			margin: 2.2rem 0 0 0;
@@ -448,8 +447,7 @@
 				0 10px 28px rgba(23, 50, 77, 0.07);
 		}
 
-		.loop-step:nth-of-type(3),
-		.loop-step:nth-of-type(9) {
+		.loop-step:nth-of-type(3) {
 			background: var(--blue-light);
 		}
 
@@ -492,41 +490,9 @@
 			padding: 0 0.05rem;
 		}
 
-		.feedback-return {
-			display: grid;
-			grid-template-columns: auto 1fr auto 1fr auto;
-			align-items: center;
-			gap: 0.65rem;
-
-			width: 100%;
-			margin: 0.85rem 0 1.65rem 0;
-
-			color: var(--sage-dark);
-		}
-
-		.feedback-line {
-			height: 1px;
-			background: var(--sage);
-			opacity: 0.65;
-		}
-
-		.feedback-start,
-		.feedback-end {
-			font-size: 1.25rem;
-			font-weight: 700;
-			line-height: 1;
-		}
-
-		.feedback-text {
-			font-size: 0.76rem;
-			font-weight: 600;
-			letter-spacing: 0.06em;
-			text-transform: uppercase;
-			white-space: nowrap;
-		}
-
 		.loop-note {
 			max-width: 800px;
+			margin-top: 1.8rem;
 			font-size: 1.08rem !important;
 			color: var(--navy) !important;
 			font-weight: 600;
@@ -558,7 +524,7 @@
 		   ========================================================= */
 
 		.artwork-section {
-			margin-top: 3.8rem;
+			margin-top: 3.2rem;
 		}
 
 		.artwork-section h3 {
@@ -801,10 +767,6 @@
 			.loop-step {
 				min-height: 0;
 			}
-
-			.feedback-return {
-				display: none;
-			}
 		}
 
 
@@ -863,35 +825,39 @@
 
 				<ul>
 
-					<li><a href="#intro">About</a></li>
+					<li>
+						<a href="#intro">
+							About
+						</a>
+					</li>
 
 					<li>
-						<a href="#path">
-							How I Got Here
+						<a href="#question">
+							The Question
 						</a>
 					</li>
 
 					<li>
 						<a href="#work">
-							Research Questions
+							Selected Work
 						</a>
 					</li>
 
 					<li>
 						<a href="#thinking">
-							Behavior to Decisions
+							How I Study It
 						</a>
 					</li>
 
 					<li>
 						<a href="#practice">
-							The Human Side
+							From Practice
 						</a>
 					</li>
 
 					<li>
 						<a href="#future">
-							Where I'm Going
+							Where It Leads
 						</a>
 					</li>
 
@@ -963,35 +929,27 @@
 					<div class="profile-summary">
 
 						<h2>
-							I am interested in how meaningful behavior change
-							can be supported in everyday life.
+							I study when and under what conditions
+							what people are capable of doing becomes
+							what they actually do.
 						</h2>
 
 						<p>
-							I keep coming back to a simple observation:
-							what people know, want, or are capable of doing
-							does not always become what they actually do.
+							I am interested in when behavioral capacity
+							translates into action, what disrupts that process
+							in everyday life, and how behavioral data can help
+							us understand when and where support may be useful.
 						</p>
 
 						<p>
-							Across research, behavioral practice, and my own
-							attempts to build behavioral services, I have become
-							interested in <strong>how change unfolds over time</strong>:
-							how people move from goals to action, what helps or
-							disrupts that process, and how support can adapt as
-							people, circumstances, and goals change.
-						</p>
-
-						<p>
-							Across populations and settings, I am interested in a
-							common problem:
+							My work brings together behavioral science,
+							longitudinal data, and applied behavioral practice.
+							Across different populations and settings, I keep
+							returning to the same question:
 							<strong>
-								how meaningful behavior change can be initiated,
-								supported, monitored, and adapted in everyday life.
+								What helps existing capacity become action
+								when and where it matters?
 							</strong>
-							I want to use behavioral science and data not only to
-							understand why behavior changes, but also to inform what
-							support may be useful and what should happen next.
 						</p>
 
 					</div>
@@ -1002,10 +960,10 @@
 
 						<li>
 							<a
-								href="#work"
+								href="#question"
 								class="button scrolly"
 							>
-								Explore My Work
+								Explore the Question
 							</a>
 						</li>
 
@@ -1030,11 +988,11 @@
 
 
 		<!-- =========================================================
-		     HOW THE QUESTION TOOK SHAPE
+		     THE QUESTION
 		     ========================================================= -->
 
 		<section
-			id="path"
+			id="question"
 			class="wrapper style2 fade-up"
 		>
 
@@ -1042,16 +1000,29 @@
 
 
 				<h2>
-					How the Question Took Shape
+					The Question
 				</h2>
 
 
 				<p class="section-intro">
-					My interests did not begin with a single population or
-					research method. They developed through different ways of
-					encountering the same problem: understanding behavior is
-					one challenge, helping change work in everyday life is another.
+					My interests did not begin with a single population,
+					diagnosis, or research method. The same behavioral
+					problem kept appearing in different forms:
+					what someone is capable of doing does not always
+					become what they actually do.
 				</p>
+
+
+
+				<div class="question-box">
+
+					<p>
+						When and under what conditions does existing
+						behavioral capacity translate into action
+						in everyday life?
+					</p>
+
+				</div>
 
 
 
@@ -1065,18 +1036,17 @@
 						</p>
 
 						<h3>
-							I started by asking why behavior differs.
+							I started by asking why behavior varies.
 						</h3>
 
 						<p>
-							Psychology introduced me to behavior as the product
-							of more than a single trait or decision. Learning
-							history, development, individual differences, and
-							environment all contribute to how people respond and
-							change. It gave me the theoretical foundation for
-							asking why the same situation can produce different
-							behavior across people, and why the same person may
-							behave differently as conditions change.
+							Psychology taught me to think about behavior as
+							shaped by interacting histories, environments,
+							individual differences, and changing conditions.
+							That made variation itself interesting:
+							why can different people respond differently to
+							the same situation, and why can the same person
+							behave differently as circumstances change?
 						</p>
 
 					</div>
@@ -1090,19 +1060,17 @@
 						</p>
 
 						<h3>
-							Data gave me tools to study that variation.
+							Data gave me a way to study that variation.
 						</h3>
 
 						<p>
-							Graduate training in behavioral data science gave me
-							statistical, computational, and visualization tools
-							to study behavior across people, time, and situations.
-							Working with longitudinal and complex behavioral data
-							taught me to move from observing that behavior varies
-							to asking how that variation can be measured, modeled,
-							and eventually made useful. I became especially
-							interested in what accumulated behavioral data can
-							tell us about <strong>what should happen next.</strong>
+							Graduate training in behavioral data science gave
+							me tools to study behavior across people, situations,
+							and time. Working with longitudinal behavioral data
+							shifted my attention from average differences between
+							people toward variation within the same person:
+							what changes from one moment or occasion to another,
+							and what those changes may tell us about behavior.
 						</p>
 
 					</div>
@@ -1116,19 +1084,26 @@
 						</p>
 
 						<h3>
-							Practice made the cost of behavior change visible.
+							Practice showed me that capacity does not
+							guarantee action.
 						</h3>
 
 						<p>
-							Working directly with children and families showed me
-							that knowing what someone can do is not enough to
-							predict what they will do. Prompts, reinforcement,
-							competing demands, available support, prior experiences,
-							the environment, and the person's state in that moment
-							can all affect whether a behavior occurs. It also taught
-							me something harder to capture in a model: an intervention
-							can be technically sound and still ask too much of the
-							person expected to carry it into everyday life.
+							Working directly with children and families in
+							applied behavior analysis made that distinction
+							concrete. A person may have learned a skill and
+							still not use it under different demands,
+							environments, levels of support, or momentary
+							conditions.
+						</p>
+
+						<p>
+							Behavior is not explained by capacity alone.
+							What comes before an action, what follows it,
+							the surrounding environment, prior learning,
+							and the person's current state can all shape
+							whether an existing skill is expressed in a
+							particular situation.
 						</p>
 
 					</div>
@@ -1138,27 +1113,27 @@
 					<div class="journey-item">
 
 						<p class="journey-label">
-							BUILDING
+							IMPLEMENTATION
 						</p>
 
 						<h3>
-							Trying to build a service made implementation
-							part of the question.
+							Building made implementation part of the problem.
 						</h3>
 
 						<p>
-							I founded Nudge Behavior Data Science LLC and explored
-							a cross-border behavioral service model with collaborators
-							in China. The experience pushed me beyond asking whether
-							an intervention could work. I had to think about whether
-							a model could actually operate within a different healthcare
-							system, market, culture, cost structure, and level of
-							public awareness. Rather than simply reproduce an existing
-							ABA service model, I became more interested in a broader
-							problem:
+							Trying to develop a behavioral service model pushed
+							me beyond asking whether an intervention could work.
+							I had to consider whether it could operate within
+							the people, resources, culture, costs, and systems
+							expected to sustain it.
+						</p>
+
+						<p>
+							Across these experiences, my question became less
+							about whether change is possible and more about
 							<strong>
-								How do we design behavioral support that fits the
-								system and the people it is meant to serve?
+								what allows existing capacity to become action
+								in real life.
 							</strong>
 						</p>
 
@@ -1174,7 +1149,7 @@
 
 
 		<!-- =========================================================
-		     QUESTIONS THAT HAVE SHAPED MY THINKING
+		     SELECTED WORK
 		     ========================================================= -->
 
 		<section
@@ -1186,15 +1161,15 @@
 
 
 				<h2>
-					Questions That Have Shaped My Thinking
+					Selected Work
 				</h2>
 
 
 				<p class="section-intro">
-					My research experiences span different behavioral domains.
-					I see them less as separate topics than as different opportunities
-					to learn how behavior can be measured, modeled, and understood
-					in everyday life.
+					Different populations and behaviors have repeatedly brought
+					me back to the same underlying question: what changes between
+					having a capacity, strategy, or resource and actually using
+					it in a particular moment?
 				</p>
 
 
@@ -1214,19 +1189,26 @@
 
 						<p>
 							I am using daily behavioral data to study protective
-							behavioral strategies during real-world drinking occasions.
-							The project began with a distinction I found increasingly
-							important: having access to a strategy is not the same as
-							implementing it when it matters. Studying repeated observations
-							within the same individuals has allowed me to ask not only
-							who differs from whom, but also what changes from one occasion
-							to another.
+							behavioral strategies during real-world drinking
+							occasions. The project began with a distinction I
+							found increasingly important:
+							<strong>
+								having access to a strategy is not the same
+								as implementing it when it matters.
+							</strong>
+						</p>
+
+						<p>
+							Repeated observations within the same individuals
+							allow me to ask not only who differs from whom,
+							but also what changes from one occasion to another.
 						</p>
 
 						<p class="next-question">
 							<strong>What it made me ask next:</strong><br />
-							What conditions help turn behavioral capacity into action,
-							and what happens when those conditions change?
+							What conditions help turn behavioral capacity into
+							action, and what changes when implementation succeeds
+							on one occasion but not another?
 						</p>
 
 						<p class="methods">
@@ -1244,22 +1226,27 @@
 						</p>
 
 						<h3>
-							What disappears when we reduce behavior to an average?
+							What disappears when we reduce behavior
+							to an average?
 						</h3>
 
 						<p>
-							Working with intensive longitudinal alcohol-use data showed
-							me how much variation can occur within the same person across
-							days and situations. That experience strengthened my interest
-							in studying behavior at the level of moments and contexts
-							rather than assuming that a person's average adequately
-							represents how they behave.
+							Working with intensive longitudinal alcohol-use data
+							showed me how much behavior can vary within the same
+							person across days and situations.
+						</p>
+
+						<p>
+							That experience shifted my attention toward moments
+							and contexts rather than assuming that a person's
+							average adequately represents how they behave.
 						</p>
 
 						<p class="next-question">
 							<strong>What it made me ask next:</strong><br />
 							If behavior changes within the same person,
-							can support change with it?
+							can our understanding of when support is useful
+							change with it?
 						</p>
 
 						<p class="methods">
@@ -1281,17 +1268,21 @@
 						</h3>
 
 						<p>
-							I studied patterns of engagement with a digital mindfulness
-							intervention using process-mining methods. The project
-							introduced me to a problem that extends well beyond digital
-							interventions: making a resource available is different from
-							creating the conditions under which someone actually uses it.
+							I studied patterns of engagement with a digital
+							mindfulness intervention using process-mining methods.
+							The project introduced me to a problem that extends
+							beyond digital interventions:
+							<strong>
+								making a resource available is different from
+								creating the conditions under which someone
+								actually uses it.
+							</strong>
 						</p>
 
 						<p class="next-question">
 							<strong>What it made me ask next:</strong><br />
-							Can behavioral systems learn from patterns of engagement
-							and respond differently over time?
+							Can behavioral systems learn from patterns of
+							engagement and respond differently over time?
 						</p>
 
 						<p class="methods">
@@ -1309,22 +1300,26 @@
 						</p>
 
 						<h3>
-							How does measurement shape the behavior we think we see?
+							How does measurement shape the behavior
+							we think we see?
 						</h3>
 
 						<p>
-							Working with behavioral and survey data taught me how many
-							analytical decisions occur between lived behavior and the
-							variables that eventually enter a statistical model.
-							It made measurement itself part of the question. How we
-							represent behavior in data affects the patterns we can detect
-							and the conclusions we can draw.
+							Working with behavioral and survey data made
+							measurement itself part of the question. Analytical
+							decisions sit between lived behavior and the variables
+							that eventually enter a statistical model.
+						</p>
+
+						<p>
+							How we represent behavior determines which patterns
+							we can detect and which conclusions we can draw.
 						</p>
 
 						<p class="next-question">
 							<strong>What it made me ask next:</strong><br />
-							How do we preserve what matters about behavior while
-							turning it into data we can actually use?
+							How can we preserve meaningful behavioral variation
+							while turning it into data we can actually use?
 						</p>
 
 						<p class="methods">
@@ -1343,7 +1338,7 @@
 
 
 		<!-- =========================================================
-		     FROM BEHAVIOR TO BETTER DECISIONS
+		     HOW I STUDY IT
 		     ========================================================= -->
 
 		<section
@@ -1355,15 +1350,15 @@
 
 
 				<h2>
-					From Behavior to Better Decisions
+					How I Study It
 				</h2>
 
 
 				<p class="section-intro">
-					Behavior leaves information behind. A completed action,
-					a missed goal, a repeated pattern, a change in engagement,
-					or a moment when an intervention stops working can all become
-					information about what may need to change.
+					I am interested not only in whether a behavior occurs,
+					but in when it occurs, when it does not, what differs
+					between those moments, and which of those differences
+					may be meaningful and modifiable.
 				</p>
 
 
@@ -1374,15 +1369,16 @@
 					<div class="loop-step">
 
 						<p class="loop-label">
-							01 · Behavior
+							01 · Observe
 						</p>
 
 						<h3>
-							What is actually happening?
+							When does capacity become action?
 						</h3>
 
 						<p>
-							Observe behavior across people, situations, and time.
+							Observe behavior across people, moments,
+							situations, and changing real-world conditions.
 						</p>
 
 					</div>
@@ -1396,16 +1392,17 @@
 					<div class="loop-step">
 
 						<p class="loop-label">
-							02 · Data
+							02 · Explain
 						</p>
 
 						<h3>
-							What can we learn?
+							What differs between those moments?
 						</h3>
 
 						<p>
-							Measure patterns, variation, trajectories, and possible
-							conditions associated with change.
+							Use behavioral and longitudinal data to examine
+							person-level and context-dependent factors associated
+							with when implementation succeeds or fails.
 						</p>
 
 					</div>
@@ -1419,16 +1416,17 @@
 					<div class="loop-step">
 
 						<p class="loop-label">
-							03 · Decision
+							03 · Intervene
 						</p>
 
 						<h3>
-							What should happen next?
+							What can be changed?
 						</h3>
 
 						<p>
-							Determine whether support is needed and which conditions
-							may be meaningful and modifiable.
+							Identify potentially modifiable conditions that
+							may help existing capacities translate into action
+							when and where support is needed.
 						</p>
 
 					</div>
@@ -1442,72 +1440,28 @@
 					<div class="loop-step">
 
 						<p class="loop-label">
-							04 · Support
+							04 · Learn
 						</p>
 
 						<h3>
-							What can we change?
+							What happened next?
 						</h3>
 
 						<p>
-							Adjust the plan, environment, timing, prompts, resources,
-							or other components of an intervention.
+							Observe how behavior responds to support and use
+							that response as new information for understanding
+							what may work, for whom, and under which conditions.
 						</p>
 
 					</div>
 
-
-					<div class="loop-arrow" aria-hidden="true">
-						→
-					</div>
-
-
-					<div class="loop-step">
-
-						<p class="loop-label">
-							05 · Response
-						</p>
-
-						<h3>
-							What happened after support changed?
-						</h3>
-
-						<p>
-							Observe the response. What happens next becomes
-							new data for the next decision.
-						</p>
-
-					</div>
-
-
-				</div>
-
-
-
-				<div class="feedback-return" aria-hidden="true">
-
-					<span class="feedback-start">
-						↑
-					</span>
-
-					<span class="feedback-line"></span>
-
-					<span class="feedback-text">
-						Observe · Learn · Adapt
-					</span>
-
-					<span class="feedback-line"></span>
-
-					<span class="feedback-end">
-						↵
-					</span>
 
 				</div>
 
 
 
 				<p class="loop-note">
-					What works, for whom, when, and what should happen next?
+					What works, for whom, when—and what should happen next?
 				</p>
 
 
@@ -1515,10 +1469,11 @@
 				<div class="future-text">
 
 					<p>
-						For me, this is where behavioral science and data science
-						become most interesting together. The goal is not simply
-						to predict behavior more accurately. It is to use what we
-						learn to make the next decision more useful.
+						For me, this is where behavioral science and data
+						science become most useful together. The goal is not
+						simply to predict behavior more accurately. It is to
+						understand behavioral variation well enough to make
+						the next decision more useful.
 					</p>
 
 				</div>
@@ -1531,7 +1486,7 @@
 
 
 		<!-- =========================================================
-		     THE HUMAN SIDE OF BEHAVIOR CHANGE
+		     FROM PRACTICE
 		     ========================================================= -->
 
 		<section
@@ -1543,7 +1498,7 @@
 
 
 				<h2>
-					The Human Side of Behavior Change
+					From Practice
 				</h2>
 
 
@@ -1555,23 +1510,17 @@
 					</h3>
 
 					<p>
-						Data can tell us whether a behavior occurred, how often
-						it happened, and how it changed over time. But behavioral
-						change is experienced before it is measured.
+						Working directly with children and families taught me
+						to pay attention to what behavioral measures do not
+						fully capture: effort, hesitation, trust, context,
+						and the meaning that a small change can have in
+						everyday life.
 					</p>
 
 					<p>
-						Working directly with children and families taught me to
-						pay attention to the parts of progress that do not fit
-						neatly into a dataset: confidence, hesitation, trust,
-						effort, connection, and the meaning that a small change
-						can have in someone's everyday life.
-					</p>
-
-					<p>
-						Those experiences continue to remind me why the outcome
-						of behavioral research should never be separated from
-						the people expected to live with it.
+						Those experiences continue to remind me that behavioral
+						research should ultimately return to the people expected
+						to live with its conclusions.
 					</p>
 
 				</div>
@@ -1587,9 +1536,8 @@
 
 
 					<p class="artwork-intro">
-						Not everything meaningful in behavioral work appears
-						in a dataset. A few small artifacts from practice remind
-						me of the people and everyday moments behind the measurements.
+						A few small artifacts from practice remind me of the
+						people and everyday moments behind the measurements.
 					</p>
 
 
@@ -1611,9 +1559,9 @@
 								</strong>
 								<br />
 
-								From first learning to trace letters to making it
-								all the way from A to Z in less than two weeks.
-								A small milestone we were happy to celebrate together.
+								From learning to trace individual letters to
+								completing A–Z. A small milestone, but a
+								meaningful one.
 
 							</div>
 
@@ -1635,10 +1583,9 @@
 								</strong>
 								<br />
 
-								Watching hesitation turn into curiosity, and curiosity
-								into a choice to try. A small reminder that approaching
-								something once avoided can begin simply with feeling
-								ready to try.
+								A reminder that change can begin with something
+								as small as becoming willing to approach what
+								was previously avoided.
 
 							</div>
 
@@ -1660,9 +1607,9 @@
 								</strong>
 								<br />
 
-								Data can capture progress, but not everything
-								that grows along the way: the trust, the connection,
-								and the little ways we become part of each other's lives.
+								Some parts of progress are easier to measure
+								than others. Trust, connection, and shared
+								experience matter too.
 
 							</div>
 
@@ -1673,7 +1620,8 @@
 
 
 					<!--
-						Only uncomment after confirming permission.
+						Only uncomment after confirming appropriate permission
+						and privacy requirements for public display.
 
 						<p class="small-note">
 							Selected artifacts displayed with permission.
@@ -1692,7 +1640,7 @@
 
 
 		<!-- =========================================================
-		     WHAT I HOPE TO BUILD TOWARD
+		     WHERE IT LEADS
 		     ========================================================= -->
 
 		<section
@@ -1704,7 +1652,7 @@
 
 
 				<h2>
-					What I Hope to Build Toward
+					Where It Leads
 				</h2>
 
 
@@ -1713,26 +1661,27 @@
 
 
 					<h3>
-						I want to understand behavior well enough to support
-						change that can live outside the research setting.
+						From understanding implementation
+						to supporting it.
 					</h3>
 
 
 					<p>
-						People differ. Circumstances change. Goals evolve.
-						I am interested in behavioral support that can respond
-						to those differences rather than assuming that the same
-						intervention should work in the same way for everyone.
+						My long-term goal is to understand when and why
+						existing behavioral capacities fail to translate
+						into action, identify potentially modifiable factors
+						associated with those moments, and use that information
+						to inform adaptive behavioral support.
 					</p>
 
 
 					<p>
-						My long-term interest is in bringing together
-						<strong>
-							behavioral science, longitudinal data, and adaptive intervention
-						</strong>
-						to help people pursue personally meaningful goals within
-						evidence-based and ethical boundaries.
+						Intensive longitudinal data make it possible to study
+						behavior as it changes within the same person. I am
+						interested in how those data can help us understand
+						not only <strong>who a person is</strong>, but also
+						<strong>what is happening at a particular moment</strong>
+						and which conditions may be shaping whether action occurs.
 					</p>
 
 
@@ -1744,58 +1693,46 @@
 
 
 					<h3>
-						From prompting behavior to learning from behavior
+						From variation to intervention
 					</h3>
 
 
 					<p>
-						Digital environments show how timing, prompts, feedback,
-						defaults, and friction can shape what people do. I am interested
-						in what becomes possible when behavioral principles are combined
-						with longitudinal data and emerging technologies to create
-						support that can learn from behavior and adapt over time.
-					</p>
-
-
-					<p>
-						AI may make that process increasingly dynamic, allowing
-						personalization to become an ongoing cycle rather than a
-						one-time decision:
+						This creates a path from observing real-world behavioral
+						variation to understanding which conditions may be
+						modifiable and eventually using that information to
+						inform more adaptive support.
 					</p>
 
 
 
 					<div
 						class="vision-sequence"
-						aria-label="Adaptive behavioral support sequence"
+						aria-label="Research direction sequence"
 					>
 
 						<span>
-							Clarify a goal
+							Observe behavior
 						</span>
 
 						<span>
-							Develop an actionable plan
+							Identify variation
 						</span>
 
 						<span>
-							Support implementation
+							Understand context
 						</span>
 
 						<span>
-							Monitor what happens
+							Identify modifiable factors
 						</span>
 
 						<span>
-							Learn from accumulated data
+							Inform support
 						</span>
 
 						<span>
-							Adapt the support
-						</span>
-
-						<span>
-							Build on what worked
+							Learn from response
 						</span>
 
 					</div>
@@ -1812,31 +1749,12 @@
 					</div>
 
 
-				</div>
-
-
-
-				<div class="vision-block">
-
-
-					<h3>
-						Looking further ahead
-					</h3>
-
-
 					<p>
-						I am also interested in what sustained behavioral change
-						may mean beyond the behavior itself. Over time, I hope to
-						better understand how repeated behavior and intervention
-						interact with psychological and physiological adaptation,
-						and potentially with neural plasticity.
-					</p>
-
-
-					<p>
-						I see this as an area I want to grow into through further
-						scientific training rather than one in which I already
-						claim specialized expertise.
+						The form that support takes may differ across
+						populations and settings. What interests me is the
+						underlying problem: how behavioral science,
+						longitudinal data, and intervention can work together
+						to support action under changing real-world conditions.
 					</p>
 
 
@@ -1853,18 +1771,21 @@
 
 
 					<p>
-						I want my work to move in both directions: from real-world
-						behavior to better scientific questions, and from research
-						back to tools, interventions, and systems that people can
-						actually use.
+						I want my work to move in both directions:
+						from real-world behavior to better scientific questions,
+						and from research back to interventions and systems that
+						people can actually use.
 					</p>
 
 
 					<p>
-						I am less committed to a single population than to a way
-						of working: <strong>understand behavior carefully, learn from
-						the data it generates, and use that knowledge to build support
-						that works in real life.</strong>
+						I am less committed to a single population than to a
+						way of asking questions:
+						<strong>
+							understand when capacity becomes action,
+							learn from when it does not, and use that
+							knowledge to make the next decision more useful.
+						</strong>
 					</p>
 
 
