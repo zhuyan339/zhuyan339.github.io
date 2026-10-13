@@ -554,45 +554,116 @@
 			background: #EEF3ED;
 		}
 		
-		.contact-simple {
-			max-width: 760px;
-			padding: 0.5rem 0;
+		.contact-card {
+			max-width: 850px;
+			padding: 2.6rem 2.8rem;
+			background: var(--white);
+			border: 1px solid var(--border);
+			border-top: 4px solid var(--yellow);
+			border-radius: 1.1rem;
+		
+			box-shadow:
+				0 8px 30px rgba(23, 50, 77, 0.05);
 		}
 		
-		.contact-simple h2 {
-			margin-bottom: 1rem;
+		.contact-heading {
+			margin-bottom: 1.4rem;
+		}
+		
+		.contact-heading h2 {
+			margin-bottom: 0.45rem;
+		}
+		
+		.contact-heading p {
+			margin: 0;
+			color: var(--muted) !important;
+			font-size: 0.95rem !important;
 		}
 		
 		.contact-email {
-			font-size: 1.15rem !important;
-			margin-bottom: 1.1rem;
-		}
+			display: inline-block;
+			margin-bottom: 1.7rem;
 		
-		.contact-email a {
+			font-size: 1.08rem;
+			font-weight: 500;
+		
 			color: var(--blue);
 			border-bottom: none;
 		}
 		
-		.contact-links {
-			display: flex;
-			align-items: center;
-			flex-wrap: wrap;
-			gap: 0.7rem;
-			font-size: 0.95rem;
-			font-weight: 600;
-		}
-		
-		.contact-links a {
+		.contact-email:hover {
 			color: var(--navy);
-			border-bottom: none;
 		}
 		
-		.contact-links a:hover {
-			color: var(--blue);
+		.contact-actions {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.75rem;
 		}
 		
-		.contact-links span {
-			color: var(--yellow);
+		.contact-button {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+		
+			min-width: 125px;
+			height: 46px;
+			padding: 0 1.35rem;
+		
+			border: 1px solid var(--navy);
+			border-radius: 999px;
+		
+			color: var(--navy) !important;
+		
+			font-size: 0.78rem;
+			font-weight: 700;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+		
+			transition:
+				background 0.2s ease,
+				color 0.2s ease,
+				transform 0.2s ease;
+		
+			border-bottom: 1px solid var(--navy);
+		}
+		
+		.contact-button:hover {
+			background: var(--blue-light);
+			color: var(--navy) !important;
+			transform: translateY(-2px);
+		}
+		
+		.contact-button.contact-primary {
+			background: var(--navy);
+			color: #FFFFFF !important;
+			border-color: var(--navy);
+		}
+		
+		.contact-button.contact-primary:hover {
+			background: var(--blue);
+			border-color: var(--blue);
+			color: #FFFFFF !important;
+		}
+		
+		
+		/* Mobile */
+		
+		@media screen and (max-width: 736px) {
+		
+			.contact-card {
+				padding: 2rem 1.5rem;
+			}
+		
+			.contact-actions {
+				flex-direction: column;
+				align-items: stretch;
+			}
+		
+			.contact-button {
+				width: 100%;
+			}
+		
 		}
 		/* =========================================================
 		   FOOTER
@@ -1217,82 +1288,87 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- =========================================================
 		     CV & CONTACT
 		     ========================================================= -->
+		
 		<section
 			id="contact"
 			class="wrapper style3 fade-up"
 		>
 		
 			<div class="inner">
-
-				<div class="contact-simple">
 		
-					<h2>
-						CV & Contact
-					</h2>
+				<div class="contact-card">
 		
-					<p class="contact-email">
-						<a href="mailto:zhuyanseattle@gmail.com">
-							zhuyanseattle@gmail.com
-						</a>
-					</p>
+					<div class="contact-heading">
 		
-					<div class="contact-links">
+						<h2>
+							CV & Contact
+						</h2>
+		
+						<p>
+							Research, collaboration, and conversation are always welcome.
+						</p>
+		
+					</div>
+		
+		
+					<a
+						class="contact-email"
+						href="mailto:zhuyanseattle@gmail.com"
+					>
+						zhuyanseattle@gmail.com
+					</a>
+		
+		
+					<div class="contact-actions">
 		
 						<a
 							href="/assets/Academic_CV_Sep2026.pdf"
+							class="contact-button contact-primary"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							Academic CV
 						</a>
 		
-						<span>·</span>
-						<a
-							href="https://github.com/zhuyan-3"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							GitHub
-						</a>
 		
-						<span>·</span>
 						<a
 							href="https://linkedin.com/in/zhuyan3"
+							class="contact-button"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							LinkedIn
 						</a>
+		
 					</div>
 				</div>
 			</div>
 		</section>
-		
-	<!-- =========================================================
-	     FOOTER
-	     ========================================================= -->
-	<footer
-		id="footer"
-		class="wrapper style1-alt"
-	>
-		<div class="inner">
-			<ul class="menu">
-				<li>
-					&copy; Yan Zhu. All rights reserved.
-				</li>
-				<li>
-					Design:
-					<a href="https://html5up.net">
-						HTML5 UP
-					</a>
-				</li>
-			</ul>
-		</div>
-	</footer>
+				
+			<!-- =========================================================
+			     FOOTER
+			     ========================================================= -->
+			<footer
+				id="footer"
+				class="wrapper style1-alt"
+			>
+				<div class="inner">
+					<ul class="menu">
+						<li>
+							&copy; Yan Zhu. All rights reserved.
+						</li>
+						<li>
+							Design:
+							<a href="https://html5up.net">
+								HTML5 UP
+							</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
 	<!-- =========================================================
 	     SCRIPTS
 	     ========================================================= -->
