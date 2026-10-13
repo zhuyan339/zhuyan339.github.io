@@ -1,1076 +1,1277 @@
-<!-- =========================================================
-     SIDEBAR
-     ========================================================= -->
-
-<section id="sidebar">
-
-	<div class="inner">
-
-		<nav>
-
-			<ul>
-
-				<li>
-					<a href="#intro">
-						About
-					</a>
-				</li>
-
-				<li>
-					<a href="#questions">
-						Research Questions
-					</a>
-				</li>
-
-				<li>
-					<a href="#work">
-						Selected Work
-					</a>
-				</li>
-
-				<li>
-					<a href="#approach">
-						Research Approach
-					</a>
-				</li>
-
-				<li>
-					<a href="#practice">
-						From Practice
-					</a>
-				</li>
-
-				<li>
-					<a href="#directions">
-						Current Directions
-					</a>
-				</li>
-
-				<li>
-					<a href="#contact">
-						CV & Contact
-					</a>
-				</li>
-
-			</ul>
-
-		</nav>
-
-	</div>
-
-</section>
-
-
-
-<div id="wrapper">
-
-
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license
+	(html5up.net/license)
+-->
+<html>
+<head>
+	<title>Yan Zhu | Behavioral Science, Data & Practice</title>
+	<meta charset="utf-8" />
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, user-scalable=no"
+	/>
+	<meta
+		name="description"
+		content="Yan Zhu's research interests in behavioral science, longitudinal behavioral data, real-world implementation, and adaptive intervention."
+	/>
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		/* =========================================================
+		   COLOR SYSTEM
+		   Warm · Alive · Academic
+		   ========================================================= */
+		:root {
+			/* Backgrounds */
+			--ivory: #F8F6EF;
+			--white: #FFFEFA;
+			/* Blue */
+			--navy: #17324D;
+			--blue: #47769B;
+			--blue-light: #E8F0F5;
+			/* Green */
+			--sage: #789B7A;
+			--sage-dark: #58755E;
+			--sage-light: #E6EEE4;
+			/* Yellow */
+			--yellow: #E8C766;
+			--yellow-light: #F7EFCF;
+			/* Text */
+			--text: #303B40;
+			--muted: #68757A;
+			/* Lines */
+			--border: #DDE2DC;
+		}
+		/* =========================================================
+		   GLOBAL
+		   ========================================================= */
+		html {
+			scroll-behavior: smooth;
+		}
+		body {
+			line-height: 1.75;
+			background: var(--ivory);
+			color: var(--text);
+		}
+		#wrapper {
+			background: var(--ivory);
+		}
+		#wrapper p {
+			font-size: 1rem;
+			line-height: 1.75;
+			color: var(--text);
+		}
+		.inner {
+			max-width: 1120px;
+		}
+		h1,
+		h2,
+		h3 {
+			color: var(--navy) !important;
+			letter-spacing: -0.02em;
+		}
+		h2 {
+			margin-bottom: 1.3rem;
+		}
+		strong {
+			color: var(--navy);
+		}
+		a {
+			color: var(--blue);
+		}
+		a:hover {
+			color: var(--navy);
+		}
+		/* =========================================================
+		   SIDEBAR
+		   ========================================================= */
+		#sidebar {
+			background: var(--navy);
+		}
+		#sidebar nav a {
+			color: rgba(255, 255, 255, 0.64);
+		}
+		#sidebar nav a:hover,
+		#sidebar nav a.active {
+			color: #FFFFFF;
+		}
+		#sidebar nav a:after {
+			background-image: none;
+			background: var(--yellow);
+		}
+		/* =========================================================
+		   SECTION COLORS
+		   ========================================================= */
+		.wrapper.style1 {
+			background: var(--ivory);
+		}
+		.wrapper.style2 {
+			background: var(--white);
+		}
+		.wrapper.style3 {
+			background: #F0F4EF;
+		}
+		.wrapper.style1-alt {
+			background: var(--navy);
+		}
+		.wrapper.style1:before,
+		.wrapper.style2:before,
+		.wrapper.style3:before {
+			background: none;
+		}
+		/* =========================================================
+		   ABOUT
+		   ========================================================= */
+		.about-profile {
+			max-width: 940px;
+		}
+		.profile-top {
+			display: grid;
+			grid-template-columns: 220px 1fr;
+			gap: 2.7rem;
+			align-items: center;
+			margin-bottom: 2.5rem;
+		}
+		.profile-photo {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+		}
+		.profile-photo img {
+			width: 205px;
+			height: 205px;
+			object-fit: cover;
+			object-position: center;
+			border-radius: 50%;
+			border: 6px solid var(--white);
+			box-shadow:
+				0 0 0 2px var(--sage-light),
+				0 12px 35px rgba(23, 50, 77, 0.13);
+			background: var(--white);
+		}
+		.profile-name {
+			font-size: 3.55rem;
+			line-height: 1;
+			margin: 0 0 0.8rem 0;
+			color: var(--navy) !important;
+		}
+		.profile-tagline {
+			font-size: 1.25rem !important;
+			font-weight: 600;
+			color: var(--blue) !important;
+			margin: 0 0 0.35rem 0;
+		}
+		.profile-location {
+			font-size: 0.9rem !important;
+			color: var(--muted) !important;
+			margin: 0;
+		}
+		.profile-summary {
+			max-width: 790px;
+		}
+		.profile-summary p {
+			font-size: 1.06rem !important;
+			color: var(--text) !important;
+			margin-bottom: 1rem;
+		}
+		/* =========================================================
+		   GENERAL
+		   ========================================================= */
+		.section-intro {
+			max-width: 760px;
+			font-size: 1.05rem !important;
+			margin-bottom: 2.2rem;
+			color: var(--muted) !important;
+		}
+		.small-note {
+			font-size: 0.78rem !important;
+			color: var(--muted) !important;
+			opacity: 0.8;
+		}
+		/* =========================================================
+		   RESEARCH QUESTIONS / TIMELINE
+		   ========================================================= */
+		.journey {
+			max-width: 850px;
+			margin-top: 2.5rem;
+		}
+		.journey-item {
+			position: relative;
+			padding: 0 0 2.5rem 2.2rem;
+			border-left: 2px solid #CBD8CB;
+		}
+		.journey-item:last-child {
+			padding-bottom: 0;
+		}
+		.journey-item:before {
+			content: "";
+			position: absolute;
+			left: -0.52rem;
+			top: 0.3rem;
+			width: 0.85rem;
+			height: 0.85rem;
+			border-radius: 50%;
+			background: var(--yellow);
+			border: 3px solid var(--white);
+			box-shadow:
+				0 0 0 2px var(--sage);
+		}
+		.journey-label {
+			font-size: 0.74rem !important;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			color: var(--sage-dark) !important;
+			margin-bottom: 0.35rem;
+		}
+		.journey-item h3 {
+			margin-bottom: 0.55rem;
+		}
+		.journey-item p {
+			max-width: 700px;
+			margin-bottom: 0;
+			color: var(--text) !important;
+		}
+		/* =========================================================
+		   QUESTION BOX
+		   ========================================================= */
+		.question-box {
+			max-width: 850px;
+			margin: 2rem 0;
+			padding: 1.7rem 1.8rem;
+			border-left: 5px solid var(--yellow);
+			background: var(--yellow-light);
+			border-radius: 0 1rem 1rem 0;
+		}
+		.question-box p {
+			color: var(--navy) !important;
+			margin: 0;
+			font-size: 1.22rem !important;
+			line-height: 1.65 !important;
+			font-weight: 600;
+		}
+		/* =========================================================
+		   SELECTED WORK
+		   ========================================================= */
+		.work-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.25rem;
+			margin-top: 2rem;
+		}
+		.work-card {
+			background: var(--white);
+			border: 1px solid var(--border);
+			border-radius: 1.1rem;
+			padding: 1.65rem;
+			box-shadow:
+				0 8px 30px rgba(23, 50, 77, 0.045);
+			transition:
+				transform 0.2s ease,
+				box-shadow 0.2s ease;
+		}
+		.work-card:hover {
+			transform: translateY(-3px);
+			box-shadow:
+				0 12px 34px rgba(23, 50, 77, 0.08);
+		}
+		.work-card:first-child {
+			border-top: 4px solid var(--blue);
+		}
+		.work-card:nth-child(2) {
+			border-top: 4px solid var(--sage);
+		}
+		.work-card:nth-child(3) {
+			border-top: 4px solid var(--yellow);
+		}
+		.work-card:nth-child(4) {
+			border-top: 4px solid #89AABD;
+		}
+		.work-card h3 {
+			margin-bottom: 0.7rem;
+		}
+		.work-label {
+			font-size: 0.72rem !important;
+			text-transform: uppercase;
+			letter-spacing: 0.09em;
+			color: var(--blue) !important;
+			margin-bottom: 0.45rem !important;
+		}
+		.work-card p {
+			font-size: 0.94rem !important;
+			color: var(--text) !important;
+			margin-bottom: 0.75rem;
+		}
+		.work-card p:last-child {
+			margin-bottom: 0;
+		}
+		.work-card .methods {
+			margin-top: 1rem;
+			padding-top: 0.85rem;
+			border-top: 1px solid var(--border);
+			font-size: 0.78rem !important;
+			color: var(--muted) !important;
+		}
+		.work-card .next-question {
+			margin-top: 1rem;
+			color: var(--navy) !important;
+		}
+		/* =========================================================
+		   RESEARCH APPROACH
+		   ========================================================= */
+		.thinking-loop {
+			display: grid;
+			grid-template-columns:
+				minmax(0, 1fr) auto
+				minmax(0, 1fr) auto
+				minmax(0, 1fr) auto
+				minmax(0, 1fr);
+			gap: 0.65rem;
+			align-items: stretch;
+			margin: 2.2rem 0 0 0;
+		}
+		.loop-step {
+			background: var(--white);
+			border: 1px solid var(--border);
+			border-radius: 1rem;
+			padding: 1.2rem;
+			min-height: 220px;
+			display: flex;
+			flex-direction: column;
+			box-shadow:
+				0 6px 20px rgba(23, 50, 77, 0.035);
+			transition:
+				transform 0.2s ease,
+				box-shadow 0.2s ease;
+		}
+		.loop-step:hover {
+			transform: translateY(-3px);
+			box-shadow:
+				0 10px 28px rgba(23, 50, 77, 0.07);
+		}
+		.loop-step:nth-of-type(3) {
+			background: var(--blue-light);
+		}
+		.loop-step:nth-of-type(5) {
+			background: var(--yellow-light);
+		}
+		.loop-step:nth-of-type(7) {
+			background: var(--sage-light);
+		}
+		.loop-label {
+			font-size: 0.7rem !important;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			color: var(--sage-dark) !important;
+			margin-bottom: 0.5rem !important;
+		}
+		.loop-step h3 {
+			font-size: 1.05rem;
+			margin-bottom: 0.55rem;
+		}
+		.loop-step p {
+			font-size: 0.88rem !important;
+			margin-bottom: 0;
+		}
+		.loop-arrow {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.4rem;
+			font-weight: 600;
+			color: var(--sage-dark);
+			padding: 0 0.05rem;
+		}
+		.loop-note {
+			max-width: 800px;
+			margin-top: 1.8rem;
+			font-size: 1.08rem !important;
+			color: var(--navy) !important;
+			font-weight: 600;
+		}
+		/* =========================================================
+		   PRACTICE / HUMAN SIDE
+		   ========================================================= */
+		#practice {
+			background: #F4F7F1;
+		}
+		.practice-story {
+			max-width: 790px;
+		}
+		.practice-story p {
+			font-size: 1.04rem !important;
+			color: var(--text) !important;
+		}
+		/* =========================================================
+		   ARTWORK / PHOTOS
+		   ========================================================= */
+		.artwork-section {
+			margin-top: 3.2rem;
+		}
+		.artwork-section h3 {
+			font-size: 1.45rem;
+		}
+		.artwork-intro {
+			max-width: 700px;
+			color: var(--muted) !important;
+		}
+		.artwork-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 1.2rem;
+			margin-top: 1.8rem;
+		}
+		.artwork-card {
+			background: var(--white);
+			border: 1px solid var(--border);
+			border-radius: 1rem;
+			overflow: hidden;
+			box-shadow:
+				0 7px 24px rgba(23, 50, 77, 0.045);
+		}
+		.artwork-card img {
+			width: 100%;
+			aspect-ratio: 4 / 3;
+			object-fit: cover;
+			display: block;
+		}
+		.artwork-caption {
+			padding: 1rem 1.1rem;
+			font-size: 0.84rem;
+			line-height: 1.55;
+			color: var(--text);
+			background: var(--white);
+		}
+		/* =========================================================
+		   CURRENT DIRECTIONS
+		   ========================================================= */
+		#future {
+			background: var(--ivory);
+		}
+		.future-text {
+			max-width: 760px;
+		}
+		.future-text p {
+			color: var(--text) !important;
+		}
+		.vision-block {
+			max-width: 850px;
+			margin-top: 2rem;
+		}
+		.vision-sequence {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.55rem;
+			margin: 1.5rem 0;
+		}
+		.vision-sequence span {
+			display: inline-block;
+			padding: 0.5rem 0.75rem;
+			border-radius: 999px;
+			background: var(--blue-light);
+			color: var(--navy);
+			font-size: 0.82rem;
+			font-weight: 600;
+		}
+		.vision-principle {
+			max-width: 760px;
+			margin: 1.7rem 0;
+			padding: 1.25rem 1.4rem;
+			border-left: 5px solid var(--yellow);
+			background: var(--yellow-light);
+			border-radius: 0 1rem 1rem 0;
+		}
+		.vision-principle p {
+			margin: 0;
+			color: var(--navy) !important;
+			font-size: 1.08rem !important;
+			font-weight: 600;
+		}
+		.closing-statement {
+			max-width: 850px;
+			margin-top: 2.8rem;
+			padding-top: 2.2rem;
+			border-top: 1px solid var(--border);
+		}
+		.closing-statement h3 {
+			font-size: 1.35rem;
+		}
+		/* =========================================================
+		   BUTTONS
+		   ========================================================= */
+		.button {
+			color: var(--navy) !important;
+			box-shadow:
+				inset 0 0 0 1px var(--navy) !important;
+		}
+		.button:hover {
+			background: rgba(71, 118, 155, 0.06);
+		}
+		.button.primary {
+			background: var(--navy) !important;
+			color: #FFFFFF !important;
+			box-shadow: none !important;
+		}
+		.button.primary:hover {
+			background: var(--blue) !important;
+		}
+		/* =========================================================
+		   CONTACT
+		   ========================================================= */
+		#contact {
+			background: #EEF3ED;
+		}
+		#contact p,
+		#contact li {
+			color: var(--text);
+		}
+		#contact .icon {
+			color: var(--navy);
+		}
+		#contact a {
+			color: var(--blue);
+		}
+		#contact a:hover {
+			color: var(--navy);
+		}
+		/* =========================================================
+		   FOOTER
+		   ========================================================= */
+		#footer {
+			background: var(--navy);
+		}
+		#footer,
+		#footer a,
+		#footer li {
+			color: rgba(255, 255, 255, 0.68);
+		}
+		/* =========================================================
+		   RESPONSIVE
+		   ========================================================= */
+		@media screen and (max-width: 980px) {
+			.profile-top {
+				grid-template-columns: 190px 1fr;
+			}
+			.profile-photo img {
+				width: 175px;
+				height: 175px;
+			}
+			.work-grid,
+			.artwork-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+			.thinking-loop {
+				grid-template-columns: 1fr;
+				gap: 0.65rem;
+			}
+			.loop-arrow {
+				transform: rotate(90deg);
+				height: 1.25rem;
+			}
+			.loop-step {
+				min-height: 0;
+			}
+		}
+		@media screen and (max-width: 736px) {
+			.profile-top {
+				grid-template-columns: 1fr;
+				gap: 1.6rem;
+			}
+			.profile-photo img {
+				width: 155px;
+				height: 155px;
+			}
+			.profile-name {
+				font-size: 2.55rem;
+			}
+			.profile-tagline {
+				font-size: 1.08rem !important;
+			}
+			.work-grid,
+			.artwork-grid {
+				grid-template-columns: 1fr;
+			}
+			.thinking-loop {
+				grid-template-columns: 1fr;
+			}
+			.journey-item {
+				padding-left: 1.6rem;
+			}
+		}
+	</style>
+</head>
+<body class="is-preload">
 	<!-- =========================================================
-	     ABOUT
+	     SIDEBAR
 	     ========================================================= -->
-
-	<section
-		id="intro"
-		class="wrapper style1 fullscreen fade-up"
-	>
-
+	<section id="sidebar">
 		<div class="inner">
-
-			<div class="about-profile">
-
-
-				<div class="profile-top">
-
-					<div class="profile-photo">
-
-						<img
-							src="images/profile.jpg"
-							alt="Portrait of Yan Zhu"
-						/>
-
-					</div>
-
-
-					<div>
-
-						<h1 class="profile-name">
-							Yan Zhu
-						</h1>
-
-						<p class="profile-tagline">
-							Behavioral Science · Data · Practice
-						</p>
-
-						<p class="profile-location">
-							Irvine, California
-						</p>
-
-					</div>
-
-				</div>
-
-
-
-				<div class="profile-summary">
-
-					<h2>
-						I study when and under what conditions
-						what people are capable of doing becomes
-						what they actually do.
-					</h2>
-
-					<p>
-						My work sits at the intersection of behavioral science,
-						longitudinal data, and applied practice. I am especially
-						interested in how behavior changes across moments and
-						contexts—and what those changes can tell us about when
-						support may be useful.
-					</p>
-
-					<p>
-						Across different behavioral domains, I keep returning
-						to one problem:
-						<strong>
-							what helps existing capacity become action
-							when and where it matters?
-						</strong>
-					</p>
-
-				</div>
-
-
-
-				<ul class="actions">
-
+			<nav>
+				<ul>
 					<li>
-						<a
-							href="#questions"
-							class="button scrolly"
-						>
-							Explore the Questions
+						<a href="#intro">
+							About
 						</a>
 					</li>
-
 					<li>
-						<a
-							href="#contact"
-							class="button scrolly"
-						>
-							View CV
+						<a href="#question">
+							Research Questions
 						</a>
 					</li>
-
+					<li>
+						<a href="#work">
+							Selected Work
+						</a>
+					</li>
+					<li>
+						<a href="#thinking">
+							Research Approach
+						</a>
+					</li>
+					<li>
+						<a href="#practice">
+							From Practice
+						</a>
+					</li>
+					<li>
+						<a href="#future">
+							Current Directions
+						</a>
+					</li>
+					<li>
+						<a href="#contact">
+							CV & Contact
+						</a>
+					</li>
 				</ul>
-
-
-			</div>
-
+			</nav>
 		</div>
-
 	</section>
-
-
-
-	<!-- =========================================================
-	     RESEARCH QUESTIONS
-	     ========================================================= -->
-
-	<section
-		id="questions"
-		class="wrapper style2 fade-up"
-	>
-
-		<div class="inner">
-
-
-			<h2>
-				Research Questions
-			</h2>
-
-
-			<p class="section-intro">
-				My interests center on the gap between what people
-				can do and what they actually do under changing
-				real-world conditions.
-			</p>
-
-
-
-			<div class="question-box">
-
-				<p>
-					When and under what conditions does existing
-					behavioral capacity translate into action?
-				</p>
-
-			</div>
-
-
-
-			<div class="journey">
-
-
-				<div class="journey-item">
-
-					<p class="journey-label">
-						VARIATION
-					</p>
-
-					<h3>
-						Why does behavior change across people,
-						moments, and contexts?
-					</h3>
-
-					<p>
-						Behavior reflects more than ability alone.
-						Learning history, environment, individual differences,
-						and momentary conditions can shape whether a behavior
-						occurs in a particular situation.
-					</p>
-
-				</div>
-
-
-
-				<div class="journey-item">
-
-					<p class="journey-label">
-						MEASUREMENT
-					</p>
-
-					<h3>
-						What can within-person variation tell us?
-					</h3>
-
-					<p>
-						Longitudinal behavioral data make it possible to move
-						beyond averages and examine what changes within the
-						same person across days, situations, and decisions.
-					</p>
-
-				</div>
-
-
-
-				<div class="journey-item">
-
-					<p class="journey-label">
-						IMPLEMENTATION
-					</p>
-
-					<h3>
-						What turns capacity into action?
-					</h3>
-
-					<p>
-						Having a skill, strategy, resource, or opportunity
-						does not guarantee that it will be used. I am interested
-						in the conditions that help explain when implementation
-						succeeds and when it breaks down.
-					</p>
-
-				</div>
-
-
-
-				<div class="journey-item">
-
-					<p class="journey-label">
-						INTERVENTION
-					</p>
-
-					<h3>
-						Which conditions can we change?
-					</h3>
-
-					<p>
-						Understanding behavioral variation becomes most useful
-						when it helps identify modifiable conditions and informs
-						support that can respond to people and contexts over time.
-					</p>
-
-				</div>
-
-
-			</div>
-
-		</div>
-
-	</section>
-
-
-
-	<!-- =========================================================
-	     SELECTED WORK
-	     ========================================================= -->
-
-	<section
-		id="work"
-		class="wrapper style3 fade-up"
-	>
-
-		<div class="inner">
-
-
-			<h2>
-				Selected Work
-			</h2>
-
-
-			<p class="section-intro">
-				My projects span different behavioral settings,
-				but repeatedly return to questions of variation,
-				implementation, and measurement.
-			</p>
-
-
-
-			<div class="work-grid">
-
-
-				<div class="work-card">
-
-					<p class="work-label">
-						Independent Research · 2026–Present
-					</p>
-
-					<h3>
-						When does having a strategy become using it?
-					</h3>
-
-					<p>
-						I use daily behavioral data to study protective
-						behavioral strategies during real-world drinking
-						occasions, distinguishing access to a strategy
-						from its implementation in a particular moment.
-					</p>
-
-					<p class="next-question">
-						<strong>What it made me ask next:</strong><br />
-						What changes between occasions when implementation
-						succeeds and when it does not?
-					</p>
-
-					<p class="methods">
-						R · Longitudinal Data · Multilevel Models · Ordinal Models
-					</p>
-
-				</div>
-
-
-
-				<div class="work-card">
-
-					<p class="work-label">
-						Addiction Research · 2024
-					</p>
-
-					<h3>
-						What disappears when behavior becomes an average?
-					</h3>
-
-					<p>
-						Working with intensive longitudinal alcohol-use data
-						showed me how substantially behavior can vary within
-						the same person across days and situations.
-					</p>
-
-					<p class="next-question">
-						<strong>What it made me ask next:</strong><br />
-						Can understanding moment-to-moment variation improve
-						our understanding of when support is useful?
-					</p>
-
-					<p class="methods">
-						Ecological Momentary Assessment · Intensive Longitudinal Data
-					</p>
-
-				</div>
-
-
-
-				<div class="work-card">
-
-					<p class="work-label">
-						Graduate Capstone · 2023
-					</p>
-
-					<h3>
-						Why does access not guarantee engagement?
-					</h3>
-
-					<p>
-						I studied engagement with a digital mindfulness
-						intervention using process-mining methods, focusing
-						on how patterns of use unfolded over time.
-					</p>
-
-					<p class="next-question">
-						<strong>What it made me ask next:</strong><br />
-						Can behavioral systems learn from engagement patterns
-						and adapt how support is delivered?
-					</p>
-
-					<p class="methods">
-						Python · Process Mining · Digital Behavioral Data
-					</p>
-
-				</div>
-
-
-
-				<div class="work-card">
-
-					<p class="work-label">
-						PIVOT Lab · 2023–2024
-					</p>
-
-					<h3>
-						How does measurement shape what we see?
-					</h3>
-
-					<p>
-						Working with behavioral and survey data made
-						measurement itself part of the problem: how behavior
-						is represented influences which patterns become
-						visible in analysis.
-					</p>
-
-					<p class="next-question">
-						<strong>What it made me ask next:</strong><br />
-						How can we preserve meaningful behavioral variation
-						while turning it into usable data?
-					</p>
-
-					<p class="methods">
-						R · Data Cleaning · Statistical Modeling · Behavioral Measurement
-					</p>
-
-				</div>
-
-
-			</div>
-
-		</div>
-
-	</section>
-
-
-
-	<!-- =========================================================
-	     RESEARCH APPROACH
-	     ========================================================= -->
-
-	<section
-		id="approach"
-		class="wrapper style1 fade-up"
-	>
-
-		<div class="inner">
-
-
-			<h2>
-				Research Approach
-			</h2>
-
-
-			<p class="section-intro">
-				I approach behavior as something that changes across
-				people, moments, environments, and conditions—and use
-				that variation as information.
-			</p>
-
-
-
-			<div class="thinking-loop">
-
-
-				<div class="loop-step">
-
-					<p class="loop-label">
-						01 · Observe
-					</p>
-
-					<h3>
-						When does behavior change?
-					</h3>
-
-					<p>
-						Observe behavior across people, moments,
-						situations, and real-world conditions.
-					</p>
-
-				</div>
-
-
-				<div class="loop-arrow" aria-hidden="true">
-					→
-				</div>
-
-
-				<div class="loop-step">
-
-					<p class="loop-label">
-						02 · Explain
-					</p>
-
-					<h3>
-						What differs between those moments?
-					</h3>
-
-					<p>
-						Examine person-level, contextual, and momentary
-						factors associated with behavioral variation.
-					</p>
-
-				</div>
-
-
-				<div class="loop-arrow" aria-hidden="true">
-					→
-				</div>
-
-
-				<div class="loop-step">
-
-					<p class="loop-label">
-						03 · Intervene
-					</p>
-
-					<h3>
-						What can be changed?
-					</h3>
-
-					<p>
-						Identify modifiable conditions that may help
-						support action when and where it matters.
-					</p>
-
-				</div>
-
-
-				<div class="loop-arrow" aria-hidden="true">
-					→
-				</div>
-
-
-				<div class="loop-step">
-
-					<p class="loop-label">
-						04 · Learn
-					</p>
-
-					<h3>
-						What happened next?
-					</h3>
-
-					<p>
-						Use behavioral response as new information about
-						what may work, for whom, and under which conditions.
-					</p>
-
-				</div>
-
-
-			</div>
-
-
-
-			<p class="loop-note">
-				What works, for whom, when—and what should happen next?
-			</p>
-
-
-		</div>
-
-	</section>
-
-
-
-	<!-- =========================================================
-	     FROM PRACTICE
-	     ========================================================= -->
-
-	<section
-		id="practice"
-		class="wrapper style2 fade-up"
-	>
-
-		<div class="inner">
-
-
-			<h2>
-				From Practice
-			</h2>
-
-
-
-			<div class="practice-story">
-
-				<h3>
-					Behind every behavioral measure is a person.
-				</h3>
-
-				<p>
-					Working directly with children and families taught me
-					to notice what behavioral measures do not always fully
-					capture: effort, hesitation, trust, context, and the
-					significance of small changes in everyday life.
-				</p>
-
-				<p>
-					It keeps my research grounded in a simple principle:
-					measurement matters most when it helps us understand
-					and support behavior in the settings where people live.
-				</p>
-
-			</div>
-
-
-
-			<div class="artwork-section">
-
-
-				<h3>
-					Small Things I Keep With Me
-				</h3>
-
-
-				<p class="artwork-intro">
-					A few artifacts from practice remind me of the
-					everyday moments behind behavioral data.
-				</p>
-
-
-
-				<div class="artwork-grid">
-
-
-					<div class="artwork-card">
-
-						<img
-							src="images/small_1.JPG"
-							alt="A learning activity from behavioral practice"
-						/>
-
-						<div class="artwork-caption">
-
-							<strong>
-								Little Steps
-							</strong>
-							<br />
-
-							From learning individual letters to completing
-							A–Z. Small changes can represent meaningful progress.
-
+	<div id="wrapper">
+		<!-- =========================================================
+		     ABOUT
+		     ========================================================= -->
+		<section
+			id="intro"
+			class="wrapper style1 fullscreen fade-up"
+		>
+			<div class="inner">
+				<div class="about-profile">
+					<div class="profile-top">
+						<div class="profile-photo">
+							<img
+								src="images/profile.jpg"
+								alt="Portrait of Yan Zhu"
+							/>
 						</div>
-
-					</div>
-
-
-
-					<div class="artwork-card">
-
-						<img
-							src="images/small_2.jpg"
-							alt="An everyday activity from behavioral practice"
-						/>
-
-						<div class="artwork-caption">
-
-							<strong>
-								Choosing to Try
-							</strong>
-							<br />
-
-							A reminder that change can begin with becoming
-							willing to approach what was previously avoided.
-
+						<div>
+							<h1 class="profile-name">
+								Yan Zhu
+							</h1>
+							<p class="profile-tagline">
+								Behavioral Science · Data · Practice
+							</p>
+							<p class="profile-location">
+								Irvine, California
+							</p>
 						</div>
-
 					</div>
-
-
-
-					<div class="artwork-card">
-
-						<img
-							src="images/small_3.png"
-							alt="A personal artifact from behavioral practice"
-						/>
-
-						<div class="artwork-caption">
-
+					<div class="profile-summary">
+						<h2>
+							I study when and under what conditions
+							behavioral capacity becomes action.
+						</h2>
+						<p>
+							My interests sit at the intersection of behavioral science,
+							longitudinal data, and real-world intervention. I study how
+							behavior changes across people, moments, and contexts—and
+							how those patterns can inform better support.
+						</p>
+						<p>
+							Across my research and applied work, I keep returning to
+							one question:
 							<strong>
-								The Human Side
+								What helps people translate what they can do
+								into what they actually do when it matters?
 							</strong>
-							<br />
-
-							Some parts of progress are easier to measure
-							than others. Trust and shared experience matter too.
-
-						</div>
-
+						</p>
 					</div>
-
-
-				</div>
-
-
-				<!--
-					Only uncomment after confirming appropriate permission
-					and privacy requirements for public display.
-
-					<p class="small-note">
-						Selected artifacts displayed with permission.
-						Identifying information has been removed.
-					</p>
-				-->
-
-
-			</div>
-
-
-		</div>
-
-	</section>
-
-
-
-	<!-- =========================================================
-	     CURRENT DIRECTIONS
-	     ========================================================= -->
-
-	<section
-		id="directions"
-		class="wrapper style1 fade-up"
-	>
-
-		<div class="inner">
-
-
-			<h2>
-				Current Directions
-			</h2>
-
-
-			<p class="section-intro">
-				I am interested in connecting behavioral measurement
-				with intervention: understanding when action changes,
-				which conditions are modifiable, and how support can
-				respond to that information.
-			</p>
-
-
-
-			<div class="direction-grid">
-
-
-				<div class="direction-card">
-
-					<h3>
-						Within-Person Variation
-					</h3>
-
-					<p>
-						Studying how behavior changes within the same person
-						across moments, settings, and changing conditions.
-					</p>
-
-				</div>
-
-
-
-				<div class="direction-card">
-
-					<h3>
-						Modifiable Conditions
-					</h3>
-
-					<p>
-						Distinguishing factors that describe behavior from
-						conditions that may provide useful targets for change.
-					</p>
-
-				</div>
-
-
-
-				<div class="direction-card">
-
-					<h3>
-						Adaptive Support
-					</h3>
-
-					<p>
-						Exploring how behavioral data can inform support
-						that responds to when, where, and for whom it is useful.
-					</p>
-
-				</div>
-
-
-			</div>
-
-
-
-			<div
-				class="vision-sequence"
-				aria-label="Research direction sequence"
-			>
-
-				<span>
-					Observe behavior
-				</span>
-
-				<span>
-					Identify variation
-				</span>
-
-				<span>
-					Understand context
-				</span>
-
-				<span>
-					Identify modifiable conditions
-				</span>
-
-				<span>
-					Inform support
-				</span>
-
-				<span>
-					Learn from response
-				</span>
-
-			</div>
-
-
-
-			<div class="vision-principle">
-
-				<p>
-					The goal belongs to the person.
-					The science helps make change more achievable.
-				</p>
-
-			</div>
-
-
-
-			<div class="closing-statement">
-
-
-				<h3>
-					Research should eventually return to real life.
-				</h3>
-
-
-				<p>
-					I am interested in research that moves in both directions:
-					from real-world behavior to better scientific questions,
-					and from evidence back to interventions, tools, and systems
-					that people can actually use.
-				</p>
-
-
-			</div>
-
-
-		</div>
-
-	</section>
-
-
-
-	<!-- =========================================================
-	     CV & CONTACT
-	     ========================================================= -->
-
-	<section
-		id="contact"
-		class="wrapper style3 fade-up"
-	>
-
-		<div class="inner">
-
-
-			<h2>
-				CV & Contact
-			</h2>
-
-
-
-			<div class="split style1">
-
-
-				<section>
-
-
-					<h3>
-						Curriculum Vitae
-					</h3>
-
-
-					<p>
-						Research, training, methods, and applied experience.
-					</p>
-
-
-
 					<ul class="actions">
-
 						<li>
-
 							<a
-								href="/assets/Academic_CV_Sep2026.pdf"
-								class="button primary"
-								target="_blank"
-								rel="noopener noreferrer"
+								href="#question"
+								class="button scrolly"
 							>
-								View Academic CV
+								Explore My Research
 							</a>
-
 						</li>
-
-					</ul>
-
-
-				</section>
-
-
-
-				<section>
-
-
-					<ul class="contact">
-
-
 						<li>
-
-							<h3>
-								Email
-							</h3>
-
-							<a href="mailto:zhuyanseattle@gmail.com">
-								zhuyanseattle@gmail.com
+							<a
+								href="#contact"
+								class="button scrolly"
+							>
+								View CV
 							</a>
-
 						</li>
-
-
-
-						<li>
-
-							<h3>
-								Professional Links
-							</h3>
-
-
-
-							<ul class="icons">
-
-
-								<li>
-
-									<a
-										href="https://github.com/zhuyan-3"
-										class="icon brands fa-github"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-
-										<span class="label">
-											GitHub
-										</span>
-
-									</a>
-
-								</li>
-
-
-
-								<li>
-
-									<a
-										href="https://linkedin.com/in/zhuyan3"
-										class="icon brands fa-linkedin-in"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-
-										<span class="label">
-											LinkedIn
-										</span>
-
-									</a>
-
-								</li>
-
-
-							</ul>
-
-						</li>
-
-
 					</ul>
-
-
-				</section>
-
-
+				</div>
 			</div>
-
-
-		</div>
-
-	</section>
-
-
-</div>
-
-
-
-<!-- =========================================================
-     FOOTER
-     ========================================================= -->
-
-<footer
-	id="footer"
-	class="wrapper style1-alt"
->
-
-	<div class="inner">
-
-		<ul class="menu">
-
-			<li>
-				&copy; Yan Zhu. All rights reserved.
-			</li>
-
-			<li>
-				Design:
-				<a href="https://html5up.net">
-					HTML5 UP
-				</a>
-			</li>
-
-		</ul>
-
+		</section>
+		<!-- =========================================================
+		     RESEARCH QUESTIONS
+		     ========================================================= -->
+		<section
+			id="question"
+			class="wrapper style2 fade-up"
+		>
+			<div class="inner">
+				<h2>
+					Research Questions
+				</h2>
+				<p class="section-intro">
+					I am interested in the gap between capacity and action:
+					why behavior changes across situations, what shapes those
+					changes, and which conditions may be modifiable.
+				</p>
+				<div class="question-box">
+					<p>
+						When and under what conditions does existing
+						behavioral capacity translate into action
+						in everyday life?
+					</p>
+				</div>
+				<div class="journey">
+					<div class="journey-item">
+						<p class="journey-label">
+							VARIATION
+						</p>
+						<h3>
+							Why does behavior change across people and moments?
+						</h3>
+						<p>
+							Behavior reflects interacting histories, environments,
+							individual differences, and current conditions.
+							I am especially interested in what changes within the
+							same person across situations and over time.
+						</p>
+					</div>
+					<div class="journey-item">
+						<p class="journey-label">
+							IMPLEMENTATION
+						</p>
+						<h3>
+							When does knowing or being able to do something
+							become doing it?
+						</h3>
+						<p>
+							Having a skill, strategy, or resource does not guarantee
+							that it will be used. I study the conditions associated
+							with whether existing capacities are expressed when
+							and where they matter.
+						</p>
+					</div>
+					<div class="journey-item">
+						<p class="journey-label">
+							MEASUREMENT
+						</p>
+						<h3>
+							How can behavioral data capture meaningful change?
+						</h3>
+						<p>
+							Longitudinal and real-world behavioral data make it
+							possible to study variation that averages can hide.
+							Measurement shapes which patterns we are able to see.
+						</p>
+					</div>
+					<div class="journey-item">
+						<p class="journey-label">
+							INTERVENTION
+						</p>
+						<h3>
+							Which conditions can be changed?
+						</h3>
+						<p>
+							Understanding behavior becomes most useful when it
+							helps identify modifiable conditions and informs
+							support that can respond to people and contexts
+							as they change.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- =========================================================
+		     SELECTED WORK
+		     ========================================================= -->
+		<section
+			id="work"
+			class="wrapper style3 fade-up"
+		>
+			<div class="inner">
+				<h2>
+					Selected Work
+				</h2>
+				<p class="section-intro">
+					My projects span different behaviors and settings, but each
+					has shaped how I think about behavioral variation,
+					implementation, and measurement.
+				</p>
+				<div class="work-grid">
+					<div class="work-card">
+						<p class="work-label">
+							Independent Research · 2026–Present
+						</p>
+						<h3>
+							When does having a strategy become using it?
+						</h3>
+						<p>
+							I use daily behavioral data to study protective
+							behavioral strategies during real-world drinking
+							occasions, with particular attention to variation
+							within the same person across occasions.
+						</p>
+						<p class="next-question">
+							<strong>What it made me ask next:</strong><br />
+							What changes between moments when a strategy is
+							available and moments when it is actually used?
+						</p>
+						<p class="methods">
+							R · Longitudinal Data · Multilevel Models · Ordinal Models
+						</p>
+					</div>
+					<div class="work-card">
+						<p class="work-label">
+							Addiction Research · 2024
+						</p>
+						<h3>
+							What disappears when we reduce behavior
+							to an average?
+						</h3>
+						<p>
+							Working with intensive longitudinal alcohol-use data
+							showed me how much behavior can vary within the same
+							person across days and situations.
+						</p>
+						<p class="next-question">
+							<strong>What it made me ask next:</strong><br />
+							Can moment-to-moment variation tell us when support
+							may be most useful?
+						</p>
+						<p class="methods">
+							Ecological Momentary Assessment · Intensive Longitudinal Data
+						</p>
+					</div>
+					<div class="work-card">
+						<p class="work-label">
+							Graduate Capstone · 2023
+						</p>
+						<h3>
+							Why does access not guarantee engagement?
+						</h3>
+						<p>
+							I studied engagement with a digital mindfulness
+							intervention using process-mining methods, examining
+							how participants moved through and used an available
+							behavioral resource.
+						</p>
+						<p class="next-question">
+							<strong>What it made me ask next:</strong><br />
+							Can patterns of engagement help systems respond
+							more effectively over time?
+						</p>
+						<p class="methods">
+							Python · Process Mining · Digital Behavioral Data
+						</p>
+					</div>
+					<div class="work-card">
+						<p class="work-label">
+							PIVOT Lab · 2023–2024
+						</p>
+						<h3>
+							How does measurement shape the behavior
+							we think we see?
+						</h3>
+						<p>
+							Working with behavioral and survey data made
+							measurement itself part of the research problem.
+							Analytical choices determine which forms of variation
+							remain visible in a model.
+						</p>
+						<p class="next-question">
+							<strong>What it made me ask next:</strong><br />
+							How can we represent behavioral variation without
+							losing what makes it meaningful?
+						</p>
+						<p class="methods">
+							R · Data Cleaning · Statistical Modeling · Behavioral Measurement
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- =========================================================
+		     RESEARCH APPROACH
+		     ========================================================= -->
+		<section
+			id="thinking"
+			class="wrapper style1 fade-up"
+		>
+			<div class="inner">
+				<h2>
+					Research Approach
+				</h2>
+				<p class="section-intro">
+					I approach behavior as something that changes across
+					people, moments, environments, and histories.
+					That makes variation part of the signal—not simply noise.
+				</p>
+				<div class="thinking-loop">
+					<div class="loop-step">
+						<p class="loop-label">
+							01 · Observe
+						</p>
+						<h3>
+							When does behavior change?
+						</h3>
+						<p>
+							Observe behavior across people, moments,
+							situations, and real-world conditions.
+						</p>
+					</div>
+					<div class="loop-arrow" aria-hidden="true">
+						→
+					</div>
+					<div class="loop-step">
+						<p class="loop-label">
+							02 · Explain
+						</p>
+						<h3>
+							What differs between those moments?
+						</h3>
+						<p>
+							Examine person-level, contextual, and momentary
+							factors associated with behavioral variation.
+						</p>
+					</div>
+					<div class="loop-arrow" aria-hidden="true">
+						→
+					</div>
+					<div class="loop-step">
+						<p class="loop-label">
+							03 · Intervene
+						</p>
+						<h3>
+							What can be changed?
+						</h3>
+						<p>
+							Identify modifiable conditions that may help
+							support action when and where it is needed.
+						</p>
+					</div>
+					<div class="loop-arrow" aria-hidden="true">
+						→
+					</div>
+					<div class="loop-step">
+						<p class="loop-label">
+							04 · Learn
+						</p>
+						<h3>
+							What happened next?
+						</h3>
+						<p>
+							Use behavioral response as new information about
+							what may work, for whom, and under which conditions.
+						</p>
+					</div>
+				</div>
+				<p class="loop-note">
+					Observe → Explain → Intervene → Learn
+				</p>
+			</div>
+		</section>
+		<!-- =========================================================
+		     FROM PRACTICE
+		     ========================================================= -->
+		<section
+			id="practice"
+			class="wrapper style2 fade-up"
+		>
+			<div class="inner">
+				<h2>
+					From Practice
+				</h2>
+				<div class="practice-story">
+					<h3>
+						Behind every behavioral measure is a person.
+					</h3>
+					<p>
+						Working directly with children and families taught me
+						that behavior observed in everyday life is shaped by
+						more than whether someone has learned a skill.
+						Demands, environments, support, prior learning, and
+						current conditions all matter.
+					</p>
+					<p>
+						It also keeps my research grounded in a simple principle:
+						behavioral evidence should eventually be useful to the
+						people and settings from which it comes.
+					</p>
+				</div>
+				<div class="artwork-section">
+					<h3>
+						Small Things I Keep With Me
+					</h3>
+					<p class="artwork-intro">
+						A few artifacts from practice remind me of the
+						everyday moments behind behavioral measurements.
+					</p>
+					<div class="artwork-grid">
+						<div class="artwork-card">
+							<img
+								src="images/small_1.JPG"
+								alt="A child and behavioral technician holding an A-to-Z tracing project"
+							/>
+							<div class="artwork-caption">
+								<strong>
+									Little Steps
+								</strong>
+								<br />
+								From learning individual letters to completing
+								A–Z. A small milestone, but a meaningful one.
+							</div>
+						</div>
+						<div class="artwork-card">
+							<img
+								src="images/small_2.jpg"
+								alt="A child exploring an everyday activity"
+							/>
+							<div class="artwork-caption">
+								<strong>
+									Choosing to Try
+								</strong>
+								<br />
+								A reminder that change can begin with becoming
+								willing to approach something previously avoided.
+							</div>
+						</div>
+						<div class="artwork-card">
+							<img
+								src="images/small_3.png"
+								alt="A birthday card received from a family"
+							/>
+							<div class="artwork-caption">
+								<strong>
+									The Human Side
+								</strong>
+								<br />
+								Some parts of progress are easier to measure
+								than others. Trust, connection, and shared
+								experience matter too.
+							</div>
+						</div>
+					</div>
+					<!--
+						Only uncomment after confirming appropriate permission
+						and privacy requirements for public display.
+						<p class="small-note">
+							Selected artifacts displayed with permission.
+							Identifying information has been removed.
+						</p>
+					-->
+				</div>
+			</div>
+		</section>
+		<!-- =========================================================
+		     CURRENT DIRECTIONS
+		     ========================================================= -->
+		<section
+			id="future"
+			class="wrapper style1 fade-up"
+		>
+			<div class="inner">
+				<h2>
+					Current Directions
+				</h2>
+				<div class="future-text">
+					<h3>
+						From behavioral variation to adaptive support.
+					</h3>
+					<p>
+						I am currently interested in how longitudinal and
+						real-world behavioral data can help identify when
+						existing capacities are—or are not—translated into
+						action.
+					</p>
+					<p>
+						The next step is to understand which of those conditions
+						are meaningful and modifiable, and how that information
+						can inform interventions that respond more effectively
+						to changing people, moments, and contexts.
+					</p>
+				</div>
+				<div class="vision-block">
+					<div
+						class="vision-sequence"
+						aria-label="Research direction sequence"
+					>
+						<span>
+							Observe behavior
+						</span>
+						<span>
+							Identify variation
+						</span>
+						<span>
+							Understand context
+						</span>
+						<span>
+							Identify modifiable factors
+						</span>
+						<span>
+							Inform support
+						</span>
+						<span>
+							Learn from response
+						</span>
+					</div>
+					<div class="vision-principle">
+						<p>
+							The goal belongs to the person.
+							The science helps make change more achievable.
+						</p>
+					</div>
+					<p>
+						The behaviors, populations, and settings may differ.
+						The underlying challenge remains similar:
+						understanding how behavioral capacity becomes action
+						under changing real-world conditions.
+					</p>
+				</div>
+				<div class="closing-statement">
+					<h3>
+						Research should eventually return to real life.
+					</h3>
+					<p>
+						I want to build a research program that moves in both
+						directions: from real-world behavior to better scientific
+						questions, and from evidence back to interventions,
+						tools, and systems that people can actually use.
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- =========================================================
+		     CV & CONTACT
+		     ========================================================= -->
+		<section
+			id="contact"
+			class="wrapper style3 fade-up"
+		>
+			<div class="inner">
+				<h2>
+					CV & Contact
+				</h2>
+				<div class="split style1">
+					<section>
+						<h3>
+							Curriculum Vitae
+						</h3>
+						<p>
+							Research, training, methods, and applied experience.
+						</p>
+						<ul class="actions">
+							<li>
+								<a
+									href="/assets/Academic_CV_Sep2026.pdf"
+									class="button primary"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									View Academic CV
+								</a>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<ul class="contact">
+							<li>
+								<h3>
+									Email
+								</h3>
+								<a href="mailto:zhuyanseattle@gmail.com">
+									zhuyanseattle@gmail.com
+								</a>
+							</li>
+							<li>
+								<h3>
+									Professional Links
+								</h3>
+								<ul class="icons">
+									<li>
+										<a
+											href="https://github.com/zhuyan-3"
+											class="icon brands fa-github"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<span class="label">
+												GitHub
+											</span>
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://linkedin.com/in/zhuyan3"
+											class="icon brands fa-linkedin-in"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<span class="label">
+												LinkedIn
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</section>
 	</div>
-
-</footer>
-
-
-
-<!-- =========================================================
-     SCRIPTS
-     ========================================================= -->
-
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+	<!-- =========================================================
+	     FOOTER
+	     ========================================================= -->
+	<footer
+		id="footer"
+		class="wrapper style1-alt"
+	>
+		<div class="inner">
+			<ul class="menu">
+				<li>
+					&copy; Yan Zhu. All rights reserved.
+				</li>
+				<li>
+					Design:
+					<a href="https://html5up.net">
+						HTML5 UP
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<!-- =========================================================
+	     SCRIPTS
+	     ========================================================= -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
