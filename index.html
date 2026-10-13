@@ -139,11 +139,12 @@
 		#sidebar nav a:before {
 			background: rgba(71, 118, 155, 0.35);
 		}
-		
+
 		#sidebar nav a:after {
 			background-image: none;
 			background: var(--yellow);
 		}
+
 
 		/* =========================================================
 		   SECTION COLORS
@@ -243,7 +244,7 @@
 		/* =========================================================
 		   ABOUT ACTIONS
 		   ========================================================= */
-		
+
 		.about-actions {
 			display: flex;
 			align-items: center;
@@ -251,78 +252,62 @@
 			gap: 0.75rem;
 			margin-top: 1.8rem;
 		}
-		
+
 		#intro .button.about-action {
 			margin: 0;
 			text-align: center;
 		}
-		
-		
+
+
 		/* View CV — Primary Blue */
-		
+
 		#intro .button.about-cv {
 			min-width: 165px;
 			background: var(--blue) !important;
 			color: #FFFFFF !important;
 			box-shadow: none !important;
 		}
-		
+
 		#intro .button.about-cv:hover {
 			background: var(--navy) !important;
 			color: #FFFFFF !important;
 		}
-		
-		
+
+
 		/* LinkedIn — Warm White */
-		
+
 		#intro .button.about-linkedin {
 			min-width: 132px;
 			background: var(--white) !important;
 			color: var(--navy) !important;
-		
+
 			box-shadow:
 				inset 0 0 0 1.5px var(--blue) !important;
 		}
-		
+
 		#intro .button.about-linkedin:hover {
 			background: var(--blue-light) !important;
 			color: var(--navy) !important;
 		}
-		
-		
+
+
 		/* Email — Soft Sage */
-		
+
 		#intro .button.about-email {
 			min-width: 120px;
 			background: var(--sage-light) !important;
 			color: var(--sage-dark) !important;
-		
+
 			box-shadow:
 				inset 0 0 0 1.5px var(--sage) !important;
 		}
-		
+
 		#intro .button.about-email:hover {
 			background: var(--sage) !important;
 			color: #FFFFFF !important;
 		}
-		
-		/* Mobile */
-		
-		@media screen and (max-width: 736px) {
-		
-			.about-actions {
-				align-items: stretch;
-				gap: 0.65rem;
-			}
-		
-			#intro .button.about-cv,
-			#intro .button.about-linkedin,
-			#intro .button.about-email {
-				min-width: 0;
-			}
-		
-		}
-		
+
+
 		/* =========================================================
 		   GENERAL
 		   ========================================================= */
@@ -443,8 +428,28 @@
 				0 12px 34px rgba(23, 50, 77, 0.08);
 		}
 
+
+		/*
+		   Current independent research is the central project.
+		   PIVOT anchors the methodological foundation.
+		*/
+
+		.work-card:first-child,
+		.work-card:last-child {
+			grid-column: 1 / -1;
+		}
+
 		.work-card:first-child {
-			border-top: 4px solid var(--blue);
+			border-top: 5px solid var(--blue);
+			padding: 2rem;
+		}
+
+		.work-card:first-child h3 {
+			font-size: 1.35rem;
+		}
+
+		.work-card:first-child p {
+			max-width: 820px;
 		}
 
 		.work-card:nth-child(2) {
@@ -816,6 +821,11 @@
 				grid-template-columns: 1fr;
 			}
 
+			.work-card:first-child,
+			.work-card:last-child {
+				grid-column: auto;
+			}
+
 			.thinking-loop {
 				grid-template-columns: 1fr;
 			}
@@ -825,8 +835,15 @@
 			}
 
 			.about-actions {
+				align-items: stretch;
 				flex-wrap: wrap;
-				gap: 0.85rem;
+				gap: 0.65rem;
+			}
+
+			#intro .button.about-cv,
+			#intro .button.about-linkedin,
+			#intro .button.about-email {
+				min-width: 0;
 			}
 
 		}
@@ -949,16 +966,16 @@
 					<div class="profile-summary">
 
 						<h2>
-							I study when and under what conditions
-							what people are capable of doing becomes
-							what they actually do.
+							I study the gap between what people can do
+							and what they actually do.
 						</h2>
 
 						<p>
-							My work brings together behavioral science,
-							longitudinal data, and applied practice to understand
-							how behavior changes across people, moments, and
-							real-world contexts.
+							When people already have a skill, strategy, or capacity,
+							why does it translate into action in some moments but not others?
+							I use longitudinal behavioral data to study the individual
+							and contextual conditions that shape this gap—and which of
+							those conditions may be modifiable.
 						</p>
 
 						<p>
@@ -975,7 +992,7 @@
 
 
 					<div class="about-actions">
-					
+
 						<a
 							href="/assets/Academic_CV_Sep2026.pdf"
 							class="button about-action about-cv"
@@ -984,7 +1001,7 @@
 						>
 							View CV
 						</a>
-					
+
 						<a
 							href="https://linkedin.com/in/zhuyan3"
 							class="button about-action about-linkedin"
@@ -993,14 +1010,14 @@
 						>
 							LinkedIn
 						</a>
-					
+
 						<a
 							href="mailto:zhuyanseattle@gmail.com"
 							class="button about-action about-email"
 						>
 							Email
 						</a>
-					
+
 					</div>
 
 
@@ -1367,7 +1384,7 @@
 					<div class="loop-step">
 
 						<p class="loop-label">
-							02 · Explain
+							02 · Model
 						</p>
 
 						<h3>
@@ -1375,8 +1392,9 @@
 						</h3>
 
 						<p>
-							Examine person-level, contextual, and momentary
-							factors associated with behavioral variation.
+							Model within-person variation and examine
+							individual, contextual, and momentary factors
+							associated with behavioral change.
 						</p>
 
 					</div>
@@ -1390,16 +1408,17 @@
 					<div class="loop-step">
 
 						<p class="loop-label">
-							03 · Intervene
+							03 · Test
 						</p>
 
 						<h3>
-							What can be changed?
+							Which conditions actually matter?
 						</h3>
 
 						<p>
-							Identify modifiable conditions that may help
-							support action when and where it is needed.
+							Test which factors are meaningfully associated
+							with action and which may be modifiable through
+							behavioral support.
 						</p>
 
 					</div>
@@ -1413,16 +1432,17 @@
 					<div class="loop-step">
 
 						<p class="loop-label">
-							04 · Learn
+							04 · Adapt
 						</p>
 
 						<h3>
-							What happened next?
+							What should change next?
 						</h3>
 
 						<p>
-							Use behavioral response as new information about
-							what may work, for whom, and under which conditions.
+							Use behavioral response as new information
+							to refine when, where, and how support
+							may be most useful.
 						</p>
 
 					</div>
@@ -1598,20 +1618,15 @@
 				<div class="future-text">
 
 					<h3>
-						From behavioral variation to adaptive support.
+						From understanding behavioral variation
+						to adaptive intervention.
 					</h3>
 
 					<p>
-						I am interested in how longitudinal and real-world
-						behavioral data can help identify when existing
-						capacities translate into action and when they do not.
-					</p>
-
-					<p>
-						The next step is to understand which conditions are
-						meaningful and modifiable, and how that information
-						can inform support that responds more effectively
-						to changing people, moments, and contexts.
+						I want to develop methods for identifying when
+						existing capacities are unlikely to translate into action,
+						which modifiable conditions contribute to those moments,
+						and when support may be most useful.
 					</p>
 
 				</div>
@@ -1630,19 +1645,15 @@
 						</span>
 
 						<span>
-							Identify variation
+							Detect meaningful variation
 						</span>
 
 						<span>
-							Understand context
+							Identify modifiable conditions
 						</span>
 
 						<span>
-							Identify modifiable factors
-						</span>
-
-						<span>
-							Inform support
+							Inform adaptive support
 						</span>
 
 						<span>
@@ -1662,14 +1673,6 @@
 					</div>
 
 
-					<p>
-						The behaviors, populations, and settings may differ.
-						The underlying challenge remains similar:
-						understanding how behavioral capacity becomes action
-						under changing real-world conditions.
-					</p>
-
-
 				</div>
 
 
@@ -1682,8 +1685,8 @@
 					<p>
 						I want my work to move in both directions:
 						from real-world behavior to better scientific questions,
-						and from evidence back to interventions, tools, and
-						systems that people can actually use.
+						and from evidence back to interventions, tools, and systems
+						that people can actually use.
 					</p>
 
 				</div>
