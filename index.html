@@ -245,31 +245,74 @@
 			display: flex;
 			align-items: center;
 			flex-wrap: wrap;
-			gap: 0.8rem;
+			gap: 0.75rem;
 			margin-top: 1.8rem;
 		}
 		
 		#intro .button.about-action {
-			background: var(--blue) !important;
-			color: #FFFFFF !important;
-			box-shadow: none !important;
 			margin: 0;
-			min-width: 145px;
 			text-align: center;
 		}
 		
-		#intro .button.about-action:hover {
+		
+		/* View CV — Primary Blue */
+		
+		#intro .button.about-cv {
+			min-width: 165px;
+			background: var(--blue) !important;
+			color: #FFFFFF !important;
+			box-shadow: none !important;
+		}
+		
+		#intro .button.about-cv:hover {
 			background: var(--navy) !important;
 			color: #FFFFFF !important;
 		}
+		
+		
+		/* LinkedIn — Navy Outline */
+		
+		#intro .button.about-linkedin {
+			min-width: 140px;
+			background: transparent !important;
+			color: var(--navy) !important;
+			box-shadow:
+				inset 0 0 0 1.5px var(--navy) !important;
+		}
+		
+		#intro .button.about-linkedin:hover {
+			background: var(--blue-light) !important;
+			color: var(--navy) !important;
+		}
+		
+		
+		/* Email — Sage */
+		
+		#intro .button.about-email {
+			min-width: 140px;
+			background: var(--sage) !important;
+			color: #FFFFFF !important;
+			box-shadow: none !important;
+		}
+		
+		#intro .button.about-email:hover {
+			background: var(--sage-dark) !important;
+			color: #FFFFFF !important;
+		}
+		
+		
+		/* Mobile */
 		
 		@media screen and (max-width: 736px) {
 		
 			.about-actions {
 				align-items: stretch;
+				gap: 0.65rem;
 			}
 		
-			#intro .button.about-action {
+			#intro .button.about-cv,
+			#intro .button.about-linkedin,
+			#intro .button.about-email {
 				min-width: 0;
 			}
 		
@@ -930,7 +973,7 @@
 					
 						<a
 							href="/assets/Academic_CV_Sep2026.pdf"
-							class="button about-action"
+							class="button about-action about-cv"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -938,19 +981,19 @@
 						</a>
 					
 						<a
-							href="mailto:zhuyanseattle@gmail.com"
-							class="button about-action"
-						>
-							Email
-						</a>
-					
-						<a
 							href="https://linkedin.com/in/zhuyan3"
-							class="button about-action"
+							class="button about-action about-linkedin"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							LinkedIn
+						</a>
+					
+						<a
+							href="mailto:zhuyanseattle@gmail.com"
+							class="button about-action about-email"
+						>
+							Email
 						</a>
 					
 					</div>
