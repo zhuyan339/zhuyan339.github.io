@@ -336,78 +336,176 @@
 
 		.patterns-opening {
 			max-width: 790px;
-			margin-bottom: 2.8rem;
+			margin-bottom: 3rem;
 		}
 
 		.patterns-opening h3 {
 			font-size: 1.45rem;
 			line-height: 1.45;
+			margin-bottom: 0.8rem;
 		}
 
-		.patterns-grid {
+		.patterns-opening p {
+			max-width: 740px;
+			color: var(--muted) !important;
+		}
+
+
+		/* Narrative sequence */
+
+		.patterns-path {
+			max-width: 900px;
+			position: relative;
+		}
+
+		.pattern-step {
 			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			gap: 1.25rem;
+			grid-template-columns: 82px 1fr;
+			gap: 1.45rem;
+			position: relative;
+			padding-bottom: 2.7rem;
 		}
 
-		.pattern-card {
-			background: var(--ivory);
-			border: 1px solid var(--border);
-			border-radius: 1.1rem;
-			padding: 1.65rem;
-
-			box-shadow:
-				0 7px 26px rgba(23, 50, 77, 0.04);
-
-			transition:
-				transform 0.2s ease,
-				box-shadow 0.2s ease;
+		.pattern-step:last-child {
+			padding-bottom: 0;
 		}
 
-		.pattern-card:hover {
-			transform: translateY(-3px);
 
-			box-shadow:
-				0 11px 32px rgba(23, 50, 77, 0.075);
+		/* Vertical line */
+
+		.pattern-step:not(:last-child):before {
+			content: "";
+			position: absolute;
+			left: 28px;
+			top: 44px;
+			bottom: 0;
+			width: 1px;
+			background: var(--border);
 		}
 
-		.pattern-card:nth-child(1) {
-			border-top: 4px solid var(--blue);
+
+		/* Number */
+
+		.pattern-number {
+			position: relative;
+			z-index: 1;
+
+			width: 57px;
+			height: 57px;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			border-radius: 50%;
+
+			background: var(--white);
+			border: 1.5px solid var(--blue);
+
+			color: var(--blue);
+			font-size: 0.76rem;
+			font-weight: 700;
+			letter-spacing: 0.08em;
 		}
 
-		.pattern-card:nth-child(2) {
-			border-top: 4px solid var(--sage);
+		.pattern-step:nth-child(2) .pattern-number {
+			border-color: var(--sage);
+			color: var(--sage-dark);
 		}
 
-		.pattern-card:nth-child(3) {
-			border-top: 4px solid var(--yellow);
+		.pattern-step:nth-child(3) .pattern-number {
+			border-color: var(--yellow);
+			color: #9B7B22;
 		}
 
-		.pattern-card:nth-child(4) {
-			border-top: 4px solid #89AABD;
+		.pattern-step:nth-child(4) .pattern-number {
+			border-color: #89AABD;
+			color: var(--blue);
 		}
 
-		.pattern-label {
-			font-size: 0.72rem !important;
+		.pattern-step:nth-child(5) .pattern-number {
+			background: var(--navy);
+			border-color: var(--navy);
+			color: #FFFFFF;
+		}
+
+
+		/* Content */
+
+		.pattern-content {
+			padding-top: 0.15rem;
+		}
+
+		.pattern-meta {
+			margin: 0 0 0.35rem 0 !important;
+
+			font-size: 0.71rem !important;
+			font-weight: 700;
 			text-transform: uppercase;
-			letter-spacing: 0.09em;
-			color: var(--blue) !important;
-			margin-bottom: 0.45rem !important;
+			letter-spacing: 0.1em;
+
+			color: var(--sage-dark) !important;
 		}
 
-		.pattern-card h3 {
-			margin-bottom: 0.7rem;
+		.pattern-content h3 {
+			font-size: 1.2rem;
+			line-height: 1.4;
+			margin-bottom: 0.65rem;
 		}
 
-		.pattern-card p {
+		.pattern-content > p:not(.pattern-meta):not(.pattern-takeaway) {
+			max-width: 760px;
+			margin-bottom: 0.8rem;
+
 			font-size: 0.94rem !important;
-			margin-bottom: 0;
+			line-height: 1.7 !important;
 		}
+
+
+		/* Short reflection */
+
+		.pattern-takeaway {
+			display: inline-block;
+
+			max-width: 760px;
+			margin: 0.15rem 0 0 0 !important;
+			padding: 0.7rem 0.95rem;
+
+			border-left: 3px solid var(--blue);
+			background: var(--blue-light);
+
+			color: var(--navy) !important;
+			font-size: 0.92rem !important;
+			font-weight: 600;
+			line-height: 1.6 !important;
+		}
+
+		.pattern-step:nth-child(2) .pattern-takeaway {
+			border-left-color: var(--sage);
+			background: var(--sage-light);
+		}
+
+		.pattern-step:nth-child(3) .pattern-takeaway {
+			border-left-color: var(--yellow);
+			background: var(--yellow-light);
+		}
+
+		.pattern-step:nth-child(4) .pattern-takeaway {
+			border-left-color: #89AABD;
+		}
+
+		.pattern-step:nth-child(5) .pattern-takeaway {
+			border-left-color: var(--navy);
+		}
+
+
+		/* Closing reflection */
 
 		.pattern-reflection {
 			max-width: 850px;
-			margin-top: 2.3rem;
-			padding: 1.5rem 1.65rem;
+			margin-top: 3rem;
+			padding: 1.6rem 1.75rem;
+
 			background: var(--blue-light);
 			border-radius: 1rem;
 		}
@@ -415,7 +513,48 @@
 		.pattern-reflection p {
 			margin: 0;
 			color: var(--navy) !important;
-			font-size: 1.05rem !important;
+			font-size: 1.02rem !important;
+			line-height: 1.7 !important;
+		}
+
+		.pattern-reflection strong {
+			font-weight: 700;
+		}
+
+
+		/* Mobile */
+
+		@media screen and (max-width: 736px) {
+
+			.patterns-path {
+				max-width: 100%;
+			}
+
+			.pattern-step {
+				grid-template-columns: 52px 1fr;
+				gap: 0.9rem;
+				padding-bottom: 2.25rem;
+			}
+
+			.pattern-number {
+				width: 43px;
+				height: 43px;
+				font-size: 0.68rem;
+			}
+
+			.pattern-step:not(:last-child):before {
+				left: 21px;
+				top: 38px;
+			}
+
+			.pattern-content h3 {
+				font-size: 1.08rem;
+			}
+
+			.pattern-takeaway {
+				display: block;
+			}
+
 		}
 
 
@@ -953,6 +1092,9 @@
 		<!-- =========================================================
 		     PATTERNS IN MOTION
 		     ========================================================= -->
+		<!-- =========================================================
+		     PATTERNS IN MOTION
+		     ========================================================= -->
 
 		<section
 			id="patterns"
@@ -973,96 +1115,208 @@
 				<div class="patterns-opening">
 
 					<h3>
-						Different questions. Different settings.
-						A few patterns kept returning.
+						The questions became clearer as the view changed.
 					</h3>
 
 					<p>
-						My interests did not develop along a single planned path.
-						Research, data, practice, and attempts to bring behavioral
-						support into new settings each changed what I noticed and
-						what I wanted to ask next.
+						I began in psychology curious about how people think,
+						feel, and respond. Research offered different ways of
+						observing those experiences; practice eventually brought
+						me closer to behavior as it unfolded.
 					</p>
 
 				</div>
 
 
-				<div class="patterns-grid">
+				<div class="patterns-path">
 
 
-					<div class="pattern-card">
+					<!-- 01 · Psychology -->
 
-						<p class="pattern-label">
-							MEASUREMENT
-						</p>
+					<div class="pattern-step">
 
-						<h3>
-							What do our measures allow us to see?
-						</h3>
+						<div class="pattern-number">
+							01
+						</div>
 
-						<p>
-							Working with behavioral and survey data made measurement
-							part of the question itself. Analytical choices shape
-							which forms of variation remain visible.
-						</p>
+						<div class="pattern-content">
 
-					</div>
+							<p class="pattern-meta">
+								Psychology · Youth & Society · Philosophy
+							</p>
 
+							<h3>
+								People, before variables.
+							</h3>
 
-					<div class="pattern-card">
+							<p>
+								Psychology was my starting point: a broad curiosity
+								about how people think, feel, and respond to the world
+								around them. Youth & Society and Philosophy widened
+								that curiosity toward development, social context,
+								and human agency.
+							</p>
 
-						<p class="pattern-label">
-							VARIATION
-						</p>
+							<p class="pattern-takeaway">
+								There were many ways to understand a person,
+								and I was still exploring which questions mattered
+								most to me.
+							</p>
 
-						<h3>
-							The same person is not the same data point every day.
-						</h3>
-
-						<p>
-							Intensive longitudinal work made within-person variation
-							hard to ignore. Behavior changes across moments,
-							situations, and everyday conditions.
-						</p>
-
-					</div>
-
-
-					<div class="pattern-card">
-
-						<p class="pattern-label">
-							ENGAGEMENT
-						</p>
-
-						<h3>
-							Access does not guarantee use.
-						</h3>
-
-						<p>
-							Studying engagement with a digital mindfulness
-							intervention sharpened a recurring question:
-							having a resource available does not mean it will
-							be used when it matters.
-						</p>
+						</div>
 
 					</div>
 
 
-					<div class="pattern-card">
+					<!-- 02 · ARC + PIVOT -->
 
-						<p class="pattern-label">
-							PRACTICE
-						</p>
+					<div class="pattern-step">
 
-						<h3>
-							Understanding became something to act on.
-						</h3>
+						<div class="pattern-number">
+							02
+						</div>
 
-						<p>
-							Applied Behavior Analysis added sustained, systematic
-							participation in behavior support: observe, intervene,
-							follow the response, and adjust over time.
-						</p>
+						<div class="pattern-content">
+
+							<p class="pattern-meta">
+								Addiction Research Center · PIVOT Lab
+							</p>
+
+							<h3>
+								Different windows into human experience.
+							</h3>
+
+							<p>
+								At the Addiction Research Center, I supported research
+								modeling alcohol relapse risk using intensive longitudinal
+								data, where self-report could be considered alongside
+								signals such as location and patterns of social interaction.
+								At the Preventing Interpersonal Violence and Overcoming
+								Trauma (PIVOT) Lab, I supported research on sexual violence,
+								trauma, and related psychological outcomes using surveys
+								and daily reports of participants' experiences.
+							</p>
+
+							<p class="pattern-takeaway">
+								Together, the two settings widened my sense of what
+								psychological research could observe and how different
+								forms of data could offer different views of experience.
+							</p>
+
+						</div>
+
+					</div>
+
+
+					<!-- 03 · ABA -->
+
+					<div class="pattern-step">
+
+						<div class="pattern-number">
+							03
+						</div>
+
+						<div class="pattern-content">
+
+							<p class="pattern-meta">
+								Applied Behavior Analysis · Frontline Practice
+							</p>
+
+							<h3>
+								Then I was standing much closer to the change itself.
+							</h3>
+
+							<p>
+								As a frontline behavior technician, I worked directly
+								with children while observing the larger process around
+								them: parents, behavior technicians, BCBAs, and related
+								clinical services such as OT and PT. I saw progress unfold
+								differently across children and across teams as support
+								was implemented, coordinated, and adjusted over time.
+							</p>
+
+							<p class="pattern-takeaway">
+								Behavior was no longer something I encountered only
+								after it became data. I could observe it, respond to it,
+								and participate directly in the process of change.
+							</p>
+
+						</div>
+
+					</div>
+
+
+					<!-- 04 · Chengdu -->
+
+					<div class="pattern-step">
+
+						<div class="pattern-number">
+							04
+						</div>
+
+						<div class="pattern-content">
+
+							<p class="pattern-meta">
+								ABA Services · Chengdu
+							</p>
+
+							<h3>
+								Seeing a service work made me curious about building one.
+							</h3>
+
+							<p>
+								During my years in ABA, I made an early attempt to
+								develop behavioral services in Chengdu. Moving a service
+								model into a different setting quickly exposed constraints
+								beyond the intervention itself, including clinical capacity,
+								staffing, family participation, economics, cultural
+								expectations, and my own inexperience.
+							</p>
+
+							<p class="pattern-takeaway">
+								A useful intervention still needs a system that can
+								carry it.
+							</p>
+
+						</div>
+
+					</div>
+
+
+					<!-- 05 · Independent PBS Project -->
+
+					<div class="pattern-step">
+
+						<div class="pattern-number">
+							05
+						</div>
+
+						<div class="pattern-content">
+
+							<p class="pattern-meta">
+								Independent Research · Protective Behavioral Strategies
+							</p>
+
+							<h3>
+								The dataset was familiar. My question was not.
+							</h3>
+
+							<p>
+								I later returned to PIVOT data for an independent study
+								of protective behavioral strategies around alcohol use.
+								Baseline reports described the strategies participants
+								generally used; daily reports offered a way to examine
+								whether those strategies were reflected in behavior
+								across actual drinking occasions.
+							</p>
+
+							<p class="pattern-takeaway">
+								If a strategy is already known and available,
+								when does it remain present in behavior, and when
+								does it not?
+							</p>
+
+						</div>
 
 					</div>
 
@@ -1073,9 +1327,13 @@
 				<div class="pattern-reflection">
 
 					<p>
-						Across these settings, I became less interested in
-						explaining behavior from a distance and more interested
-						in what understanding can make possible.
+						I began by trying to understand people through psychological
+						experience. Over time, my attention moved toward something
+						more visible and dynamic:
+						<strong>
+							behavior itself, the conditions around it, and the
+							possibility of changing what happens next.
+						</strong>
 					</p>
 
 				</div>
