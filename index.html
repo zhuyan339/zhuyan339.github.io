@@ -322,226 +322,214 @@
         /* =========================================================
            JOURNEY
            ========================================================= */
-
+        
         #patterns {
             background: var(--white);
         }
-
-        .patterns-opening {
-            max-width: 790px;
+        
+        /* Introduction */
+        
+        #patterns .journey-opening {
+            max-width: 760px;
             margin-bottom: 3rem;
         }
-
-        .patterns-opening h3 {
-            font-size: 1.45rem;
-            line-height: 1.45;
-            margin-bottom: 0.8rem;
-        }
-
-        .patterns-opening p {
-            max-width: 740px;
-            color: var(--muted) !important;
-        }
-
-        /* Narrative sequence */
-
-        .patterns-path {
-            max-width: 900px;
-            position: relative;
-        }
-
-        .pattern-step {
-            display: grid;
-            grid-template-columns: 82px 1fr;
-            gap: 1.45rem;
-            position: relative;
-            padding-bottom: 2.7rem;
-        }
-
-        .pattern-step:last-child {
-            padding-bottom: 0;
-        }
-
-        /* Vertical line */
-
-        .pattern-step:not(:last-child):before {
-            content: "";
-            position: absolute;
-            left: 28px;
-            top: 44px;
-            bottom: 0;
-            width: 1px;
-            background: var(--border);
-        }
-
-        /* Number */
-
-        .pattern-number {
-            position: relative;
-            z-index: 1;
-
-            width: 57px;
-            height: 57px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 50%;
-
-            background: var(--white);
-            border: 1.5px solid var(--blue);
-
-            color: var(--blue);
-            font-size: 0.76rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-        }
-
-        .pattern-step:nth-child(2) .pattern-number {
-            border-color: var(--sage);
-            color: var(--sage-dark);
-        }
-
-        .pattern-step:nth-child(3) .pattern-number {
-            border-color: var(--yellow);
-            color: #9B7B22;
-        }
-
-        .pattern-step:nth-child(4) .pattern-number {
-            border-color: #89AABD;
-            color: var(--blue);
-        }
-
-        .pattern-step:nth-child(5) .pattern-number {
-            background: var(--navy);
-            border-color: var(--navy);
-            color: #FFFFFF;
-        }
-
-        /* Content */
-
-        .pattern-content {
-            padding-top: 0.15rem;
-        }
-
-        .pattern-meta {
-            margin: 0 0 0.35rem 0 !important;
-
-            font-size: 0.71rem !important;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-
-            color: var(--sage-dark) !important;
-        }
-
-        .pattern-content h3 {
-            font-size: 1.2rem;
+        
+        #patterns .journey-opening h3 {
+            font-size: 1.55rem;
             line-height: 1.4;
-            margin-bottom: 0.65rem;
+            margin-bottom: 1.1rem;
         }
-
-        .pattern-content > p:not(.pattern-meta):not(.pattern-takeaway) {
-            max-width: 760px;
-            margin-bottom: 0.8rem;
-
-            font-size: 0.94rem !important;
-            line-height: 1.7 !important;
+        
+        #patterns .journey-opening p {
+            max-width: 720px;
+            font-size: 0.96rem !important;
+            line-height: 1.75 !important;
+            margin-bottom: 0.9rem;
         }
-
-        /* Short reflection */
-
-        .pattern-takeaway {
-            display: inline-block;
-
-            max-width: 760px;
-            margin: 0.15rem 0 0 0 !important;
-            padding: 0.7rem 0.95rem;
-
-            border-left: 3px solid var(--blue);
-            background: var(--blue-light);
-
-            color: var(--navy) !important;
-            font-size: 0.92rem !important;
-            font-weight: 600;
-            line-height: 1.6 !important;
+        
+        #patterns .journey-opening p:last-child {
+            margin-bottom: 0;
         }
-
-        .pattern-step:nth-child(2) .pattern-takeaway {
-            border-left-color: var(--sage);
-            background: var(--sage-light);
+        
+        /* Shared headings */
+        
+        #patterns .journey-block {
+            margin-top: 2.8rem;
         }
-
-        .pattern-step:nth-child(3) .pattern-takeaway {
-            border-left-color: var(--yellow);
-            background: var(--yellow-light);
-        }
-
-        .pattern-step:nth-child(4) .pattern-takeaway {
-            border-left-color: #89AABD;
-        }
-
-        .pattern-step:nth-child(5) .pattern-takeaway {
-            border-left-color: var(--navy);
-        }
-
-        /* Closing reflection */
-
-        .pattern-reflection {
-            max-width: 850px;
-            margin-top: 3rem;
-            padding: 1.6rem 1.75rem;
-
-            background: var(--blue-light);
-            border-radius: 1rem;
-        }
-
-        .pattern-reflection p {
-            margin: 0;
-            color: var(--navy) !important;
-            font-size: 1.02rem !important;
-            line-height: 1.7 !important;
-        }
-
-        .pattern-reflection strong {
+        
+        #patterns .journey-label {
+            font-size: 0.72rem !important;
             font-weight: 700;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
+            color: var(--sage-dark) !important;
+            margin-bottom: 0.5rem !important;
         }
-
+        
+        #patterns .journey-heading {
+            font-size: 1.35rem;
+            line-height: 1.4;
+            margin-bottom: 1.4rem;
+        }
+        
+        /* Graduation cards */
+        
+        #patterns .journey-education-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.6rem;
+            align-items: start;
+        }
+        
+        #patterns .journey-school {
+            min-width: 0;
+        }
+        
+        #patterns .journey-photo {
+            margin: 0 0 1.25rem;
+            overflow: hidden;
+            border-radius: 0.9rem;
+            background: var(--blue-light);
+            border: 1px solid var(--border);
+            box-shadow: 0 8px 28px rgba(23, 50, 77, 0.07);
+        }
+        
+        #patterns .journey-photo img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            object-position: center 35%;
+            transition: transform 0.35s ease;
+        }
+        
+        @media (hover: hover) {
+            #patterns .journey-photo:hover img {
+                transform: scale(1.025);
+            }
+        }
+        
+        #patterns .journey-school-info {
+            padding: 0 0.2rem;
+        }
+        
+        #patterns .journey-school-name {
+            font-size: 1.1rem;
+            line-height: 1.45;
+            margin-bottom: 0.3rem;
+        }
+        
+        #patterns .journey-degree {
+            font-size: 0.85rem !important;
+            font-weight: 600;
+            color: var(--blue) !important;
+            line-height: 1.6 !important;
+            margin-bottom: 0.15rem !important;
+        }
+        
+        #patterns .journey-minor {
+            font-size: 0.79rem !important;
+            color: var(--muted) !important;
+            margin-bottom: 0.8rem !important;
+        }
+        
+        #patterns .journey-school-description {
+            font-size: 0.91rem !important;
+            line-height: 1.7 !important;
+            margin-bottom: 0 !important;
+        }
+        
+        /* Practice and entrepreneurship */
+        
+        #patterns .journey-experiences {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 2rem;
+            margin-top: 3.2rem;
+            padding-top: 2.2rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        #patterns .journey-experience {
+            min-width: 0;
+        }
+        
+        #patterns .journey-experience h3 {
+            font-size: 1.18rem;
+            line-height: 1.45;
+            margin-bottom: 0.85rem;
+        }
+        
+        #patterns .journey-experience p:not(.journey-label) {
+            font-size: 0.92rem !important;
+            line-height: 1.75 !important;
+            margin-bottom: 0.85rem;
+        }
+        
+        #patterns .journey-experience p:last-child {
+            margin-bottom: 0;
+        }
+        
+        #patterns .journey-emphasis {
+            color: var(--navy) !important;
+            font-weight: 600;
+        }
+        
+        /* Tablet */
+        
+        @media screen and (max-width: 980px) {
+            #patterns .journey-education-grid {
+                gap: 1.25rem;
+            }
+        
+            #patterns .journey-experiences {
+                gap: 1.5rem;
+            }
+        }
+        
         /* Mobile */
-
+        
         @media screen and (max-width: 736px) {
-
-            .patterns-path {
-                max-width: 100%;
+            #patterns .journey-opening {
+                margin-bottom: 2.3rem;
             }
-
-            .pattern-step {
-                grid-template-columns: 52px 1fr;
-                gap: 0.9rem;
-                padding-bottom: 2.25rem;
+        
+            #patterns .journey-opening h3 {
+                font-size: 1.35rem;
             }
-
-            .pattern-number {
-                width: 43px;
-                height: 43px;
-                font-size: 0.68rem;
+        
+            #patterns .journey-block {
+                margin-top: 2.3rem;
             }
-
-            .pattern-step:not(:last-child):before {
-                left: 21px;
-                top: 38px;
+        
+            #patterns .journey-education-grid,
+            #patterns .journey-experiences {
+                grid-template-columns: 1fr;
             }
-
-            .pattern-content h3 {
-                font-size: 1.08rem;
+        
+            #patterns .journey-education-grid {
+                gap: 2.3rem;
             }
-
-            .pattern-takeaway {
-                display: block;
+        
+            #patterns .journey-photo {
+                max-width: 460px;
             }
-
+        
+            #patterns .journey-experiences {
+                margin-top: 2.5rem;
+                padding-top: 1.8rem;
+                gap: 2rem;
+            }
         }
+        
+        /* Reduced motion */
+        
+        @media (prefers-reduced-motion: reduce) {
+            #patterns .journey-photo img {
+                transition: none;
+            }
+        }
+
 
         /* =========================================================
            RESEARCH
@@ -1061,247 +1049,241 @@
         <!-- =========================================================
              JOURNEY
              ========================================================= -->
-
+        
         <section
             id="patterns"
             class="wrapper style2 fade-up"
         >
-
+        
             <div class="inner">
-
+        
                 <p class="section-kicker">
                     02
                 </p>
-
+        
                 <h2>
                     Journey
                 </h2>
-
-                <div class="patterns-opening">
-
+        
+        
+                <!-- INTRODUCTION -->
+        
+                <div class="journey-opening">
+        
                     <h3>
-                        The questions became clearer as the view changed.
+                        Not exactly a straight line.
                     </h3>
-
+        
                     <p>
-                        I began in psychology curious about how people think,
-                        feel, and respond. Research offered different ways of
-                        observing those experiences; practice eventually brought
-                        me closer to behavior as it unfolded.
+                        Psychology wasn't the original plan.
+                        A foundation year at the University of
+                        Sheffield in the UK started with Finance
+                        and Accounting in mind. By freshman year,
+                        curiosity about people had won out.
+                        A change of major followed.
                     </p>
-
-                </div>
-
-                <div class="patterns-path">
-
-                    <!-- 01 · Psychology -->
-
-                    <div class="pattern-step">
-
-                        <div class="pattern-number">
-                            01
-                        </div>
-
-                        <div class="pattern-content">
-
-                            <p class="pattern-meta">
-                                Psychology · Youth & Society · Philosophy
-                            </p>
-
-                            <h3>
-                                People, before variables.
-                            </h3>
-
-                            <p>
-                                Psychology was my starting point: a broad curiosity
-                                about how people think, feel, and respond to the world
-                                around them. Youth & Society and Philosophy widened
-                                that curiosity toward development, social context,
-                                and human agency.
-                            </p>
-
-                            <p class="pattern-takeaway">
-                                There were many ways to understand a person,
-                                and I was still exploring which questions mattered
-                                most to me.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- 02 · ARC + PIVOT -->
-
-                    <div class="pattern-step">
-
-                        <div class="pattern-number">
-                            02
-                        </div>
-
-                        <div class="pattern-content">
-
-                            <p class="pattern-meta">
-                                Addiction Research Center · PIVOT Lab
-                            </p>
-
-                            <h3>
-                                Different windows into human experience.
-                            </h3>
-
-                            <p>
-                                At the Addiction Research Center, I supported research
-                                modeling alcohol relapse risk using intensive longitudinal
-                                data, where self-report could be considered alongside
-                                signals such as location and patterns of social interaction.
-                                At the Preventing Interpersonal Violence and Overcoming
-                                Trauma (PIVOT) Lab, I supported research on sexual violence,
-                                trauma, and related psychological outcomes using surveys
-                                and daily reports of participants' experiences.
-                            </p>
-
-                            <p class="pattern-takeaway">
-                                Together, the two settings widened my sense of what
-                                psychological research could observe and how different
-                                forms of data could offer different views of experience.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- 03 · ABA -->
-
-                    <div class="pattern-step">
-
-                        <div class="pattern-number">
-                            03
-                        </div>
-
-                        <div class="pattern-content">
-
-                            <p class="pattern-meta">
-                                Applied Behavior Analysis · Frontline Practice
-                            </p>
-
-                            <h3>
-                                Then I was standing much closer to the change itself.
-                            </h3>
-
-                            <p>
-                                As a frontline behavior technician, I worked directly
-                                with children while observing the larger process around
-                                them: parents, behavior technicians, BCBAs, and related
-                                clinical services such as OT and PT. I saw progress unfold
-                                differently across children and across teams as support
-                                was implemented, coordinated, and adjusted over time.
-                            </p>
-
-                            <p class="pattern-takeaway">
-                                Behavior was no longer something I encountered only
-                                after it became data. I could observe it, respond to it,
-                                and participate directly in the process of change.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- 04 · Chengdu -->
-
-                    <div class="pattern-step">
-
-                        <div class="pattern-number">
-                            04
-                        </div>
-
-                        <div class="pattern-content">
-
-                            <p class="pattern-meta">
-                                ABA Services · Chengdu
-                            </p>
-
-                            <h3>
-                                Seeing a service work made me curious about building one.
-                            </h3>
-
-                            <p>
-                                During my years in ABA, I made an early attempt to
-                                develop behavioral services in Chengdu. Moving a service
-                                model into a different setting quickly exposed constraints
-                                beyond the intervention itself, including clinical capacity,
-                                staffing, family participation, economics, cultural
-                                expectations, and my own inexperience.
-                            </p>
-
-                            <p class="pattern-takeaway">
-                                A useful intervention still needs a system that can
-                                carry it.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- 05 · Independent PBS Project -->
-
-                    <div class="pattern-step">
-
-                        <div class="pattern-number">
-                            05
-                        </div>
-
-                        <div class="pattern-content">
-
-                            <p class="pattern-meta">
-                                Independent Research · Protective Behavioral Strategies
-                            </p>
-
-                            <h3>
-                                The dataset was familiar. My question was not.
-                            </h3>
-
-                            <p>
-                                I later returned to PIVOT data for an independent study
-                                of protective behavioral strategies around alcohol use.
-                                Baseline reports described the strategies participants
-                                generally used; daily reports offered a way to examine
-                                whether those strategies were reflected in behavior
-                                across actual drinking occasions.
-                            </p>
-
-                            <p class="pattern-takeaway">
-                                If a strategy is already known and available,
-                                when does it remain present in behavior, and when
-                                does it not?
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="pattern-reflection">
-
+        
                     <p>
-                        I began by trying to understand people through psychological
-                        experience. Over time, my attention moved toward something
-                        more visible and dynamic:
-                        <strong>
-                            behavior itself, the conditions around it, and the
-                            possibility of changing what happens next.
-                        </strong>
+                        Part of that curiosity came from personal
+                        experiences, family relationships, and a
+                        fascination with how differently people
+                        think, feel, and respond to life.
+                        Understanding people seemed like a good
+                        place to start.
                     </p>
-
+        
                 </div>
-
+        
+        
+                <!-- ACADEMIC FOUNDATIONS -->
+        
+                <div class="journey-block">
+        
+                    <p class="journey-label">
+                        01 · Academic Foundations
+                    </p>
+        
+                    <h3 class="journey-heading">
+                        People, before variables.
+                    </h3>
+        
+        
+                    <div class="journey-education-grid">
+        
+        
+                        <!-- MICHIGAN STATE UNIVERSITY -->
+        
+                        <article class="journey-school">
+        
+                            <figure class="journey-photo">
+        
+                                <img
+                                    src="images/MSU_zy.jpg"
+                                    alt="Yan Zhu at Michigan State University graduation"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+        
+                            </figure>
+        
+                            <div class="journey-school-info">
+        
+                                <h3 class="journey-school-name">
+                                    Michigan State University
+                                </h3>
+        
+                                <p class="journey-degree">
+                                    B.S. in Psychology · 2022
+                                </p>
+        
+                                <p class="journey-minor">
+                                    Minors in Youth &amp; Society
+                                    and Philosophy
+                                </p>
+        
+                                <p class="journey-school-description">
+                                    Psychology offered a starting
+                                    point. Youth &amp; Society and
+                                    Philosophy added new perspectives
+                                    on development, social environments,
+                                    and human experience.
+                                </p>
+        
+                            </div>
+        
+                        </article>
+        
+        
+                        <!-- UNIVERSITY OF WISCONSIN MADISON -->
+        
+                        <article class="journey-school">
+        
+                            <figure class="journey-photo">
+        
+                                <img
+                                    src="images/UWM_zy.JPG"
+                                    alt="Yan Zhu at University of Wisconsin Madison graduation"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+        
+                            </figure>
+        
+                            <div class="journey-school-info">
+        
+                                <h3 class="journey-school-name">
+                                    University of Wisconsin–Madison
+                                </h3>
+        
+                                <p class="journey-degree">
+                                    M.S. in Psychology:
+                                    Data Science in Human Behavior · 2023
+                                </p>
+        
+                                <p class="journey-minor">
+                                    Psychology and Quantitative Research
+                                </p>
+        
+                                <p class="journey-school-description">
+                                    Still curious, but ready for more
+                                    tools. Graduate training focused on
+                                    data analysis, statistical modeling,
+                                    and psychological research,
+                                    particularly experimental data.
+                                    A different way to explore human
+                                    behavior, with an appreciation for
+                                    what numbers can and cannot tell us.
+                                </p>
+        
+                            </div>
+        
+                        </article>
+        
+        
+                    </div>
+        
+                </div>
+        
+        
+                <!-- PRACTICE AND ENTREPRENEURSHIP -->
+        
+                <div class="journey-experiences">
+        
+        
+                    <!-- ABA EXPERIENCE -->
+        
+                    <article class="journey-experience">
+        
+                        <p class="journey-label">
+                            02 · Practice
+                        </p>
+        
+                        <h3>
+                            From Understanding to Doing
+                        </h3>
+        
+                        <p class="journey-emphasis">
+                            Then came applied behavior analysis (ABA).
+                        </p>
+        
+                        <p>
+                            Working with children and families
+                            under BCBA supervision brought
+                            psychology into everyday life.
+                            Every child, family, and session
+                            was different. Some days brought
+                            unexpected challenges. Others brought
+                            small moments worth celebrating.
+                        </p>
+        
+                        <p>
+                            Less time studying behavior from a
+                            distance. More time participating
+                            in the process of change.
+                        </p>
+        
+                    </article>
+        
+        
+                    <!-- ENTREPRENEURSHIP -->
+        
+                    <article class="journey-experience">
+        
+                        <p class="journey-label">
+                            03 · Entrepreneurship
+                        </p>
+        
+                        <h3>
+                            Trying to Build Something
+                        </h3>
+        
+                        <p>
+                            Entrepreneurship became another
+                            learning experience. Through a
+                            U.S.-based company, I explored
+                            providing remote technical support
+                            to a locally operated behavioral
+                            services center in Chengdu, China.
+                        </p>
+        
+                        <p>
+                            A small venture, but a valuable
+                            introduction to the practical side
+                            of service delivery, collaboration,
+                            and building something beyond
+                            the classroom.
+                        </p>
+        
+                    </article>
+        
+        
+                </div>
+        
+        
             </div>
-
+        
         </section>
+
 
 
         <!-- =========================================================
