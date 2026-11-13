@@ -322,73 +322,73 @@
         /* =========================================================
            JOURNEY
            ========================================================= */
-        
+
         #patterns {
             background: var(--white);
         }
-        
+
         /* INTRODUCTION */
-        
+
         #patterns .journey-opening {
             max-width: 780px;
             margin-bottom: 3.2rem;
         }
-        
+
         #patterns .journey-opening h3 {
             font-size: 1.55rem;
             line-height: 1.4;
             margin-bottom: 1.1rem;
         }
-        
+
         #patterns .journey-opening p {
             max-width: 730px;
             font-size: 0.97rem !important;
             line-height: 1.8 !important;
             margin-bottom: 0.9rem;
         }
-        
+
         /* SECTION HEADINGS */
-        
+
         #patterns .journey-section {
             margin-top: 3rem;
         }
-        
+
         #patterns .journey-section-title {
             font-size: 1.4rem;
             line-height: 1.4;
             margin-bottom: 0.35rem;
         }
-        
+
         #patterns .journey-section-subtitle {
             font-size: 0.92rem !important;
             color: var(--muted) !important;
             margin-bottom: 1.8rem !important;
         }
-        
+
         /* GRADUATION GRID */
-        
+
         #patterns .journey-education-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 1.8rem;
             align-items: start;
         }
-        
+
         #patterns .journey-school {
             min-width: 0;
         }
-        
+
         #patterns .journey-graduation-photo {
             margin: 0 0 1.25rem;
             overflow: hidden;
             border-radius: 0.85rem;
             background: var(--blue-light);
             border: 1px solid var(--border);
-        
+
             box-shadow:
                 0 8px 26px rgba(23, 50, 77, 0.07);
         }
-        
+
         #patterns .journey-graduation-photo img {
             display: block;
             width: 100%;
@@ -396,13 +396,13 @@
             object-fit: cover;
             object-position: center 35%;
         }
-        
+
         #patterns .journey-school-name {
             font-size: 1.12rem;
             line-height: 1.4;
             margin-bottom: 0.35rem;
         }
-        
+
         #patterns .journey-degree {
             font-size: 0.86rem !important;
             font-weight: 600;
@@ -410,26 +410,26 @@
             line-height: 1.6 !important;
             margin-bottom: 0.15rem !important;
         }
-        
+
         #patterns .journey-minor {
             font-size: 0.8rem !important;
             color: var(--muted) !important;
             margin-bottom: 0.85rem !important;
         }
-        
+
         #patterns .journey-school-description {
             font-size: 0.93rem !important;
             line-height: 1.75 !important;
             margin-bottom: 0 !important;
         }
-        
+
         /* EXPERIENCE STORIES */
-        
+
         #patterns .journey-stories {
             margin-top: 3.5rem;
             border-top: 1px solid var(--border);
         }
-        
+
         #patterns .journey-story {
             display: grid;
             grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
@@ -438,21 +438,21 @@
             padding: 3rem 0;
             border-bottom: 1px solid var(--border);
         }
-        
+
         #patterns .journey-story.reverse {
             grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
         }
-        
+
         #patterns .journey-story.reverse .journey-story-text {
             order: 1;
         }
-        
+
         #patterns .journey-story.reverse .journey-story-photo {
             order: 2;
         }
-        
+
         /* STORY PHOTOS */
-        
+
         #patterns .journey-story-photo {
             margin: 0;
             min-width: 0;
@@ -460,11 +460,11 @@
             border-radius: 0.85rem;
             background: var(--sage-light);
             border: 1px solid var(--border);
-        
+
             box-shadow:
                 0 8px 26px rgba(23, 50, 77, 0.055);
         }
-        
+
         #patterns .journey-story-photo img {
             display: block;
             width: 100%;
@@ -472,199 +472,314 @@
             object-fit: cover;
             object-position: center;
         }
-        
+
         /* STORY TEXT */
-        
+
         #patterns .journey-story-text {
             min-width: 0;
         }
-        
+
         #patterns .journey-story-text h3 {
             font-size: 1.3rem;
             line-height: 1.4;
             margin-bottom: 1.1rem;
         }
-        
+
         #patterns .journey-story-text p {
             font-size: 0.94rem !important;
             line-height: 1.8 !important;
             margin-bottom: 0.9rem;
         }
-        
+
         #patterns .journey-story-text p:last-child {
             margin-bottom: 0;
         }
-        
+
         #patterns .journey-story-lead {
             font-weight: 600;
             color: var(--navy) !important;
         }
-        
+
         /* TABLET */
-        
+
         @media screen and (max-width: 980px) {
-        
+
             #patterns .journey-education-grid {
                 gap: 1.3rem;
             }
-        
+
             #patterns .journey-story,
             #patterns .journey-story.reverse {
                 gap: 1.7rem;
             }
-        
+
         }
-        
+
         /* MOBILE */
-        
+
         @media screen and (max-width: 736px) {
-        
+
             #patterns .journey-opening {
                 margin-bottom: 2.5rem;
             }
-        
+
             #patterns .journey-opening h3 {
                 font-size: 1.35rem;
             }
-        
+
             #patterns .journey-education-grid {
                 grid-template-columns: 1fr;
                 gap: 2.4rem;
             }
-        
+
             #patterns .journey-graduation-photo {
                 max-width: 460px;
             }
-        
+
             #patterns .journey-story,
             #patterns .journey-story.reverse {
                 grid-template-columns: 1fr;
                 gap: 1.3rem;
                 padding: 2.4rem 0;
             }
-        
+
             #patterns .journey-story.reverse .journey-story-photo,
             #patterns .journey-story.reverse .journey-story-text {
                 order: initial;
             }
-        
+
             #patterns .journey-story-photo {
                 max-width: 560px;
             }
-        
+
             #patterns .journey-story-text h3 {
                 font-size: 1.2rem;
             }
-        
+
         }
 
-
         /* =========================================================
-           RESEARCH
+           THINKING THROUGH RESEARCH
            ========================================================= */
 
         #next {
             background: #F0F4EF;
         }
 
-        .next-opening {
-            max-width: 830px;
-            margin-bottom: 2.7rem;
+        #next .research-opening {
+            max-width: 800px;
+            margin-bottom: 3.2rem;
         }
 
-        .next-opening h3 {
+        #next .research-opening h3 {
             font-size: 1.55rem;
             line-height: 1.45;
-            margin-bottom: 1rem;
+            margin-bottom: 1.1rem;
         }
 
-        .next-opening p {
-            max-width: 760px;
+        #next .research-opening p {
+            font-size: 0.97rem !important;
+            line-height: 1.85 !important;
+            color: var(--muted) !important;
         }
 
-        .next-question {
-            max-width: 850px;
-            margin: 2rem 0 2.6rem 0;
-            padding: 1.6rem 1.8rem;
-            border-left: 5px solid var(--yellow);
-            background: var(--yellow-light);
-            border-radius: 0 1rem 1rem 0;
+        /* RESEARCH GROUPS */
+
+        #next .research-group {
+            margin-top: 3.5rem;
         }
 
-        .next-question p {
-            margin: 0;
-            color: var(--navy) !important;
-            font-size: 1.18rem !important;
-            font-weight: 600;
-            line-height: 1.6 !important;
+        #next .research-group-label {
+            font-size: 0.76rem !important;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--sage-dark) !important;
+            margin-bottom: 1.5rem;
         }
 
-        .next-grid {
+        /* RESEARCH LABS */
+
+        #next .research-labs {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.15rem;
-            margin-top: 1.8rem;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.5rem;
+            align-items: stretch;
         }
 
-        .next-card {
+        #next .research-lab {
+            min-width: 0;
+            padding: 2rem;
             background: var(--white);
             border: 1px solid var(--border);
             border-radius: 1rem;
-            padding: 1.5rem;
 
             box-shadow:
                 0 6px 22px rgba(23, 50, 77, 0.04);
         }
 
-        .next-number {
-            font-size: 0.72rem !important;
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            color: var(--sage-dark) !important;
-            margin-bottom: 0.5rem !important;
+        #next .research-project-name {
+            font-size: 0.8rem !important;
+            font-weight: 600;
+            color: var(--blue) !important;
+            margin-bottom: 0.9rem;
         }
 
-        .next-card h3 {
-            font-size: 1.08rem;
-            margin-bottom: 0.65rem;
+        #next .research-lab h3 {
+            font-size: 1.35rem;
+            line-height: 1.4;
+            margin-bottom: 1.15rem;
         }
 
-        .next-card p {
-            font-size: 0.9rem !important;
+        #next .research-lab p {
+            font-size: 0.92rem !important;
+            line-height: 1.8 !important;
+            margin-bottom: 1rem;
+        }
+
+        #next .research-lab p:last-child {
             margin-bottom: 0;
         }
 
-        .tool-space {
-            max-width: 850px;
-            margin-top: 2.5rem;
-            padding-top: 2rem;
+        /* FEATURED RESEARCH */
+
+        #next .research-feature {
+            padding: 2.2rem 0;
             border-top: 1px solid var(--border);
         }
 
-        .tool-space h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.65rem;
+        #next .research-feature-grid {
+            display: grid;
+            grid-template-columns:
+                minmax(0, 0.85fr)
+                minmax(0, 1.15fr);
+            gap: 2.5rem;
+            align-items: center;
         }
 
-        .tool-space p {
-            max-width: 760px;
+        #next .research-feature-text {
+            min-width: 0;
         }
 
-        .tool-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.55rem;
-            margin-top: 1.1rem;
+        #next .research-feature h3 {
+            font-size: 1.45rem;
+            line-height: 1.4;
+            margin-bottom: 1.2rem;
         }
 
-        .tool-tags span {
-            display: inline-block;
-            padding: 0.48rem 0.75rem;
-            border-radius: 999px;
-            background: var(--blue-light);
-            color: var(--navy);
-            font-size: 0.8rem;
+        #next .research-feature p {
+            font-size: 0.94rem !important;
+            line-height: 1.85 !important;
+            margin-bottom: 1rem;
+        }
+
+        #next .research-feature p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* CAPSTONE VISUAL */
+
+        #next .research-visual {
+            min-width: 0;
+            margin: 0;
+        }
+
+        #next .research-visual img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: 1px solid var(--border);
+            border-radius: 0.85rem;
+            background: var(--white);
+
+            box-shadow:
+                0 8px 26px rgba(23, 50, 77, 0.055);
+        }
+
+        #next .research-visual figcaption {
+            font-size: 0.78rem;
+            line-height: 1.65;
+            color: var(--muted);
+            margin-top: 0.85rem;
+        }
+
+        /* INDEPENDENT RESEARCH */
+
+        #next .research-independent {
+            max-width: 850px;
+        }
+
+        #next .research-question {
+            margin: 1.6rem 0;
+            padding: 1.25rem 1.5rem;
+            border-left: 4px solid var(--yellow);
+            border-radius: 0 0.85rem 0.85rem 0;
+            background: var(--yellow-light);
+        }
+
+        #next .research-question p {
+            font-size: 1.06rem !important;
             font-weight: 600;
+            line-height: 1.7 !important;
+            color: var(--navy) !important;
+            margin: 0 !important;
+        }
+
+        /* RESEARCH RESPONSIVE */
+
+        @media screen and (max-width: 980px) {
+
+            #next .research-feature-grid {
+                grid-template-columns: 1fr;
+                gap: 1.8rem;
+            }
+
+            #next .research-visual {
+                max-width: 760px;
+            }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            #next .research-opening {
+                margin-bottom: 2.5rem;
+            }
+
+            #next .research-opening h3 {
+                font-size: 1.35rem;
+            }
+
+            #next .research-group {
+                margin-top: 2.8rem;
+            }
+
+            #next .research-labs {
+                grid-template-columns: 1fr;
+                gap: 1.1rem;
+            }
+
+            #next .research-lab {
+                padding: 1.5rem;
+            }
+
+            #next .research-lab h3,
+            #next .research-feature h3 {
+                font-size: 1.25rem;
+            }
+
+            #next .research-feature {
+                padding: 1.7rem 0;
+            }
+
+            #next .research-feature-grid {
+                gap: 1.4rem;
+            }
+
+            #next .research-question {
+                padding: 1rem 1.2rem;
+            }
+
         }
 
         /* =========================================================
@@ -944,7 +1059,7 @@
 
                     <li>
                         <a href="#next">
-                            Research
+                            Thinking Through Research
                         </a>
                     </li>
 
@@ -1022,17 +1137,17 @@
 
                         <p>
                             My background brings together psychology, behavioral data science,
-                            and applied behavior analysis. Behavior, of course, does not live 
-                            in a spreadsheet. Working directly with children has brought me 
-                            closer to how behavior unfolds in everyday life, shaped by experience, 
+                            and applied behavior analysis. Behavior, of course, does not live
+                            in a spreadsheet. Working directly with children has brought me
+                            closer to how behavior unfolds in everyday life, shaped by experience,
                             context, and consequences.
                         </p>
 
                         <p>
-                            I am interested in what makes meaningful behavior more likely to occur, 
-                            how actions and their consequences shape future behavior, and why learning 
-                            does not always translate into action. My goal is to develop and refine 
-                            interventions that help meaningful behaviors emerge, persist, and adapt 
+                            I am interested in what makes meaningful behavior more likely to occur,
+                            how actions and their consequences shape future behavior, and why learning
+                            does not always translate into action. My goal is to develop and refine
+                            interventions that help meaningful behaviors emerge, persist, and adapt
                             across everyday contexts.
                         </p>
 
@@ -1077,31 +1192,31 @@
         <!-- =========================================================
              JOURNEY
              ========================================================= -->
-        
+
         <section
             id="patterns"
             class="wrapper style2 fade-up"
         >
-        
+
             <div class="inner">
-        
+
                 <p class="section-kicker">
                     02
                 </p>
-        
+
                 <h2>
                     Journey
                 </h2>
-        
-        
+
+
                 <!-- INTRODUCTION -->
-        
+
                 <div class="journey-opening">
-        
+
                     <h3>
                         Not exactly a straight line.
                     </h3>
-        
+
                     <p>
                         Psychology wasn't the original plan.
                         A foundation year at the University of
@@ -1110,7 +1225,7 @@
                         curiosity about people had won out.
                         A change of major followed.
                     </p>
-        
+
                     <p>
                         Part of that curiosity came from personal
                         experiences, family relationships, and a
@@ -1119,54 +1234,54 @@
                         Understanding people seemed like a good
                         place to start.
                     </p>
-        
+
                 </div>
-        
-        
+
+
                 <!-- ACADEMIC FOUNDATIONS -->
-        
+
                 <div class="journey-section">
-        
+
                     <h3 class="journey-section-title">
                         Academic Foundations
                     </h3>
-        
+
                     <p class="journey-section-subtitle">
                         People, before variables.
                     </p>
-        
-        
+
+
                     <div class="journey-education-grid">
-        
-        
+
+
                         <!-- MICHIGAN STATE UNIVERSITY -->
-        
+
                         <article class="journey-school">
-        
+
                             <figure class="journey-graduation-photo">
-        
+
                                 <img
                                     src="images/MSU_zy.jpg"
                                     alt="Yan Zhu at Michigan State University graduation"
                                     loading="lazy"
                                     decoding="async"
                                 />
-        
+
                             </figure>
-        
+
                             <h3 class="journey-school-name">
                                 Michigan State University
                             </h3>
-        
+
                             <p class="journey-degree">
                                 B.S. in Psychology · 2022
                             </p>
-        
+
                             <p class="journey-minor">
                                 Minors in Youth &amp; Society
                                 and Philosophy
                             </p>
-        
+
                             <p class="journey-school-description">
                                 Psychology offered a starting point.
                                 Youth &amp; Society and Philosophy
@@ -1174,38 +1289,38 @@
                                 social environments, and human
                                 experience.
                             </p>
-        
+
                         </article>
-        
-        
+
+
                         <!-- UNIVERSITY OF WISCONSIN MADISON -->
-        
+
                         <article class="journey-school">
-        
+
                             <figure class="journey-graduation-photo">
-        
+
                                 <img
                                     src="images/UWM_zy.JPG"
                                     alt="Yan Zhu at University of Wisconsin Madison graduation"
                                     loading="lazy"
                                     decoding="async"
                                 />
-        
+
                             </figure>
-        
+
                             <h3 class="journey-school-name">
                                 University of Wisconsin–Madison
                             </h3>
-        
+
                             <p class="journey-degree">
                                 M.S. in Psychology:
                                 Data Science in Human Behavior · 2023
                             </p>
-        
+
                             <p class="journey-minor">
                                 Psychology and Quantitative Research
                             </p>
-        
+
                             <p class="journey-school-description">
                                 Still curious, but ready for more
                                 tools. Graduate training focused on
@@ -1216,47 +1331,47 @@
                                 behavior, with an appreciation for
                                 what numbers can and cannot tell us.
                             </p>
-        
+
                         </article>
-        
-        
+
+
                     </div>
-        
+
                 </div>
-        
-        
+
+
                 <!-- PRACTICE AND ENTREPRENEURSHIP -->
-        
+
                 <div class="journey-stories">
-        
-        
+
+
                     <!-- ABA PRACTICE -->
-        
+
                     <article class="journey-story">
-        
+
                         <figure class="journey-story-photo">
-        
+
                             <img
                                 src="images/ABA_center_movieday.jpg"
                                 alt="A movie day activity at an ABA center"
                                 loading="lazy"
                                 decoding="async"
                             />
-        
+
                         </figure>
-        
-        
+
+
                         <div class="journey-story-text">
-        
+
                             <h3>
                                 From Understanding to Doing
                             </h3>
-        
+
                             <p class="journey-story-lead">
                                 Then came applied behavior
                                 analysis (ABA).
                             </p>
-        
+
                             <p>
                                 Working with children and families
                                 under BCBA supervision brought
@@ -1267,28 +1382,28 @@
                                 brought small moments worth
                                 celebrating.
                             </p>
-        
+
                             <p>
                                 Less time studying behavior from
                                 a distance. More time participating
                                 in the process of change.
                             </p>
-        
+
                         </div>
-        
+
                     </article>
-        
-        
+
+
                     <!-- ENTREPRENEURSHIP -->
-        
+
                     <article class="journey-story reverse">
-        
+
                         <div class="journey-story-text">
-        
+
                             <h3>
                                 Trying to Build Something
                             </h3>
-        
+
                             <p>
                                 Entrepreneurship became another
                                 learning experience. Through a
@@ -1297,7 +1412,7 @@
                                 to a locally operated behavioral
                                 services center in Chengdu, China.
                             </p>
-        
+
                             <p>
                                 A small venture, but a valuable
                                 introduction to the practical side
@@ -1305,35 +1420,34 @@
                                 and building something beyond
                                 the classroom.
                             </p>
-        
+
                         </div>
-        
-        
+
+
                         <figure class="journey-story-photo">
-        
+
                             <img
                                 src="images/XunWeiCenter.jpg"
                                 alt="Behavioral services center in Chengdu, China"
                                 loading="lazy"
                                 decoding="async"
                             />
-        
+
                         </figure>
-        
+
                     </article>
-        
-        
+
+
                 </div>
-        
-        
+
+
             </div>
-        
+
         </section>
 
 
-
         <!-- =========================================================
-             RESEARCH
+             THINKING THROUGH RESEARCH
              ========================================================= -->
 
         <section
@@ -1348,136 +1462,277 @@
                 </p>
 
                 <h2>
-                    Research
+                    Thinking Through Research
                 </h2>
 
-                <div class="next-opening">
+
+                <!-- INTRODUCTION -->
+
+                <div class="research-opening">
 
                     <h3>
-                        I want to understand behavior well enough
-                        to change what happens next.
+                        Different windows into human experience.
                     </h3>
 
                     <p>
-                        Perfect prediction is not the goal. I am interested in
-                        understanding behavior well enough to identify where
-                        support can make a meaningful difference, then learning
-                        from what happens after we act.
+                        Research has given me different ways to examine
+                        human experience, but also reasons to question
+                        what each method can reveal. Across intensive
+                        longitudinal studies, digital behavior data,
+                        and independent reanalysis, I have become
+                        increasingly interested in the relationship
+                        between what we measure, what we infer,
+                        and what people actually do.
                     </p>
 
                 </div>
 
-                <div class="next-question">
 
-                    <p>
-                        What can we change, design, or provide that makes
-                        meaningful behavior more likely to emerge, persist,
-                        or adapt in everyday life?
+                <!-- =====================================================
+                     RESEARCH LABS
+                     ===================================================== -->
+
+                <div class="research-group">
+
+                    <p class="research-group-label">
+                        Research Labs
                     </p>
 
+                    <div class="research-labs">
+
+
+                        <!-- PIVOT LAB -->
+
+                        <article class="research-lab">
+
+                            <p class="research-project-name">
+                                PIVOT Lab
+                            </p>
+
+                            <h3>
+                                What Can a Daily Report Tell Us?
+                            </h3>
+
+                            <p>
+                                Working with surveys and daily reports
+                                introduced another way to examine
+                                psychological experiences and behavior
+                                over time. Repeated observations offered
+                                opportunities to look beyond a single
+                                summary of a person's experience.
+                            </p>
+
+                            <p>
+                                But a report is also a measurement,
+                                shaped by what is asked, remembered,
+                                and communicated. How much can we learn
+                                from variation across days? And how
+                                do we distinguish meaningful changes
+                                in experience from differences in
+                                how those experiences are reported?
+                            </p>
+
+                        </article>
+
+
+                        <!-- ADDICTION RESEARCH CENTER -->
+
+                        <article class="research-lab">
+
+                            <p class="research-project-name">
+                                Addiction Research Center
+                            </p>
+
+                            <h3>
+                                Different Signals, Different Stories
+                            </h3>
+
+                            <p>
+                                Intensive longitudinal data offered
+                                multiple ways to examine alcohol-related
+                                risk. Self-reports captured participants'
+                                experiences, while location and social
+                                interaction data provided additional
+                                information about their daily lives.
+                            </p>
+
+                            <p>
+                                What interested me was not simply having
+                                more data, but understanding what each
+                                source represented. When different signals
+                                appear to tell different stories, how
+                                should we interpret them? More information
+                                can broaden our perspective, but it does
+                                not necessarily make the explanation
+                                straightforward.
+                            </p>
+
+                        </article>
+
+
+                    </div>
+
                 </div>
 
-                <div class="next-grid">
 
-                    <div class="next-card">
+                <!-- =====================================================
+                     CAPSTONE PROJECT
+                     ===================================================== -->
 
-                        <p class="next-number">
-                            01 · UNDERSTAND
-                        </p>
+                <div class="research-group">
 
-                        <h3>
-                            Where can we act?
-                        </h3>
-
-                        <p>
-                            Study behavior in context across people, histories,
-                            environments, and moments, not to explain everything,
-                            but to find conditions that may be meaningfully
-                            modifiable.
-                        </p>
-
-                    </div>
-
-                    <div class="next-card">
-
-                        <p class="next-number">
-                            02 · SUPPORT
-                        </p>
-
-                        <h3>
-                            What actually helps?
-                        </h3>
-
-                        <p>
-                            Develop and test interventions, environments, tools,
-                            or forms of support that make meaningful behavior
-                            more achievable in real-world settings.
-                        </p>
-
-                    </div>
-
-                    <div class="next-card">
-
-                        <p class="next-number">
-                            03 · REFINE
-                        </p>
-
-                        <h3>
-                            What did the response teach us?
-                        </h3>
-
-                        <p>
-                            Treat behavioral response as new information.
-                            Use it to improve when, where, and how support is
-                            delivered, and to keep asking how it can work better.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="tool-space">
-
-                    <h3>
-                        The tools can change.
-                    </h3>
-
-                    <p>
-                        Digital systems, wearable technologies, and emerging
-                        AI tools interest me when they make behavioral support
-                        more timely, accessible, engaging, adaptive, or scalable.
-                        The technology is not the destination.
+                    <p class="research-group-label">
+                        Capstone Project
                     </p>
 
-                    <div class="tool-tags">
+                    <article class="research-feature">
 
-                        <span>
-                            Behavioral Intervention
-                        </span>
+                        <div class="research-feature-grid">
 
-                        <span>
-                            Adaptive Support
-                        </span>
 
-                        <span>
-                            Digital Systems
-                        </span>
+                            <div class="research-feature-text">
 
-                        <span>
-                            Wearables
-                        </span>
+                                <p class="research-project-name">
+                                    Healthy Minds Innovations
+                                </p>
 
-                        <span>
-                            AI-Enabled Tools
-                        </span>
+                                <h3>
+                                    The Process Behind the Outcome
+                                </h3>
 
-                        <span>
-                            Real-World Implementation
-                        </span>
+                                <p>
+                                    An app can record whether someone
+                                    completed an activity, but that
+                                    endpoint is only part of the
+                                    experience.
+                                </p>
 
-                    </div>
+                                <p>
+                                    Working with meditation app and
+                                    survey data, I explored user
+                                    activity through process mining,
+                                    examining sequences and patterns
+                                    of engagement.
+                                </p>
+
+                                <p>
+                                    The project raised a question that
+                                    continues to interest me: what
+                                    can the path toward an outcome
+                                    reveal that the outcome alone
+                                    cannot?
+                                </p>
+
+                                <p>
+                                    At the same time, a digital
+                                    interaction is not necessarily
+                                    evidence of psychological change.
+                                </p>
+
+                            </div>
+
+
+                            <figure class="research-visual">
+
+                                <img
+                                    src="images/HM_appPathWay.jpg"
+                                    alt="Conceptual process-mining illustration showing transitions among Information, Learning, and Practice in a meditation app, alongside two illustrative user activity sequences."
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+
+                                <figcaption>
+                                    Conceptual illustration of activity
+                                    transitions and possible user pathways.
+                                    The example sequences are illustrative,
+                                    not empirically identified user groups.
+                                </figcaption>
+
+                            </figure>
+
+
+                        </div>
+
+                    </article>
 
                 </div>
+
+
+                <!-- =====================================================
+                     INDEPENDENT REANALYSIS
+                     ===================================================== -->
+
+                <div class="research-group">
+
+                    <p class="research-group-label">
+                        Independent Reanalysis
+                    </p>
+
+                    <article class="research-feature">
+
+                        <div class="research-independent">
+
+                            <p class="research-project-name">
+                                Protective Behavioral Strategies
+                            </p>
+
+                            <h3>
+                                The Dataset Was Familiar.
+                                My Question Was Not.
+                            </h3>
+
+                            <p>
+                                I later returned independently to
+                                data associated with my earlier
+                                PIVOT Lab experience, this time
+                                with a different question.
+                            </p>
+
+
+                            <div class="research-question">
+
+                                <p>
+                                    If a strategy is already known
+                                    and available, when does it
+                                    translate into action?
+                                </p>
+
+                            </div>
+
+
+                            <p>
+                                Participants had reported protective
+                                behavioral strategies, but having
+                                a strategy available did not
+                                necessarily tell me whether it
+                                was used during a particular
+                                drinking occasion.
+                            </p>
+
+                            <p>
+                                I examined baseline strategy reports,
+                                occasion-level implementation, and
+                                drinking-related outcomes, distinguishing
+                                differences between people from variation
+                                within the same person across occasions.
+                            </p>
+
+                            <p>
+                                The analysis gave me a more precise
+                                way to investigate the gap between
+                                having a strategy and using it.
+                                It also reinforced an important
+                                distinction: identifying an association
+                                is not the same as demonstrating
+                                what caused a behavior to occur.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
 
             </div>
 
