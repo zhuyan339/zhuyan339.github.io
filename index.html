@@ -865,6 +865,263 @@
                 min-width: 0;
             }
         }
+        
+/* =========================================================
+   GLOBAL TYPOGRAPHY SYSTEM
+   Unified across Sections 01–05
+   ========================================================= */
+
+:root {
+    --type-section: 2rem;
+    --type-intro: 1.5rem;
+    --type-module: 1.4rem;
+    --type-card: 1.2rem;
+    --type-body: 0.97rem;
+    --type-subtitle: 0.88rem;
+    --type-label: 0.76rem;
+    --type-caption: 0.8rem;
+
+    --leading-heading: 1.4;
+    --leading-body: 1.8;
+}
+
+/* BASE TYPOGRAPHY */
+
+#wrapper {
+    color: var(--text);
+}
+
+#wrapper h1,
+#wrapper h2,
+#wrapper h3,
+#wrapper h4 {
+    letter-spacing: -0.02em;
+}
+
+#wrapper p {
+    font-size: var(--type-body) !important;
+    line-height: var(--leading-body) !important;
+    font-weight: 400;
+}
+
+/* SECTION TITLES */
+
+#wrapper section > .inner > h2 {
+    font-size: var(--type-section);
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+
+/* SECTION INTRODUCTION HEADINGS */
+
+#intro .profile-summary h3,
+#patterns .journey-opening h3,
+#next .research-opening h3,
+#beyond .practice-story h3,
+#thoughts .thoughts-opening h3 {
+    font-size: var(--type-intro);
+    line-height: var(--leading-heading);
+    font-weight: 600;
+    margin-bottom: 1.1rem;
+}
+
+/* MODULE HEADINGS */
+
+#patterns .journey-section-title,
+#next .research-group-title,
+#beyond .artwork-section h3 {
+    font-size: var(--type-module);
+    line-height: var(--leading-heading);
+    font-weight: 600;
+}
+
+/* CARD AND CONTENT HEADINGS */
+
+#patterns .journey-school-name,
+#patterns .journey-story-text h3,
+#next .research-lab h4,
+#thoughts .thought-card h3 {
+    font-size: var(--type-card);
+    line-height: var(--leading-heading);
+    font-weight: 600;
+}
+
+/* STANDARD BODY TEXT */
+
+#intro .profile-summary p,
+#patterns .journey-opening p,
+#patterns .journey-school-description,
+#patterns .journey-story-text p,
+#next .research-opening p,
+#next .research-lab p,
+#next .research-feature p,
+#next .research-connection-note p,
+#beyond .practice-story p,
+#beyond .artwork-intro,
+#thoughts .thoughts-opening p,
+#thoughts .thought-card p,
+#thoughts .open-ending p {
+    font-size: var(--type-body) !important;
+    line-height: var(--leading-body) !important;
+}
+
+/* SUBTITLES AND PROJECT NAMES */
+
+#patterns .journey-section-subtitle,
+#patterns .journey-degree,
+#patterns .journey-minor,
+#patterns .journey-story-lead,
+#next .research-project-name {
+    font-size: var(--type-subtitle) !important;
+    line-height: 1.65 !important;
+}
+
+/* SMALL SECTION AND REFLECTION LABELS */
+
+#wrapper .section-kicker,
+#next .research-group-label,
+#next .research-reflection-label,
+#next .research-connection-heading span {
+    font-size: var(--type-label) !important;
+    line-height: 1.5 !important;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* CAPTIONS AND SMALL NOTES */
+
+#next .research-visual figcaption,
+#beyond .artwork-caption,
+#wrapper .small-note {
+    font-size: var(--type-caption) !important;
+    line-height: 1.65 !important;
+}
+
+/* RESTORE SPECIAL TEXT HIERARCHY */
+
+#intro .profile-name {
+    font-size: 3.55rem;
+    line-height: 1.05;
+    font-weight: 700;
+}
+
+#intro .profile-tagline {
+    font-size: 1.25rem !important;
+    line-height: 1.5 !important;
+    font-weight: 600;
+}
+
+#intro .profile-location {
+    font-size: var(--type-subtitle) !important;
+    line-height: 1.6 !important;
+}
+
+#patterns .journey-degree,
+#patterns .journey-story-lead,
+#next .research-project-name,
+#next .research-lab-question,
+#thoughts .thought-question {
+    font-weight: 600 !important;
+}
+
+#next .research-question p {
+    font-size: 1.06rem !important;
+    line-height: 1.7 !important;
+    font-weight: 600 !important;
+}
+
+#thoughts .thought-card p:last-child {
+    font-size: var(--type-body) !important;
+    line-height: var(--leading-body) !important;
+}
+
+        /* CONSISTENT PARAGRAPH SPACING */
+        
+        #intro .profile-summary p,
+        #patterns .journey-opening p,
+        #patterns .journey-story-text p,
+        #next .research-feature p,
+        #next .research-lab p,
+        #beyond .practice-story p,
+        #thoughts .thought-card p {
+            margin-bottom: 1rem;
+        }
+        
+        /* PRESERVE EXISTING SPECIAL SPACING */
+        
+        #patterns .journey-school-description {
+            margin-bottom: 0 !important;
+        }
+        
+        #patterns .journey-degree {
+            margin-bottom: 0.15rem !important;
+        }
+        
+        #patterns .journey-minor {
+            margin-bottom: 0.85rem !important;
+        }
+        
+        #next .research-group-label {
+            margin-bottom: 0.55rem !important;
+        }
+        
+        #next .research-reflection-label {
+            margin-bottom: 0.8rem !important;
+        }
+        
+        #next .research-project-name {
+            margin-bottom: 0.85rem !important;
+        }
+        
+        #next .research-question p {
+            margin: 0 !important;
+        }
+        
+        #thoughts .thought-question {
+            margin-bottom: 0.65rem !important;
+        }
+        
+        #next .research-lab-question {
+            margin-top: auto !important;
+        }
+        
+        #next .research-connection-note p:last-child,
+        #next .research-reflection-box p:last-child,
+        #next .research-feature p:last-child,
+        #patterns .journey-story-text p:last-child,
+        #thoughts .thought-card p:last-child {
+            margin-bottom: 0 !important;
+        }
+        
+        /* MOBILE TYPOGRAPHY */
+        
+        @media screen and (max-width: 736px) {
+            :root {
+                --type-section: 1.8rem;
+                --type-intro: 1.35rem;
+                --type-module: 1.25rem;
+                --type-card: 1.15rem;
+                --type-body: 0.95rem;
+                --type-subtitle: 0.85rem;
+                --type-label: 0.73rem;
+                --type-caption: 0.78rem;
+            }
+        
+            #intro .profile-name {
+                font-size: 2.55rem;
+            }
+        
+            #intro .profile-tagline {
+                font-size: 1.08rem !important;
+            }
+        
+            #next .research-question p {
+                font-size: 1rem !important;
+            }
+        }
+
     </style>
 </head>
 
