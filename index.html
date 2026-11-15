@@ -408,21 +408,28 @@
            RESEARCH REFLECTION
            ========================================================= */
         #next { background: #F0F4EF; }
+
         #next .research-opening {
-            max-width: 800px;
-            margin-bottom: 3.2rem;
+            max-width: 820px;
+            margin-bottom: 3.1rem;
         }
+
         #next .research-opening h3 {
             font-size: 1.55rem;
             line-height: 1.45;
             margin-bottom: 1.1rem;
         }
+
         #next .research-opening p {
             font-size: 0.97rem !important;
             line-height: 1.85 !important;
             color: var(--muted) !important;
         }
-        #next .research-group { margin-top: 3.5rem; }
+
+        #next .research-group {
+            margin-top: 3.4rem;
+        }
+
         #next .research-group-label {
             font-size: 0.76rem !important;
             font-weight: 700;
@@ -431,63 +438,161 @@
             color: var(--sage-dark) !important;
             margin-bottom: 1.5rem;
         }
+
+        /* RESEARCH LABS */
+
         #next .research-labs {
             display: grid;
-            grid-template-columns: repeat(2,minmax(0,1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.4rem;
             align-items: stretch;
         }
+
         #next .research-lab {
             min-width: 0;
+            display: flex;
+            flex-direction: column;
             padding: 2rem;
             background: var(--white);
             border: 1px solid var(--border);
             border-radius: 1rem;
             box-shadow: 0 6px 22px rgba(23,50,77,0.04);
         }
+
         #next .research-project-name {
             font-size: 0.8rem !important;
             font-weight: 600;
             color: var(--blue) !important;
-            margin-bottom: 0.9rem;
+            margin-bottom: 0.85rem;
         }
+
         #next .research-lab h3 {
             font-size: 1.35rem;
             line-height: 1.4;
-            margin-bottom: 1.15rem;
+            margin-bottom: 1.1rem;
         }
+
         #next .research-lab p {
             font-size: 0.92rem !important;
             line-height: 1.8 !important;
             margin-bottom: 1rem;
         }
-        #next .research-lab p:last-child { margin-bottom: 0; }
+
+        #next .research-lab p:last-child {
+            margin-bottom: 0;
+        }
+
+        #next .research-lab-context {
+            min-height: 6.5rem;
+        }
+
+        #next .research-lab-divider {
+            border: 0;
+            height: 1px;
+            background: var(--border);
+            margin: 0.55rem 0 1.4rem;
+        }
+
+        #next .research-lab-reflection {
+            flex: 1;
+        }
+
+        #next .research-lab-question {
+            margin-top: auto !important;
+            padding-top: 1.3rem;
+            color: var(--navy) !important;
+            font-weight: 600;
+        }
+
+        /* CONNECTED PERSPECTIVES */
+
+        #next .research-connection {
+            margin-top: 2rem;
+        }
+
+        #next .research-connection-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.4rem;
+        }
+
+        #next .research-connection-heading:before,
+        #next .research-connection-heading:after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        #next .research-connection-heading span {
+            flex: 0 0 auto;
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            color: var(--sage-dark);
+        }
+
+        #next .research-connection-note {
+            background: var(--sage-light);
+            border-radius: 1rem;
+            padding: 1.6rem 1.8rem;
+        }
+
+        #next .research-reflection-label {
+            font-size: 0.76rem !important;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--sage-dark) !important;
+            margin-bottom: 0.8rem !important;
+        }
+
+        #next .research-connection-note p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* RESEARCH FEATURES */
+
         #next .research-feature {
             padding: 2.2rem 0;
             border-top: 1px solid var(--border);
         }
-        #next .research-feature-grid {
-            display: grid;
-            grid-template-columns: minmax(0,0.85fr) minmax(0,1.15fr);
-            gap: 2.5rem;
-            align-items: center;
-        }
-        #next .research-feature-text { min-width: 0; }
+
         #next .research-feature h3 {
             font-size: 1.45rem;
             line-height: 1.4;
             margin-bottom: 1.2rem;
         }
+
         #next .research-feature p {
             font-size: 0.94rem !important;
             line-height: 1.85 !important;
             margin-bottom: 1rem;
         }
-        #next .research-feature p:last-child { margin-bottom: 0; }
+
+        #next .research-feature p:last-child {
+            margin-bottom: 0;
+        }
+
+        #next .research-feature-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        #next .research-feature-text {
+            min-width: 0;
+        }
+
         #next .research-visual {
             min-width: 0;
             margin: 0;
         }
+
         #next .research-visual img {
             display: block;
             width: 100%;
@@ -497,20 +602,51 @@
             background: var(--white);
             box-shadow: 0 8px 26px rgba(23,50,77,0.055);
         }
+
         #next .research-visual figcaption {
             font-size: 0.78rem;
             line-height: 1.65;
             color: var(--muted);
             margin-top: 0.85rem;
         }
-        #next .research-independent { max-width: 850px; }
+
+        /* CAPSTONE REFLECTION */
+
+        #next .research-about {
+            margin-top: 2rem;
+            padding-top: 1.6rem;
+            border-top: 1px solid var(--border);
+        }
+
+        #next .research-reflection-box {
+            margin-top: 1.4rem;
+            padding: 1.5rem 1.7rem;
+            background: var(--sage-light);
+            border-radius: 1rem;
+        }
+
+        #next .research-reflection-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* INDEPENDENT REANALYSIS */
+
+        #next .research-independent {
+            max-width: 850px;
+        }
+
+        #next .research-independent .research-reflection-label {
+            margin-top: 1.8rem;
+        }
+
         #next .research-question {
-            margin: 1.6rem 0;
+            margin: 1.6rem 0 0;
             padding: 1.25rem 1.5rem;
             border-left: 4px solid var(--yellow);
             border-radius: 0 0.85rem 0.85rem 0;
             background: var(--yellow-light);
         }
+
         #next .research-question p {
             font-size: 1.06rem !important;
             font-weight: 600;
@@ -518,27 +654,75 @@
             color: var(--navy) !important;
             margin: 0 !important;
         }
+
+        /* RESPONSIVE */
+
         @media screen and (max-width: 980px) {
             #next .research-feature-grid {
                 grid-template-columns: 1fr;
                 gap: 1.8rem;
             }
-            #next .research-visual { max-width: 760px; }
+
+            #next .research-visual {
+                max-width: 760px;
+            }
         }
+
         @media screen and (max-width: 736px) {
-            #next .research-opening { margin-bottom: 2.5rem; }
-            #next .research-opening h3 { font-size: 1.35rem; }
-            #next .research-group { margin-top: 2.8rem; }
+            #next .research-opening {
+                margin-bottom: 2.5rem;
+            }
+
+            #next .research-opening h3 {
+                font-size: 1.35rem;
+            }
+
+            #next .research-group {
+                margin-top: 2.8rem;
+            }
+
             #next .research-labs {
                 grid-template-columns: 1fr;
                 gap: 1.1rem;
             }
-            #next .research-lab { padding: 1.5rem; }
+
+            #next .research-lab {
+                padding: 1.5rem;
+            }
+
+            #next .research-lab-context {
+                min-height: 0;
+            }
+
             #next .research-lab h3,
-            #next .research-feature h3 { font-size: 1.25rem; }
-            #next .research-feature { padding: 1.7rem 0; }
-            #next .research-feature-grid { gap: 1.4rem; }
-            #next .research-question { padding: 1rem 1.2rem; }
+            #next .research-feature h3 {
+                font-size: 1.25rem;
+            }
+
+            #next .research-feature {
+                padding: 1.7rem 0;
+            }
+
+            #next .research-feature-grid {
+                gap: 1.4rem;
+            }
+
+            #next .research-connection-note,
+            #next .research-reflection-box {
+                padding: 1.25rem;
+            }
+
+            #next .research-connection-heading {
+                gap: 0.65rem;
+            }
+
+            #next .research-connection-heading span {
+                font-size: 0.68rem;
+            }
+
+            #next .research-question {
+                padding: 1rem 1.2rem;
+            }
         }
 
         /* =========================================================
@@ -783,9 +967,9 @@
                 <div class="journey-opening">
                     <h3>A Little Fun Fact</h3>
                     <p>
-                        I started out studying Finance and Accounting during a
-                        foundation year at the University of Sheffield in the UK.
-                        But somewhere along the way, I found myself more curious
+                        I started out studying Finance and Accounting during a 
+                        foundation year at the University of Sheffield in the UK. 
+                        But somewhere along the way, I found myself more curious 
                         about the people behind the numbers than the numbers themselves.
                     </p>
                 </div>
@@ -820,9 +1004,9 @@
                                 <p class="journey-school-description">
                                     A foundation in psychological research, scientific reasoning,
                                     and the biological, cognitive, and social dimensions of human behavior.
-
+                                
                                     <br><br>
-
+                                
                                     <strong>Go Green! Go White! 💚</strong>
                                 </p>
                             </div>
@@ -838,16 +1022,18 @@
                                     M.S. in Psychology:
                                     Data Science in Human Behavior · 2023
                                 </p>
+                                
                                 <p class="journey-minor">
                                     Behavioral Data Science &amp; Applied Research
                                 </p>
+                                
                                 <p class="journey-school-description">
                                     Advanced training in statistical analysis, experimental design,
                                     programming, and machine learning, with hands-on experience
                                     applying data science to real-world questions about human behavior.
-
+                                
                                     <br><br>
-
+                                
                                     <strong>Go Badgers! ❤️</strong>
                                 </p>
                             </div>
@@ -878,11 +1064,11 @@
                         </figure>
                         <div class="journey-story-text">
                             <h3>From Understanding to Doing</h3>
-
+                        
                             <p class="journey-story-lead">
                                 Applied Behavior Analysis (ABA) · Clinical Practice
                             </p>
-
+                        
                             <p>
                                 Working with children and families under BCBA supervision,
                                 applying behavioral principles, implementing individualized
@@ -898,20 +1084,20 @@
                     <article class="journey-story reverse">
                         <div class="journey-story-text">
                             <h3>Trying to Build Something</h3>
-
+                        
                             <p class="journey-story-lead">
                                 Entrepreneurship
                             </p>
-
+                        
                             <p>
                                 Exploring the operational side of behavioral services
                                 through a U.S.-based venture supporting a locally operated
                                 center in Chengdu, China, with a focus on remote technical
                                 support, coordination, and the practical challenges
                                 of service delivery.
-
+                        
                                 <br><br>
-
+                        
                                 <strong>A Nudge Toward Change. ✨</strong>
                             </p>
                         </div>
@@ -934,143 +1120,246 @@
              ===================================================== -->
         <section id="next" class="wrapper style3 fade-up">
             <div class="inner">
+
                 <p class="section-kicker">03</p>
                 <h2>Research Reflection</h2>
 
+                <!-- SECTION INTRODUCTION -->
                 <div class="research-opening">
-                    <h3>What can the data tell us—and what might we be missing?</h3>
+                    <h3>
+                        What can the data tell us—and what might we be missing?
+                    </h3>
+
                     <p>
-                        My research experiences have taught me to look beyond
-                        a result and ask how it was measured, what it means,
-                        and what remains unexplained. Across daily reports,
-                        intensive longitudinal data, digital activity records,
-                        and independent reanalysis, I have become especially
-                        interested in how behavior unfolds across situations
-                        and over time.
+                        My research experiences have taught me to look
+                        beyond a result and ask what was measured,
+                        how it was interpreted, and what remains
+                        unexplained. Across self-reports, behavioral
+                        data, and digital activity records, I have
+                        encountered different ways of understanding
+                        human experience and action. Each approach
+                        reveals something valuable, while leaving
+                        other questions open.
                     </p>
                 </div>
 
-                <!-- RESEARCH LABS -->
+                <!-- =================================================
+                     RESEARCH LABS
+                     ================================================= -->
                 <div class="research-group">
-                    <p class="research-group-label">Research Labs</p>
+
+                    <p class="research-group-label">
+                        Research Labs
+                    </p>
 
                     <div class="research-labs">
 
+                        <!-- PIVOT LAB -->
                         <article class="research-lab">
-                            <p class="research-project-name">PIVOT Lab</p>
-                            <h3>Looking Beyond a Single Report</h3>
 
-                            <p>
-                                Working with survey and daily-diary data on
-                                psychological experiences and behavior showed
-                                me why repeated observations matter. A single
-                                report offers a snapshot; reports collected
-                                across days can reveal how experiences and
-                                actions vary within the same person.
+                            <p class="research-project-name">
+                                PIVOT Lab
                             </p>
 
-                            <p>
-                                Yet self-reports are not direct windows into
-                                behavior. What people recall, notice, and
-                                choose to report also shapes the data.
-                                This experience taught me to distinguish
-                                changes in what we measure from changes
-                                in the experiences we hope to understand.
+                            <h3>
+                                Understanding Human Experience
+                            </h3>
+
+                            <p class="research-lab-context">
+                                The PIVOT Lab examines interpersonal
+                                violence, trauma, and their psychological
+                                consequences, with attention to
+                                differences across individuals
+                                and contexts.
                             </p>
+
+                            <hr class="research-lab-divider" />
+
+                            <p class="research-lab-reflection">
+                                Surveys and daily-diary research offer
+                                ways to understand experiences that
+                                are often difficult to observe directly.
+                                Yet translating lived experience into
+                                measurable responses involves memory,
+                                interpretation, and individual differences.
+                                Even a simple question can carry
+                                different meanings for different people.
+                            </p>
+
+                            <p class="research-lab-question">
+                                What does a response capture,
+                                and what might remain beyond it?
+                            </p>
+
                         </article>
 
+                        <!-- ADDICTION RESEARCH CENTER -->
                         <article class="research-lab">
+
                             <p class="research-project-name">
-                                UW Addiction Research Center
-                            </p>
-                            <h3>More Data, Better Questions</h3>
-
-                            <p>
-                                Working with more than 70,000 intensive
-                                longitudinal observations introduced me to
-                                the challenges of organizing and evaluating
-                                real-world behavioral data. Data quality,
-                                timing, and the meaning of each measure
-                                mattered as much as the number of records.
+                                Addiction Research Center
                             </p>
 
-                            <p>
-                                Different measures can capture different
-                                parts of an experience. Before combining
-                                signals or interpreting a pattern, I learned
-                                to ask what each measure can support—and
-                                what conclusions would go beyond the data.
+                            <h3>
+                                Understanding Behavior in Context
+                            </h3>
+
+                            <p class="research-lab-context">
+                                The Addiction Research Center studies
+                                alcohol and other substance use
+                                disorders, using intensive longitudinal
+                                data and predictive modeling to
+                                examine risks in everyday life.
                             </p>
+
+                            <hr class="research-lab-divider" />
+
+                            <p class="research-lab-reflection">
+                                Geolocation, text messaging patterns,
+                                and social interaction data offer
+                                another perspective on daily behavior.
+                                Patterns of movement and communication
+                                can reveal aspects of life that
+                                self-reports may not capture.
+                                Yet a behavioral trace does not
+                                necessarily explain the experience
+                                behind it.
+                            </p>
+
+                            <p class="research-lab-question">
+                                How might these different sources
+                                inform, challenge, or refine
+                                one another?
+                            </p>
+
                         </article>
 
                     </div>
-                </div>
 
-                <!-- CAPSTONE PROJECT -->
-                <div class="research-group">
-                    <p class="research-group-label">Capstone Project</p>
+                    <!-- CONNECTED PERSPECTIVES -->
+                    <div class="research-connection">
 
-                    <article class="research-feature">
-                        <div class="research-feature-grid">
+                        <div class="research-connection-heading">
+                            <span>Connected Perspectives</span>
+                        </div>
 
-                            <div class="research-feature-text">
-                                <p class="research-project-name">
-                                    Healthy Minds Innovations
-                                </p>
+                        <div class="research-connection-note">
 
-                                <h3>The Process Behind the Outcome</h3>
+                            <p class="research-reflection-label">
+                                Shaping My Perspective
+                            </p>
 
-                                <p>
-                                    An app may record whether someone
-                                    completed an activity, but completion
-                                    tells us little about the steps that
-                                    led there.
-                                </p>
-
-                                <p>
-                                    Using meditation app and survey data,
-                                    I applied process mining to explore
-                                    sequences of user activity. Rather than
-                                    focusing only on endpoints, I examined
-                                    how different paths through an app
-                                    could make patterns of engagement visible.
-                                </p>
-
-                                <p>
-                                    The experience left me with a useful
-                                    distinction: a digital action can show
-                                    engagement with an app, but it does not
-                                    by itself establish learning or
-                                    psychological change.
-                                </p>
-                            </div>
-
-                            <figure class="research-visual">
-                                <img
-                                    src="images/HM_appPathWay.jpg"
-                                    alt="Conceptual process-mining illustration showing transitions among Information, Learning, and Practice in a meditation app, alongside two illustrative user activity sequences."
-                                    loading="lazy"
-                                    decoding="async"
-                                />
-                                <figcaption>
-                                    Conceptual illustration of activity
-                                    transitions and possible user pathways.
-                                    The example sequences are illustrative,
-                                    not empirically identified user groups.
-                                </figcaption>
-                            </figure>
+                            <p>
+                                Moving between these two labs changed
+                                how I think about experience, behavior,
+                                and measurement. Self-reports can reveal
+                                what people experience, while behavioral
+                                traces offer another perspective on
+                                what they do. Neither tells the whole
+                                story. Together, they taught me to ask
+                                how different sources of evidence might
+                                complement, challenge, or refine
+                                one another.
+                            </p>
 
                         </div>
-                    </article>
+
+                    </div>
+
                 </div>
 
-                <!-- INDEPENDENT REANALYSIS -->
+                <!-- =================================================
+                     CAPSTONE PROJECT
+                     ================================================= -->
                 <div class="research-group">
+
+                    <p class="research-group-label">
+                        Capstone Project
+                    </p>
+
+                    <article class="research-feature">
+
+                        <p class="research-project-name">
+                            Healthy Minds Innovations
+                        </p>
+
+                        <h3>
+                            The Process Behind the Outcome
+                        </h3>
+
+                        <!-- ORIGINAL PROJECT IMAGE -->
+                        <figure class="research-visual">
+
+                            <img
+                                src="images/HM_appPathWay.jpg"
+                                alt="Conceptual illustration of meditation app activity pathways and transitions among Information, Learning, and Practice."
+                                loading="lazy"
+                                decoding="async"
+                            />
+
+                            <figcaption>
+                                Conceptual illustration of activity
+                                transitions and possible user pathways.
+                                The example sequences are illustrative,
+                                not empirically identified user groups.
+                            </figcaption>
+
+                        </figure>
+
+                        <!-- ABOUT THE PROJECT -->
+                        <div class="research-about">
+
+                            <p class="research-reflection-label">
+                                About the Project
+                            </p>
+
+                            <p>
+                                As part of a graduate capstone with
+                                Healthy Minds Innovations, meditation
+                                app activity and survey data were
+                                examined through process mining to
+                                explore how engagement unfolds
+                                across interactions.
+                            </p>
+
+                        </div>
+
+                        <!-- REFLECTION -->
+                        <div class="research-reflection-box">
+
+                            <p class="research-reflection-label">
+                                Reflection
+                            </p>
+
+                            <p>
+                                A digital record can show the path
+                                someone takes through an app, but
+                                the meaning of that path is less
+                                straightforward. Similar interactions
+                                may reflect different intentions,
+                                needs, or experiences. What can a
+                                sequence reveal about engagement,
+                                and what remains beyond the
+                                recorded activity?
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <!-- =================================================
+                     INDEPENDENT REANALYSIS
+                     ================================================= -->
+                <div class="research-group">
+
                     <p class="research-group-label">
                         Independent Reanalysis
                     </p>
 
                     <article class="research-feature">
+
                         <div class="research-independent">
 
                             <p class="research-project-name">
@@ -1083,59 +1372,70 @@
                             </h3>
 
                             <p>
-                                An independent reanalysis of daily-diary
-                                data from the PIVOT Lab examined how
-                                protective drinking strategies were used
-                                across <strong>1,105 drinking occasions
+                                An independent reanalysis of
+                                daily-diary data from the PIVOT Lab
+                                examined how protective drinking
+                                strategies were used across
+                                <strong>1,105 drinking occasions
                                 involving 203 participants</strong>.
                                 By separating differences between
-                                individuals from changes within the same
-                                person, the analysis explored how habitual
-                                strategy use relates to implementation
-                                in real-world situations.
+                                individuals from changes within
+                                the same person, the analysis
+                                explored how habitual strategy use
+                                relates to implementation in
+                                real-world situations.
                             </p>
 
-                            <p class="research-project-name">
-                                Research Reflection
-                            </p>
-
-                            <p>
-                                Although participants who reported more
-                                frequent strategy use at baseline generally
-                                implemented more strategies during drinking
-                                occasions, <strong>44.5% of recorded
-                                occasions involved no reported strategy
-                                use</strong>. This contrast highlights
-                                an important distinction: habitual patterns
-                                of behavior do not necessarily translate
-                                into consistent implementation across
-                                situations.
+                            <!-- FINDINGS AND REFLECTION -->
+                            <p class="research-reflection-label">
+                                What the Findings Made Me Ask
                             </p>
 
                             <p>
-                                The analysis also revealed that when
-                                individuals used more strategies than
-                                usual, they tended to have lower odds
-                                of heavier drinking, with stronger
-                                associations observed at higher
-                                consumption thresholds. While these
-                                observational findings do not establish
-                                causality or confirm differences between
-                                thresholds, they raise a question worth
+                                Although participants who reported
+                                more frequent strategy use at baseline
+                                generally implemented more strategies
+                                during drinking occasions,
+                                <strong>44.5% of recorded occasions
+                                involved no reported strategy use</strong>.
+                                This contrast highlights an important
+                                distinction: habitual patterns of
+                                behavior do not necessarily translate
+                                into consistent implementation
+                                across situations.
+                            </p>
+
+                            <p>
+                                The analysis also revealed that
+                                when individuals used more strategies
+                                than usual, they tended to have
+                                lower odds of heavier drinking,
+                                with stronger associations observed
+                                at higher consumption thresholds.
+                                While these observational findings
+                                do not establish causality or confirm
+                                differences between thresholds,
+                                they raise a question worth
                                 investigating:
                             </p>
 
+                            <!-- CENTRAL RESEARCH QUESTION -->
                             <div class="research-question">
+
                                 <p>
-                                    What conditions shape whether a
-                                    strategy is implemented, and why
-                                    might its relationship with outcomes
-                                    vary with their severity?
+                                    What conditions shape whether
+                                    a strategy is implemented,
+                                    and why might its relationship
+                                    with outcomes vary with
+                                    their severity?
                                 </p>
+
                             </div>
 
                         </div>
+
                     </article>
+
                 </div>
 
             </div>
@@ -1171,7 +1471,6 @@
                     </p>
 
                     <div class="artwork-grid">
-
                         <div class="artwork-card">
                             <img
                                 src="images/small_1.JPG"
@@ -1211,7 +1510,6 @@
                                 experience matter too.
                             </div>
                         </div>
-
                     </div>
 
                     <!--
@@ -1223,7 +1521,6 @@
                             Identifying information has been removed.
                         </p>
                     -->
-
                 </div>
             </div>
         </section>
@@ -1246,7 +1543,6 @@
                 </div>
 
                 <div class="thought-grid">
-
                     <div class="thought-card">
                         <h3>Agency &amp; Determinism</h3>
                         <p class="thought-question">
@@ -1297,7 +1593,6 @@
                             or supporting, and who gets to decide?
                         </p>
                     </div>
-
                 </div>
 
                 <div class="open-ending">
