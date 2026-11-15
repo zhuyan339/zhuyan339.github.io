@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <!--
     Hyperspace by HTML5 UP
@@ -429,17 +430,27 @@
             margin-top: 3.4rem;
         }
 
+        /* UNIFIED GROUP HEADING */
+        #next .research-group-heading {
+            margin-bottom: 1.7rem;
+        }
+
         #next .research-group-label {
             font-size: 0.76rem !important;
             font-weight: 700;
             letter-spacing: 0.12em;
             text-transform: uppercase;
             color: var(--sage-dark) !important;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.55rem !important;
+        }
+
+        #next .research-group-title {
+            font-size: 1.45rem;
+            line-height: 1.4;
+            margin: 0 0 0.4rem;
         }
 
         /* RESEARCH LABS */
-
         #next .research-labs {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -465,10 +476,12 @@
             margin-bottom: 0.85rem;
         }
 
-        #next .research-lab h3 {
-            font-size: 1.35rem;
+        #next .research-lab h4 {
+            font-size: 1.22rem;
             line-height: 1.4;
             margin-bottom: 1.1rem;
+            color: var(--navy);
+            letter-spacing: -0.02em;
         }
 
         #next .research-lab p {
@@ -504,7 +517,6 @@
         }
 
         /* CONNECTED PERSPECTIVES */
-
         #next .research-connection {
             margin-top: 2rem;
         }
@@ -554,16 +566,9 @@
         }
 
         /* RESEARCH FEATURES */
-
         #next .research-feature {
             padding: 2.2rem 0;
             border-top: 1px solid var(--border);
-        }
-
-        #next .research-feature h3 {
-            font-size: 1.45rem;
-            line-height: 1.4;
-            margin-bottom: 1.2rem;
         }
 
         #next .research-feature p {
@@ -576,22 +581,12 @@
             margin-bottom: 0;
         }
 
-        #next .research-feature-grid {
-            display: grid;
-            grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-            gap: 2.5rem;
-            align-items: center;
-        }
-
-        #next .research-feature-text {
-            min-width: 0;
-        }
-
+        /* CAPSTONE IMAGE */
         #next .research-visual {
             width: 100%;
             max-width: 680px;
             min-width: 0;
-            margin: 0 auto 1.5rem;
+            margin: 1.5rem auto;
         }
 
         #next .research-visual img {
@@ -611,12 +606,11 @@
             margin-top: 0.85rem;
         }
 
-        /* CAPSTONE REFLECTION */
-
+        /* CAPSTONE CONTENT */
         #next .research-about {
-            margin-top: 2rem;
-            padding-top: 1.6rem;
-            border-top: 1px solid var(--border);
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
         }
 
         #next .research-reflection-box {
@@ -631,7 +625,6 @@
         }
 
         /* INDEPENDENT REANALYSIS */
-
         #next .research-independent {
             max-width: 850px;
         }
@@ -656,19 +649,6 @@
             margin: 0 !important;
         }
 
-        /* RESPONSIVE */
-
-        @media screen and (max-width: 980px) {
-            #next .research-feature-grid {
-                grid-template-columns: 1fr;
-                gap: 1.8rem;
-            }
-
-            #next .research-visual {
-                max-width: 760px;
-            }
-        }
-
         @media screen and (max-width: 736px) {
             #next .research-opening {
                 margin-bottom: 2.5rem;
@@ -680,6 +660,10 @@
 
             #next .research-group {
                 margin-top: 2.8rem;
+            }
+
+            #next .research-group-title {
+                font-size: 1.28rem;
             }
 
             #next .research-labs {
@@ -695,17 +679,12 @@
                 min-height: 0;
             }
 
-            #next .research-lab h3,
-            #next .research-feature h3 {
-                font-size: 1.25rem;
+            #next .research-lab h4 {
+                font-size: 1.16rem;
             }
 
             #next .research-feature {
                 padding: 1.7rem 0;
-            }
-
-            #next .research-feature-grid {
-                gap: 1.4rem;
             }
 
             #next .research-connection-note,
@@ -968,9 +947,9 @@
                 <div class="journey-opening">
                     <h3>A Little Fun Fact</h3>
                     <p>
-                        I started out studying Finance and Accounting during a 
-                        foundation year at the University of Sheffield in the UK. 
-                        But somewhere along the way, I found myself more curious 
+                        I started out studying Finance and Accounting during a
+                        foundation year at the University of Sheffield in the UK.
+                        But somewhere along the way, I found myself more curious
                         about the people behind the numbers than the numbers themselves.
                     </p>
                 </div>
@@ -1005,9 +984,9 @@
                                 <p class="journey-school-description">
                                     A foundation in psychological research, scientific reasoning,
                                     and the biological, cognitive, and social dimensions of human behavior.
-                                
+
                                     <br><br>
-                                
+
                                     <strong>Go Green! Go White! 💚</strong>
                                 </p>
                             </div>
@@ -1023,18 +1002,16 @@
                                     M.S. in Psychology:
                                     Data Science in Human Behavior · 2023
                                 </p>
-                                
                                 <p class="journey-minor">
                                     Behavioral Data Science &amp; Applied Research
                                 </p>
-                                
                                 <p class="journey-school-description">
                                     Advanced training in statistical analysis, experimental design,
                                     programming, and machine learning, with hands-on experience
                                     applying data science to real-world questions about human behavior.
-                                
+
                                     <br><br>
-                                
+
                                     <strong>Go Badgers! ❤️</strong>
                                 </p>
                             </div>
@@ -1065,11 +1042,11 @@
                         </figure>
                         <div class="journey-story-text">
                             <h3>From Understanding to Doing</h3>
-                        
+
                             <p class="journey-story-lead">
                                 Applied Behavior Analysis (ABA) · Clinical Practice
                             </p>
-                        
+
                             <p>
                                 Working with children and families under BCBA supervision,
                                 applying behavioral principles, implementing individualized
@@ -1085,20 +1062,20 @@
                     <article class="journey-story reverse">
                         <div class="journey-story-text">
                             <h3>Trying to Build Something</h3>
-                        
+
                             <p class="journey-story-lead">
                                 Entrepreneurship
                             </p>
-                        
+
                             <p>
                                 Exploring the operational side of behavioral services
                                 through a U.S.-based venture supporting a locally operated
                                 center in Chengdu, China, with a focus on remote technical
                                 support, coordination, and the practical challenges
                                 of service delivery.
-                        
+
                                 <br><br>
-                        
+
                                 <strong>A Nudge Toward Change. ✨</strong>
                             </p>
                         </div>
@@ -1145,13 +1122,18 @@
                 </div>
 
                 <!-- =================================================
-                     RESEARCH LABS
+                     01 RESEARCH LABS
                      ================================================= -->
                 <div class="research-group">
 
-                    <p class="research-group-label">
-                        Research Labs
-                    </p>
+                    <div class="research-group-heading">
+                        <p class="research-group-label">
+                            Research Labs
+                        </p>
+                        <h3 class="research-group-title">
+                            Learning Through Different Perspectives
+                        </h3>
+                    </div>
 
                     <div class="research-labs">
 
@@ -1162,9 +1144,9 @@
                                 PIVOT Lab
                             </p>
 
-                            <h3>
+                            <h4>
                                 Understanding Human Experience
-                            </h3>
+                            </h4>
 
                             <p class="research-lab-context">
                                 The PIVOT Lab examines interpersonal
@@ -1201,9 +1183,9 @@
                                 Addiction Research Center
                             </p>
 
-                            <h3>
+                            <h4>
                                 Understanding Behavior in Context
-                            </h3>
+                            </h4>
 
                             <p class="research-lab-context">
                                 The Addiction Research Center studies
@@ -1247,7 +1229,7 @@
                         <div class="research-connection-note">
 
                             <p class="research-reflection-label">
-                                Shaping My Perspective
+                                Reflection
                             </p>
 
                             <p>
@@ -1270,13 +1252,18 @@
                 </div>
 
                 <!-- =================================================
-                     CAPSTONE PROJECT
+                     02 CAPSTONE PROJECT
                      ================================================= -->
                 <div class="research-group">
 
-                    <p class="research-group-label">
-                        Capstone Project
-                    </p>
+                    <div class="research-group-heading">
+                        <p class="research-group-label">
+                            Capstone Project
+                        </p>
+                        <h3 class="research-group-title">
+                            The Process Behind the Outcome
+                        </h3>
+                    </div>
 
                     <article class="research-feature">
 
@@ -1284,11 +1271,25 @@
                             Healthy Minds Innovations
                         </p>
 
-                        <h3>
-                            The Process Behind the Outcome
-                        </h3>
+                        <!-- ABOUT THE PROJECT -->
+                        <div class="research-about">
 
-                        <!-- ORIGINAL PROJECT IMAGE -->
+                            <p class="research-reflection-label">
+                                About the Project
+                            </p>
+
+                            <p>
+                                As part of a graduate capstone with
+                                Healthy Minds Innovations, meditation
+                                app activity and survey data were
+                                examined through process mining to
+                                explore how engagement unfolds across
+                                sequences of interactions.
+                            </p>
+
+                        </div>
+
+                        <!-- SINGLE CENTERED PROJECT IMAGE -->
                         <figure class="research-visual">
 
                             <img
@@ -1307,65 +1308,45 @@
 
                         </figure>
 
-
-                        <!-- ABOUT THE PROJECT -->
-                        <div class="research-about">
-                            <p class="research-reflection-label">
-                                About the Project
-                            </p>
-                        
-                            <p>
-                                As part of a graduate capstone with Healthy Minds Innovations, 
-                                meditation app activity and survey data were examined through 
-                                process mining to explore how engagement unfolds across sequences
-                                of interactions.
-                            </p>
-                        </div>
-                        
-                        <!-- PROJECT IMAGE -->
-                        <figure class="research-visual">
-                            <img
-                                src="images/HM_appPathWay.jpg"
-                                alt="Process-mining illustration of meditation app user pathways."
-                                loading="lazy"
-                                decoding="async"
-                            />
-                        
-                            <figcaption>
-                                Conceptual illustration of activity transitions and possible
-                                user pathways. The example sequences are illustrative,
-                                not empirically identified user groups.
-                            </figcaption>
-                        </figure>
-                        
                         <!-- REFLECTION -->
                         <div class="research-reflection-box">
+
                             <p class="research-reflection-label">
                                 Reflection
                             </p>
-                        
-                            <p>
-                                Digital activity records can reveal the paths people take 
-                                through an app, but not necessarily the experiences behind them. 
-                                Similar patterns of engagement may reflect different intentions, 
-                                needs, or experiences. What can behavioral sequences reveal about 
-                                engagement, and what remains beyond the recorded activity?
-                            </p>
-                        </div>
 
+                            <p>
+                                Digital activity records can reveal
+                                the paths people take through an app,
+                                but not necessarily the experiences
+                                behind them. Similar patterns of
+                                engagement may reflect different
+                                intentions, needs, or experiences.
+                                What can behavioral sequences reveal
+                                about engagement, and what remains
+                                beyond the recorded activity?
+                            </p>
+
+                        </div>
 
                     </article>
 
                 </div>
 
                 <!-- =================================================
-                     INDEPENDENT REANALYSIS
+                     03 INDEPENDENT REANALYSIS
                      ================================================= -->
                 <div class="research-group">
 
-                    <p class="research-group-label">
-                        Independent Reanalysis
-                    </p>
+                    <div class="research-group-heading">
+                        <p class="research-group-label">
+                            Independent Reanalysis
+                        </p>
+                        <h3 class="research-group-title">
+                            Revisiting Familiar Data,
+                            Asking Different Questions
+                        </h3>
+                    </div>
 
                     <article class="research-feature">
 
@@ -1374,11 +1355,6 @@
                             <p class="research-project-name">
                                 Protective Behavioral Strategies
                             </p>
-
-                            <h3>
-                                Revisiting Familiar Data,
-                                Asking Different Questions
-                            </h3>
 
                             <p>
                                 An independent reanalysis of
@@ -1395,9 +1371,9 @@
                                 real-world situations.
                             </p>
 
-                            <!-- FINDINGS AND REFLECTION -->
+                            <!-- REFLECTION -->
                             <p class="research-reflection-label">
-                                What the Findings Made Me Ask
+                                Reflection
                             </p>
 
                             <p>
