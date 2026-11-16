@@ -84,7 +84,11 @@
         /* =========================================================
            ABOUT
            ========================================================= */
-        .about-profile { max-width: 940px; }
+        
+        .about-profile {
+            max-width: 1040px;
+        }
+        
         .profile-top {
             display: grid;
             grid-template-columns: 220px 1fr;
@@ -92,11 +96,13 @@
             align-items: center;
             margin-bottom: 2.5rem;
         }
+        
         .profile-photo {
             display: flex;
             align-items: center;
             justify-content: flex-start;
         }
+        
         .profile-photo img {
             width: 205px;
             height: 205px;
@@ -109,31 +115,42 @@
                 0 12px 35px rgba(23,50,77,0.13);
             background: var(--white);
         }
+        
         .profile-name {
             font-size: 3.55rem;
             line-height: 1;
             margin: 0 0 0.8rem 0;
             color: var(--navy) !important;
         }
+        
         .profile-tagline {
             font-size: 1.25rem !important;
             font-weight: 600;
             color: var(--blue) !important;
             margin: 0 0 0.35rem 0;
         }
+        
         .profile-location {
             font-size: 0.9rem !important;
             color: var(--muted) !important;
             margin: 0;
         }
-        .profile-summary { max-width: 790px; }
+        
+        /* ABOUT SUMMARY — WIDTH ADJUSTMENT */
+        
+        .profile-summary {
+            max-width: 960px;
+        }
+        
         .profile-summary p {
             font-size: 1.06rem !important;
+            line-height: 1.8 !important;
             color: var(--text) !important;
             margin-bottom: 1rem;
         }
-
+        
         /* ABOUT ACTIONS */
+        
         .about-actions {
             display: flex;
             align-items: center;
@@ -141,48 +158,57 @@
             gap: 0.75rem;
             margin-top: 1.8rem;
         }
+        
         #intro .button.about-action {
             margin: 0;
             text-align: center;
         }
+        
         #intro .button.about-cv {
             min-width: 165px;
             background: var(--blue) !important;
             color: #FFFFFF !important;
             box-shadow: none !important;
         }
+        
         #intro .button.about-cv:hover {
             background: var(--navy) !important;
             color: #FFFFFF !important;
         }
+        
         #intro .button.about-linkedin {
             min-width: 132px;
             background: var(--white) !important;
             color: var(--navy) !important;
             box-shadow: inset 0 0 0 1.5px var(--blue) !important;
         }
+        
         #intro .button.about-linkedin:hover {
             background: var(--blue-light) !important;
             color: var(--navy) !important;
         }
+        
         #intro .button.about-email {
             min-width: 120px;
             background: var(--sage-light) !important;
             color: var(--sage-dark) !important;
             box-shadow: inset 0 0 0 1.5px var(--sage) !important;
         }
+        
         #intro .button.about-email:hover {
             background: var(--sage) !important;
             color: #FFFFFF !important;
         }
-
-        /* GENERAL SECTION ELEMENTS */
+        
+        /* GENERAL SECTION ELEMENTS — UNCHANGED */
+        
         .section-intro {
             max-width: 780px;
             font-size: 1.05rem !important;
             margin-bottom: 2.3rem;
             color: var(--muted) !important;
         }
+        
         .section-kicker {
             margin-bottom: 0.4rem !important;
             font-size: 0.72rem !important;
@@ -191,6 +217,7 @@
             letter-spacing: 0.13em;
             color: var(--sage-dark) !important;
         }
+        
         .small-note {
             font-size: 0.78rem !important;
             color: var(--muted) !important;
