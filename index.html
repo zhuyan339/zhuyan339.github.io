@@ -224,14 +224,17 @@
             opacity: 0.8;
         }
 
+
         /* =========================================================
            JOURNEY
            ========================================================= */
+        
         #patterns {
             background: var(--white);
         }
         
-        /* FUN FACT — LOCAL DESIGN ONLY */
+        /* FUN FACT */
+        
         #patterns .journey-opening {
             max-width: 780px;
             margin-bottom: 1.5rem;
@@ -243,7 +246,7 @@
             font-size: 1.3rem !important;
             font-style: italic;
             font-weight: 500 !important;
-            line-height: 1.4;
+            line-height: 1.4 !important;
             color: var(--sage-dark) !important;
             margin-bottom: 0.85rem;
         }
@@ -251,201 +254,236 @@
         #patterns .journey-opening p {
             max-width: 730px;
             font-size: 0.97rem !important;
+            font-weight: 400;
             line-height: 1.8 !important;
+            color: var(--text) !important;
             margin-bottom: 0;
         }
         
-        /* ACADEMIC FOUNDATIONS — UNCHANGED */
+        /* FOUR EXPERIENCE MODULES — SHARED LAYOUT */
+        
         #patterns .journey-section {
-            margin-top: 3rem;
+            margin-top: 2.2rem;
         }
         
-        #patterns .journey-section-title {
-            font-size: 1.4rem;
-            line-height: 1.4;
-            margin-bottom: 0.35rem;
-        }
-        
-        #patterns .journey-section-subtitle {
-            font-size: 0.92rem !important;
-            color: var(--muted) !important;
-            margin-bottom: 1.8rem !important;
-        }
-
-
-        /* =========================================================
-           ACADEMIC FOUNDATIONS
-           Alternating layout with smaller 3:4 photos
-           ========================================================= */
-        #patterns .journey-education-grid {
+        #patterns .journey-grid {
             display: flex;
             flex-direction: column;
             gap: 2.8rem;
         }
-        #patterns .journey-school {
+        
+        /* Shared experience container */
+        
+        #patterns .journey-item {
             display: grid;
-            grid-template-columns: 280px minmax(0,1fr);
+            grid-template-columns: 280px minmax(0, 1fr);
             gap: 3rem;
             align-items: center;
             min-width: 0;
             padding-bottom: 2.8rem;
             border-bottom: 1px solid var(--border);
         }
-        #patterns .journey-school:last-child {
-            grid-template-columns: minmax(0,1fr) 280px;
-            padding-bottom: 0;
-            border-bottom: none;
+        
+        /* Text-left, photo-right variation */
+        
+        #patterns .journey-item.reverse {
+            grid-template-columns: minmax(0, 1fr) 280px;
         }
-        #patterns .journey-school-content {
-            min-width: 0;
-            max-width: 630px;
-        }
-        #patterns .journey-school:last-child .journey-school-content {
+        
+        #patterns .journey-item.reverse .journey-content {
             grid-column: 1;
             grid-row: 1;
         }
-        #patterns .journey-school:last-child .journey-graduation-photo {
+        
+        #patterns .journey-item.reverse .journey-photo {
             grid-column: 2;
             grid-row: 1;
         }
-        #patterns .journey-graduation-photo {
+        
+        #patterns .journey-item:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        /* SHARED TEXT SYSTEM */
+        
+        #patterns .journey-content {
+            min-width: 0;
+            max-width: 630px;
+        }
+        
+        /* Level 1 — Experience title */
+        
+        #patterns .journey-title {
+            font-size: 1.2rem !important;
+            font-weight: 600 !important;
+            font-style: normal;
+            line-height: 1.4 !important;
+            letter-spacing: -0.01em;
+            color: var(--navy) !important;
+            margin-bottom: 0.35rem;
+        }
+        
+        /* Level 2 — Degree / role / year */
+        
+        #patterns .journey-primary {
+            font-size: 0.88rem !important;
+            font-weight: 600 !important;
+            line-height: 1.6 !important;
+            color: var(--blue) !important;
+            margin-bottom: 0.15rem !important;
+        }
+        
+        /* Level 3 — Minor / specialization */
+        
+        #patterns .journey-secondary {
+            font-size: 0.82rem !important;
+            font-weight: 400 !important;
+            line-height: 1.6 !important;
+            color: var(--muted) !important;
+            margin-bottom: 0.85rem !important;
+        }
+        
+        /* Level 4 — Description */
+        
+        #patterns .journey-description {
+            font-size: 0.97rem !important;
+            font-weight: 400;
+            line-height: 1.8 !important;
+            color: var(--text) !important;
+            margin-bottom: 0 !important;
+        }
+        
+        /* Level 5 — Personal closing line */
+        
+        #patterns .journey-description strong {
+            font-weight: 600;
+            color: var(--navy);
+        }
+        
+        /* IMAGES — ORIGINAL FORMATS PRESERVED */
+        
+        /* Shared photo frame */
+        
+        #patterns .journey-photo {
             width: 100%;
-            max-width: 280px;
             margin: 0;
+            min-width: 0;
             overflow: hidden;
             border-radius: 0.85rem;
-            background: var(--blue-light);
             border: 1px solid var(--border);
-            box-shadow: 0 8px 26px rgba(23,50,77,0.07);
+            box-shadow: 0 8px 26px rgba(23, 50, 77, 0.07);
         }
-        #patterns .journey-graduation-photo img {
+        
+        /* School graduation photos */
+        
+        #patterns .journey-photo.graduation {
+            max-width: 280px;
+            background: var(--blue-light);
+        }
+        
+        #patterns .journey-photo.graduation img {
             display: block;
             width: 100%;
             aspect-ratio: 3 / 4;
             object-fit: cover;
             object-position: center 35%;
         }
-        #patterns .journey-school-name {
-            font-size: 1.12rem;
-            line-height: 1.4;
-            margin-bottom: 0.35rem;
-        }
-        #patterns .journey-degree {
-            font-size: 0.86rem !important;
-            font-weight: 600;
-            color: var(--blue) !important;
-            line-height: 1.6 !important;
-            margin-bottom: 0.15rem !important;
-        }
-        #patterns .journey-minor {
-            font-size: 0.8rem !important;
-            color: var(--muted) !important;
-            margin-bottom: 0.85rem !important;
-        }
-        #patterns .journey-school-description {
-            font-size: 0.93rem !important;
-            line-height: 1.75 !important;
-            margin-bottom: 0 !important;
-        }
-
-        /* EXPERIENCE STORIES */
-        #patterns .journey-stories {
-            margin-top: 3.5rem;
-            border-top: 1px solid var(--border);
-        }
-        #patterns .journey-story {
-            display: grid;
-            grid-template-columns: minmax(0,0.95fr) minmax(0,1.05fr);
-            gap: 2.8rem;
-            align-items: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-        #patterns .journey-story.reverse {
-            grid-template-columns: minmax(0,1.05fr) minmax(0,0.95fr);
-        }
-        #patterns .journey-story.reverse .journey-story-text { order: 1; }
-        #patterns .journey-story.reverse .journey-story-photo { order: 2; }
-        #patterns .journey-story-photo {
-            margin: 0;
-            min-width: 0;
-            overflow: hidden;
-            border-radius: 0.85rem;
+        
+        /* ABA and entrepreneurship photos */
+        
+        #patterns .journey-photo.experience {
+            max-width: none;
             background: var(--sage-light);
-            border: 1px solid var(--border);
-            box-shadow: 0 8px 26px rgba(23,50,77,0.055);
+            box-shadow: 0 8px 26px rgba(23, 50, 77, 0.055);
         }
-        #patterns .journey-story-photo img {
+        
+        #patterns .journey-photo.experience img {
             display: block;
             width: 100%;
             aspect-ratio: 4 / 3;
             object-fit: cover;
             object-position: center;
         }
-        #patterns .journey-story-text { min-width: 0; }
-        #patterns .journey-story-text h3 {
-            font-size: 1.3rem;
-            line-height: 1.4;
-            margin-bottom: 1.1rem;
-        }
-        #patterns .journey-story-text p {
-            font-size: 0.94rem !important;
-            line-height: 1.8 !important;
-            margin-bottom: 0.9rem;
-        }
-        #patterns .journey-story-text p:last-child { margin-bottom: 0; }
-        #patterns .journey-story-lead {
-            font-weight: 600;
-            color: var(--navy) !important;
-        }
-
+        
+        /* RESPONSIVE — TABLET */
+        
         @media screen and (max-width: 980px) {
-            #patterns .journey-school {
-                grid-template-columns: 240px minmax(0,1fr);
+        
+            #patterns .journey-item {
+                grid-template-columns: 240px minmax(0, 1fr);
                 gap: 2rem;
             }
-            #patterns .journey-school:last-child {
-                grid-template-columns: minmax(0,1fr) 240px;
+        
+            #patterns .journey-item.reverse {
+                grid-template-columns: minmax(0, 1fr) 240px;
             }
-            #patterns .journey-graduation-photo { max-width: 240px; }
-            #patterns .journey-story,
-            #patterns .journey-story.reverse { gap: 1.7rem; }
+        
+            #patterns .journey-photo.graduation {
+                max-width: 240px;
+            }
         }
+        
+        /* RESPONSIVE — MOBILE */
+        
         @media screen and (max-width: 736px) {
-            #patterns .journey-opening { margin-bottom: 2.5rem; }
-            #patterns .journey-opening h3 { font-size: 1.35rem; }
-            #patterns .journey-education-grid { gap: 2.4rem; }
-            #patterns .journey-school,
-            #patterns .journey-school:last-child {
+        
+            #patterns .journey-opening {
+                margin-bottom: 1.5rem;
+            }
+        
+            #patterns .journey-opening h3 {
+                font-size: 1.3rem !important;
+            }
+        
+            #patterns .journey-section {
+                margin-top: 2rem;
+            }
+        
+            #patterns .journey-grid {
+                gap: 2.4rem;
+            }
+        
+            #patterns .journey-item,
+            #patterns .journey-item.reverse {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 1.3rem;
                 padding-bottom: 2.4rem;
             }
-            #patterns .journey-school:last-child { padding-bottom: 0; }
-            #patterns .journey-graduation-photo {
+        
+            #patterns .journey-item:last-child {
+                padding-bottom: 0;
+            }
+        
+            #patterns .journey-content {
+                width: 100%;
+                max-width: none;
+            }
+        
+            #patterns .journey-photo.graduation {
                 width: 100%;
                 max-width: 240px;
                 align-self: center;
             }
-            #patterns .journey-school-content {
+        
+            #patterns .journey-photo.experience {
                 width: 100%;
-                max-width: none;
+                max-width: 560px;
             }
-            #patterns .journey-story,
-            #patterns .journey-story.reverse {
-                grid-template-columns: 1fr;
-                gap: 1.3rem;
-                padding: 2.4rem 0;
+        
+            #patterns .journey-item.reverse .journey-content,
+            #patterns .journey-item.reverse .journey-photo {
+                grid-column: auto;
+                grid-row: auto;
             }
-            #patterns .journey-story.reverse .journey-story-photo,
-            #patterns .journey-story.reverse .journey-story-text {
-                order: initial;
+        
+            #patterns .journey-title {
+                font-size: 1.2rem !important;
             }
-            #patterns .journey-story-photo { max-width: 560px; }
-            #patterns .journey-story-text h3 { font-size: 1.2rem; }
         }
+
 
         /* =========================================================
            RESEARCH REFLECTION
@@ -1236,35 +1274,44 @@
             </div>
         </section>
 
+        
         <!-- =====================================================
              02 JOURNEY
              ===================================================== -->
+        
         <section id="patterns" class="wrapper style2 fade-up">
             <div class="inner">
+        
                 <h2>Journey</h2>
-
+        
+                <!-- FUN FACT -->
+        
                 <div class="journey-opening">
-
-                    <h3 style="color: #58755E !important; 
-                        font-size: 1.3rem !important; 
-                        font-style: italic; font-weight: 500 !important;">
-                        A Little Fun Fact </h3>
+        
+                    <h3>A Little Fun Fact</h3>
+        
                     <p>
                         I started out studying Finance and Accounting during a
                         foundation year at the University of Sheffield in the UK.
                         But somewhere along the way, I found myself more curious
                         about the people behind the numbers than the numbers themselves.
                     </p>
+        
                 </div>
-
-                <!-- ACADEMIC FOUNDATIONS -->
+        
+                <!-- FOUR EXPERIENCES -->
+        
                 <div class="journey-section">
-
-                    <div class="journey-education-grid">
-
-                        <!-- MSU: PHOTO LEFT, TEXT RIGHT -->
-                        <article class="journey-school">
-                            <figure class="journey-graduation-photo">
+                    <div class="journey-grid">
+        
+                        <!-- =============================================
+                             01 MICHIGAN STATE UNIVERSITY
+                             PHOTO LEFT / TEXT RIGHT
+                             ============================================= -->
+        
+                        <article class="journey-item">
+        
+                            <figure class="journey-photo graduation">
                                 <img
                                     src="images/MSU_zy.jpg"
                                     alt="Yan Zhu at Michigan State University graduation"
@@ -1272,51 +1319,72 @@
                                     decoding="async"
                                 />
                             </figure>
-                            <div class="journey-school-content">
-                                <h3 class="journey-school-name">
+        
+                            <div class="journey-content">
+        
+                                <h3 class="journey-title">
                                     Michigan State University
                                 </h3>
-                                <p class="journey-degree">
+        
+                                <p class="journey-primary">
                                     B.S. in Psychology · 2022
                                 </p>
-                                <p class="journey-minor">
+        
+                                <p class="journey-secondary">
                                     Minors in Youth &amp; Society and Philosophy
                                 </p>
-                                <p class="journey-school-description">
-                                    A foundation in psychological research, scientific reasoning,
-                                    and the biological, cognitive, and social dimensions of human behavior.
-
+        
+                                <p class="journey-description">
+                                    A foundation in psychological research,
+                                    scientific reasoning, and the biological,
+                                    cognitive, and social dimensions of human behavior.
+        
                                     <br><br>
-
+        
                                     <strong>Go Green! Go White! 💚</strong>
                                 </p>
+        
                             </div>
+        
                         </article>
-
-                        <!-- UW: TEXT LEFT, PHOTO RIGHT -->
-                        <article class="journey-school">
-                            <div class="journey-school-content">
-                                <h3 class="journey-school-name">
+        
+                        <!-- =============================================
+                             02 UNIVERSITY OF WISCONSIN–MADISON
+                             TEXT LEFT / PHOTO RIGHT
+                             ============================================= -->
+        
+                        <article class="journey-item reverse">
+        
+                            <div class="journey-content">
+        
+                                <h3 class="journey-title">
                                     University of Wisconsin–Madison
                                 </h3>
-                                <p class="journey-degree">
+        
+                                <p class="journey-primary">
                                     M.S. in Psychology:
                                     Data Science in Human Behavior · 2023
                                 </p>
-                                <p class="journey-minor">
+        
+                                <p class="journey-secondary">
                                     Behavioral Data Science &amp; Applied Research
                                 </p>
-                                <p class="journey-school-description">
-                                    Advanced training in statistical analysis, experimental design,
-                                    programming, and machine learning, with hands-on experience
-                                    applying data science to real-world questions about human behavior.
-
+        
+                                <p class="journey-description">
+                                    Advanced training in statistical analysis,
+                                    experimental design, programming, and machine
+                                    learning, with hands-on experience applying
+                                    data science to real-world questions about
+                                    human behavior.
+        
                                     <br><br>
-
+        
                                     <strong>Go Badgers! ❤️</strong>
                                 </p>
+        
                             </div>
-                            <figure class="journey-graduation-photo">
+        
+                            <figure class="journey-photo graduation">
                                 <img
                                     src="images/UWM_zy.JPG"
                                     alt="Yan Zhu at University of Wisconsin Madison graduation"
@@ -1324,75 +1392,108 @@
                                     decoding="async"
                                 />
                             </figure>
+        
                         </article>
-
+        
+                        <!-- =============================================
+                             03 APPLIED BEHAVIOR ANALYSIS
+                             PHOTO LEFT / TEXT RIGHT
+                             ============================================= -->
+        
+                        <article class="journey-item">
+        
+                            <figure class="journey-photo experience">
+                                <img
+                                    src="images/ABA_center_movieday.jpg"
+                                    alt="A movie day activity at an ABA center"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            </figure>
+        
+                            <div class="journey-content">
+        
+                                <h3 class="journey-title">
+                                    From Understanding to Doing
+                                </h3>
+        
+                                <p class="journey-primary">
+                                    Applied Behavior Analysis (ABA) · 2024
+                                </p>
+        
+                                <p class="journey-secondary">
+                                    Clinical Practice
+                                </p>
+        
+                                <p class="journey-description">
+                                    Working with children and families under BCBA
+                                    supervision, applying behavioral principles,
+                                    implementing individualized interventions,
+                                    and observing how learning and behavior change
+                                    unfold in everyday settings.
+        
+                                    <br><br>
+        
+                                    <strong>Every Small Step Matters. 🌱</strong>
+                                </p>
+        
+                            </div>
+        
+                        </article>
+        
+                        <!-- =============================================
+                             04 ENTREPRENEURSHIP
+                             TEXT LEFT / PHOTO RIGHT
+                             ============================================= -->
+        
+                        <article class="journey-item reverse">
+        
+                            <div class="journey-content">
+        
+                                <h3 class="journey-title">
+                                    Trying to Build Something
+                                </h3>
+        
+                                <p class="journey-primary">
+                                    Entrepreneurship · 2025
+                                </p>
+        
+                                <p class="journey-secondary">
+                                    Behavioral Services · Operations &amp; Coordination
+                                </p>
+        
+                                <p class="journey-description">
+                                    Exploring the operational side of behavioral
+                                    services through a U.S.-based venture supporting
+                                    a locally operated center in Chengdu, China,
+                                    with a focus on remote technical support,
+                                    coordination, and the practical challenges
+                                    of service delivery.
+        
+                                    <br><br>
+        
+                                    <strong>A Nudge Toward Change. ✨</strong>
+                                </p>
+        
+                            </div>
+        
+                            <figure class="journey-photo experience">
+                                <img
+                                    src="images/XunWeiCenter.jpg"
+                                    alt="Behavioral services center in Chengdu, China"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            </figure>
+        
+                        </article>
+        
                     </div>
                 </div>
-
-                <!-- PRACTICE AND ENTREPRENEURSHIP -->
-                <div class="journey-stories">
-
-                    <article class="journey-story">
-                        <figure class="journey-story-photo">
-                            <img
-                                src="images/ABA_center_movieday.jpg"
-                                alt="A movie day activity at an ABA center"
-                                loading="lazy"
-                                decoding="async"
-                            />
-                        </figure>
-                        <div class="journey-story-text">
-                            <h3>From Understanding to Doing</h3>
-
-                            <p class="journey-story-lead">
-                                Applied Behavior Analysis (ABA) · Clinical Practice
-                            </p>
-
-                            <p>
-                                Working with children and families under BCBA supervision,
-                                applying behavioral principles, implementing individualized
-                                interventions, and observing how learning and behavior change
-                                unfold in everyday settings.
-                                <br><br>
-
-                                <strong>Every Small Step Matters. 🌱</strong>
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="journey-story reverse">
-                        <div class="journey-story-text">
-                            <h3>Trying to Build Something</h3>
-
-                            <p class="journey-story-lead">
-                                Entrepreneurship
-                            </p>
-
-                            <p>
-                                Exploring the operational side of behavioral services
-                                through a U.S.-based venture supporting a locally operated
-                                center in Chengdu, China, with a focus on remote technical
-                                support, coordination, and the practical challenges
-                                of service delivery.
-
-                                <br><br>
-
-                                <strong>A Nudge Toward Change. ✨</strong>
-                            </p>
-                        </div>
-                        <figure class="journey-story-photo">
-                            <img
-                                src="images/XunWeiCenter.jpg"
-                                alt="Behavioral services center in Chengdu, China"
-                                loading="lazy"
-                                decoding="async"
-                            />
-                        </figure>
-                    </article>
-
-                </div>
+        
             </div>
         </section>
+
 
         <!-- =====================================================
              03 RESEARCH REFLECTION
