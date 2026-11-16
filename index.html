@@ -393,7 +393,10 @@
         /* ABA and entrepreneurship photos */
         
         #patterns .journey-photo.experience {
-            max-width: none;
+            width: 100%;
+            max-width: 498px;
+            aspect-ratio: 4 / 3;
+            margin: 0;
             background: var(--sage-light);
             box-shadow: 0 8px 26px rgba(23, 50, 77, 0.055);
         }
@@ -401,6 +404,7 @@
         #patterns .journey-photo.experience img {
             display: block;
             width: 100%;
+            height: 100%;
             aspect-ratio: 4 / 3;
             object-fit: cover;
             object-position: center;
