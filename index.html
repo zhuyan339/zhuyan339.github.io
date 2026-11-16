@@ -606,23 +606,39 @@
         }
 
         /* UNIFIED GROUP HEADING */
+        
         #next .research-group-heading {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0;
             margin-bottom: 1.7rem;
         }
-
+        
+        /* Category label — top right */
+        
         #next .research-group-label {
+            order: 1;
+            align-self: flex-end;
+            text-align: right;
             font-size: 0.76rem !important;
             font-weight: 700;
             letter-spacing: 0.12em;
             text-transform: uppercase;
             color: var(--sage-dark) !important;
-            margin-bottom: 0.55rem !important;
+            margin-bottom: 0.9rem !important;
         }
-
+        
+        /* Divider and title */
+        
         #next .research-group-title {
+            order: 2;
+            width: 100%;
             font-size: 1.45rem;
             line-height: 1.4;
-            margin: 0 0 0.4rem;
+            margin: 0;
+            padding-top: 1.2rem;
+            border-top: 1px solid var(--border);
         }
 
         /* RESEARCH LABS */
@@ -742,9 +758,9 @@
 
         /* RESEARCH FEATURES */
         #next .research-feature {
-            padding: 2.2rem 0;
-            border-top: 1px solid var(--border);
-        }
+            padding: 0 0 2.2rem;
+            border-top: none;
+}
 
         #next .research-feature p {
             font-size: 0.94rem !important;
@@ -1600,7 +1616,7 @@
                 <!-- SECTION INTRODUCTION -->
                 <div class="research-opening">
                     <h3>
-                        What can the data tell us—and what might we be missing?
+                        What can the data tell us, and what might we be missing?
                     </h3>
 
                     <p>
