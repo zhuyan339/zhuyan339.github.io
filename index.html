@@ -225,6 +225,7 @@
         }
 
 
+
         /* =========================================================
            JOURNEY
            ========================================================= */
@@ -233,19 +234,21 @@
             background: var(--white);
         }
         
-        /* FUN FACT */
+        /* =========================================================
+           FUN FACT
+           ========================================================= */
         
         #patterns .journey-opening {
             max-width: 780px;
-            margin-bottom: 1.5rem;
             padding-left: 1.25rem;
             border-left: 3px solid var(--sage);
+            margin-bottom: 0;
         }
         
         #patterns .journey-opening h3 {
             font-size: 1.3rem !important;
-            font-style: italic;
             font-weight: 500 !important;
+            font-style: italic;
             line-height: 1.4 !important;
             color: var(--sage-dark) !important;
             margin-bottom: 0.85rem;
@@ -260,7 +263,9 @@
             margin-bottom: 0;
         }
         
-        /* FOUR EXPERIENCE MODULES — SHARED LAYOUT */
+        /* =========================================================
+           FOUR EXPERIENCE MODULES
+           ========================================================= */
         
         #patterns .journey-section {
             margin-top: 2.2rem;
@@ -272,23 +277,56 @@
             gap: 2.8rem;
         }
         
-        /* Shared experience container */
-        
         #patterns .journey-item {
             display: grid;
-            grid-template-columns: 280px minmax(0, 1fr);
-            gap: 3rem;
             align-items: center;
             min-width: 0;
+            gap: 3rem;
             padding-bottom: 2.8rem;
             border-bottom: 1px solid var(--border);
         }
         
-        /* Text-left, photo-right variation */
+        #patterns .journey-item:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
         
-        #patterns .journey-item.reverse {
+        /* =========================================================
+           DESKTOP — SCHOOL MODULES
+           ========================================================= */
+        
+        /* MSU: photo left / text right */
+        
+        #patterns .journey-item.school {
+            grid-template-columns: 280px minmax(0, 1fr);
+        }
+        
+        /* UW: text left / photo right */
+        
+        #patterns .journey-item.school.reverse {
             grid-template-columns: minmax(0, 1fr) 280px;
         }
+        
+        /* =========================================================
+           DESKTOP — EXPERIENCE MODULES
+           ========================================================= */
+        
+        /* ABA: wide photo left / text right */
+        
+        #patterns .journey-item.experience {
+            grid-template-columns: 498px minmax(0, 1fr);
+            gap: 2.8rem;
+        }
+        
+        /* Entrepreneurship: text left / wide photo right */
+        
+        #patterns .journey-item.experience.reverse {
+            grid-template-columns: minmax(0, 1fr) 498px;
+        }
+        
+        /* =========================================================
+           DESKTOP — ALTERNATING ORDER
+           ========================================================= */
         
         #patterns .journey-item.reverse .journey-content {
             grid-column: 1;
@@ -300,19 +338,17 @@
             grid-row: 1;
         }
         
-        #patterns .journey-item:last-child {
-            padding-bottom: 0;
-            border-bottom: none;
-        }
-        
-        /* SHARED TEXT SYSTEM */
+        /* =========================================================
+           SHARED TYPOGRAPHY
+           ALL FOUR MODULES
+           ========================================================= */
         
         #patterns .journey-content {
             min-width: 0;
             max-width: 630px;
         }
         
-        /* Level 1 — Experience title */
+        /* Level 1 — Title */
         
         #patterns .journey-title {
             font-size: 1.2rem !important;
@@ -324,7 +360,7 @@
             margin-bottom: 0.35rem;
         }
         
-        /* Level 2 — Degree / role / year */
+        /* Level 2 — Degree / Role / Year */
         
         #patterns .journey-primary {
             font-size: 0.88rem !important;
@@ -334,7 +370,7 @@
             margin-bottom: 0.15rem !important;
         }
         
-        /* Level 3 — Minor / specialization */
+        /* Level 3 — Minor / Specialization */
         
         #patterns .journey-secondary {
             font-size: 0.82rem !important;
@@ -348,92 +384,128 @@
         
         #patterns .journey-description {
             font-size: 0.97rem !important;
-            font-weight: 400;
+            font-weight: 400 !important;
             line-height: 1.8 !important;
             color: var(--text) !important;
             margin-bottom: 0 !important;
         }
         
-        /* Level 5 — Personal closing line */
+        /* Level 5 — Personal Closing Line */
         
         #patterns .journey-description strong {
             font-weight: 600;
             color: var(--navy);
         }
         
-        /* IMAGES — ORIGINAL FORMATS PRESERVED */
-        
-        /* Shared photo frame */
+        /* =========================================================
+           SHARED PHOTO FRAME
+           ========================================================= */
         
         #patterns .journey-photo {
+            display: block;
             width: 100%;
-            margin: 0;
             min-width: 0;
+            margin: 0;
             overflow: hidden;
             border-radius: 0.85rem;
             border: 1px solid var(--border);
             box-shadow: 0 8px 26px rgba(23, 50, 77, 0.07);
         }
         
-        /* School graduation photos */
+        #patterns .journey-photo img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
         
-        #patterns .journey-photo.graduation {
-            max-width: 280px;
+        /* =========================================================
+           SCHOOL PHOTOS — 3:4
+           ========================================================= */
+        
+        #patterns .journey-item.school .journey-photo {
+            width: 280px;
+            height: 373px;
+            max-width: 100%;
             background: var(--blue-light);
         }
         
-        #patterns .journey-photo.graduation img {
-            display: block;
-            width: 100%;
-            aspect-ratio: 3 / 4;
-            object-fit: cover;
+        #patterns .journey-item.school .journey-photo img {
             object-position: center 35%;
         }
         
-        /* ABA and entrepreneurship photos */
+        /* =========================================================
+           EXPERIENCE PHOTOS — 4:3
+           SAME DISPLAY HEIGHT AS SCHOOL PHOTOS
+           ========================================================= */
         
-        #patterns .journey-photo.experience {
-            width: 100%;
-            max-width: 498px;
-            aspect-ratio: 4 / 3;
-            margin: 0;
+        #patterns .journey-item.experience .journey-photo {
+            width: 498px;
+            height: 373px;
+            max-width: 100%;
             background: var(--sage-light);
             box-shadow: 0 8px 26px rgba(23, 50, 77, 0.055);
         }
         
-        #patterns .journey-photo.experience img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            aspect-ratio: 4 / 3;
-            object-fit: cover;
+        #patterns .journey-item.experience .journey-photo img {
             object-position: center;
         }
         
-        /* RESPONSIVE — TABLET */
+        /* =========================================================
+           TABLET / COMPACT DESKTOP
+           ========================================================= */
         
-        @media screen and (max-width: 980px) {
+        @media screen and (min-width: 737px) and (max-width: 1200px) {
         
             #patterns .journey-item {
-                grid-template-columns: 240px minmax(0, 1fr);
                 gap: 2rem;
             }
         
-            #patterns .journey-item.reverse {
+            /* School layout */
+        
+            #patterns .journey-item.school {
+                grid-template-columns: 240px minmax(0, 1fr);
+            }
+        
+            #patterns .journey-item.school.reverse {
                 grid-template-columns: minmax(0, 1fr) 240px;
             }
         
-            #patterns .journey-photo.graduation {
-                max-width: 240px;
+            #patterns .journey-item.school .journey-photo {
+                width: 240px;
+                height: 320px;
+            }
+        
+            /* Experience layout */
+        
+            #patterns .journey-item.experience {
+                grid-template-columns:
+                    minmax(0, 0.95fr)
+                    minmax(0, 1.05fr);
+                gap: 1.7rem;
+            }
+        
+            #patterns .journey-item.experience.reverse {
+                grid-template-columns:
+                    minmax(0, 1.05fr)
+                    minmax(0, 0.95fr);
+            }
+        
+            #patterns .journey-item.experience .journey-photo {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 4 / 3;
             }
         }
         
-        /* RESPONSIVE — MOBILE */
+        /* =========================================================
+           MOBILE
+           ========================================================= */
         
         @media screen and (max-width: 736px) {
         
             #patterns .journey-opening {
-                margin-bottom: 1.5rem;
+                padding-left: 1rem;
             }
         
             #patterns .journey-opening h3 {
@@ -448,8 +520,13 @@
                 gap: 2.4rem;
             }
         
+            /* All four modules become single-column */
+        
             #patterns .journey-item,
-            #patterns .journey-item.reverse {
+            #patterns .journey-item.school,
+            #patterns .journey-item.school.reverse,
+            #patterns .journey-item.experience,
+            #patterns .journey-item.experience.reverse {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -461,27 +538,40 @@
                 padding-bottom: 0;
             }
         
+            /* Text first, photo second */
+        
             #patterns .journey-content {
+                order: 1;
                 width: 100%;
                 max-width: none;
             }
         
-            #patterns .journey-photo.graduation {
-                width: 100%;
-                max-width: 240px;
-                align-self: center;
-            }
-        
-            #patterns .journey-photo.experience {
-                width: 100%;
-                max-width: 560px;
-            }
-        
-            #patterns .journey-item.reverse .journey-content,
-            #patterns .journey-item.reverse .journey-photo {
+            #patterns .journey-photo {
+                order: 2;
                 grid-column: auto;
                 grid-row: auto;
             }
+        
+            /* School photos */
+        
+            #patterns .journey-item.school .journey-photo {
+                width: min(240px, 100%);
+                height: auto;
+                aspect-ratio: 3 / 4;
+                align-self: center;
+            }
+        
+            /* Experience photos */
+        
+            #patterns .journey-item.experience .journey-photo {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 4 / 3;
+                max-width: 560px;
+                align-self: center;
+            }
+        
+            /* Shared typography */
         
             #patterns .journey-title {
                 font-size: 1.2rem !important;
